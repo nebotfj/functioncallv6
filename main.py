@@ -1,22 +1,26 @@
-from protocols.aave import AAVE_FUNCTIONS
-from protocols.compound import COMPOUND_FUNCTIONS
-from protocols.cream import CREAM_FUNCTIONS
-from protocols.dex.uniswap import UNISWAP_FUNCTIONS
-from protocols.dex.sushiswap import SUSHISWAP_FUNCTIONS
-from protocols.dex.pancakeswap import PANCAKESWAP_FUNCTIONS
-from protocols.dex.balancer import BALANCER_FUNCTIONS
-from protocols.dex.bancor import BANCOR_FUNCTIONS
-from protocols.dex.curve import CURVE_FUNCTIONS
-from protocols.dex.beethoven import BEETHOVEN_FUNCTIONS
-from protocols.dex.biswap import BISWAP_FUNCTIONS
-from protocols.dex.camelot import CAMELOT_FUNCTIONS
-from protocols.dex.chronos import CHRONOS_FUNCTIONS
-from protocols.dex.dodo import DODO_FUNCTIONS
-from protocols.dex.dystopia import DYSTOPIA_FUNCTIONS
-from protocols.dex.gmx import GMX_FUNCTIONS
-from protocols.dex.gnosis import GNOSIS_FUNCTIONS
-from protocols.dex.hashflow import HASHFLOW_FUNCTIONS
-from protocols.dex.kyberswap import KYBERSWAP_FUNCTIONS
+import protocols
+
+from protocols.bridges import across, allbridge, arbitrum, celer, hop, layerzero, multichain, optimism, orbiter, polygon, portal, stargate, symbiosis, synapse, wormhole
+from protocols.derivatives import drift, dydx, gains, gmx, hubble, kwenta, level, mycelium, perpetual, polynomial, ribbon, synthetix, vela
+from protocols.dex import balancer, bancor, beethoven, biswap, camelot, chronos, curve, dodo, dystopia, gmx, gnosis, hashflow, kyberswap, loopring, maverick, meshswap, mixswap, oneinch, orca, pancakeswap, paraswap, platypus, quickswap, ramses, raydium, solidly, spiritswap, spookyswap, sushiswap, traderjoe, uniswap, velodrome, vulpefi, wombat, zapper, zerion, zeroex, zyberswap
+from protocols. gaming import 
+from protocols.identity import brightid, civic, polygonid, worldcoin
+from protocols.infrastructure import arweave, filecoin, ipfs, pocket, the_graph
+from protocols.insurance import insurace, nexus_mutual, unslashed
+from protocols. launchpad import bullperks, gamefi, gamestarter, launchpad_repasar
+from protocols.lending import aave, benqi, compound, cream, euler, frax, geist, granary, hundred, ironbank, maple, maker, morpho, radiant, venus
+from protocols.mev import 
+from protocols.nft import 
+from protocols.options import 
+from protocols.oracles import 
+from protocols.privacy import 
+from protocols.rwa import centrifuge, goldfinch, maple, truefi
+from protocols.social_media import farcaster, friend_tech, lens
+from protocols.staking import 
+from protocols.tokens import erc1155, erc20, erc2981, erc3525, erc4626, erc5192, erc721
+from protocols.yield_farming import
+
+from aave import AAVE_FUNCTIONS
 
 def search_function(function_name):
     protocols = {
