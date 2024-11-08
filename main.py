@@ -1,3 +1,10 @@
+import os
+import csv
+import tkinter as tk
+from tkinter import scrolledtext, messagebox
+import pandas as pd
+
+
 import protocols
 from protocols.bridges import across, allbridge, arbitrum, celer, hop, layerzero, multichain, optimism, orbiter, polygon, portal, stargate, symbiosis, synapse, wormhole
 from protocols.derivatives import drift, dydx, gains, gmx, hubble, kwenta, level, mycelium, perpetual, polynomial, ribbon, synthetix, vela
@@ -497,7 +504,7 @@ def search_function(function_name):
 
     return results
 
-def main():
+'''def main():
     print("Welcome to DeFi Function Analyzer")
     print("Enter function names separated by comma (or 'exit' to quit)")
     
@@ -508,6 +515,7 @@ def main():
             break
         # Divide las funciones introducidas por el usuario
         functions = [f.strip() for f in user_input.split(',')]
+
         # Itera sobre todas las funciones introducidas por el usuario
         for function in functions:
             results = search_function(function)
@@ -521,14 +529,99 @@ def main():
                     print(f"Description: {result['details']['description']}")
                     print(f"Method ID: {result['details']['method']}")
             else:
+                print(f"\nFunction '{function}' not found in any protocol")'''
+
+
+def main():
+    print("Welcome to DeFi Function Analyzer")
+    print("Enter function names separated by comma (or 'exit' to quit)")
+
+    # Lista para almacenar los resultados
+    all_results = []
+
+    while True:
+        user_input = input("\nEnter function name(s): ").strip()
+
+        if user_input.lower() == 'exit':
+            break
+
+        # Divide las funciones introducidas por el usuario
+        functions = [f.strip() for f in user_input.split(',')]
+
+        # Itera sobre todas las funciones introducidas por el usuario
+        for function in functions:
+            results = search_function(function)
+            
+            if results:
+                print(f"\nResults for '{function}':")
+                for result in results:
+                    print(f"\nProtocol: {result['protocol']} {result['version']}")
+                    print(f"Category: {result['category']}")
+                    print(f"Direction: {result['details']['direction']}")
+                    print(f"Description: {result['details']['description']}")
+                    print(f"Method ID: {result['details']['method']}")
+
+                    # Añadir el resultado a la lista de todos los resultados
+                    all_results.append({
+                        'function': function,
+                        'protocol': result['protocol'],
+                        'version': result['version'],
+                        'category': result['category'],
+                        'direction': result['details']['direction'],
+                        'description': result['details']['description'],
+                        'method_id': result['details']['method']
+                    })
+            else:
                 print(f"\nFunction '{function}' not found in any protocol")
+                    # Añadir el resultado a la lista de todos los resultados
+                all_results.append({
+                        'function': function,
+                        'protocol': 'not found',
+                        'version': '',
+                        'category': '',
+                        'direction': '',
+                        'description': '',
+                        'method_id': ''
+                    })    
+
+    # Guardar todos los resultados en un archivo CSV
+    with open("defi_function_analysis.csv", mode="w", newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=['function', 'protocol', 'version', 'category', 'direction', 'description', 'method_id'])
+        writer.writeheader()
+        writer.writerows(all_results)
+
+    print("\nResults saved to 'defi_function_analysis.csv' in the current directory.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     main()
-    
-                        
-            
-           
-            
-            
-    

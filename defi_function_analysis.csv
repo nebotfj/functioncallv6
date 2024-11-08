@@ -1,0 +1,868 @@
+function,protocol,version,category,direction,description,method_id
+add_liquidity,CURVE,V1,POOL,OUTGOING,Adds liquidity to pool,0x0b4c7e4d
+add_liquidity,CURVE,V2,POOL,OUTGOING,Adds liquidity to pool,0x0b4c7e4d
+add_liquidity,CURVE,V2,TRICRYPTO,OUTGOING,Adds liquidity to tricrypto,0x0b4c7e4d
+addLiquidity,ACROSS,V1,LIQUIDITY,OUTGOING,Adds liquidity to bridge pool,0xe8e33700
+addLiquidity,ACROSS,V2,LIQUIDITY,OUTGOING,Adds liquidity to bridge pool V2,0xe8e33700
+addLiquidity,ALLBRIDGE,V1,LIQUIDITY,OUTGOING,Adds liquidity to bridge pool,0xe8e33700
+addLiquidity,CELER,V1,LIQUIDITY,OUTGOING,Adds liquidity to bridge,0xe8e33700
+addLiquidity,HOP,V1,AMM,OUTGOING,Adds liquidity to bridge pool,0xe8e33700
+addLiquidity,HOP,V2,AMM,OUTGOING,Adds liquidity to bridge pool V2,0xe8e33700
+addLiquidity,MULTICHAIN,V3,ROUTER,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,STARGATE,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SYMBIOSIS,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SYNAPSE,V1,POOLS,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,DRIFT,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,GMX,V1,LIQUIDITY,OUTGOING,Adds liquidity to GLP,0x68bf9329
+addLiquidity,LEVEL,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,MYCELIUM,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,VELA,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,BANCOR,V2,LIQUIDITY,OUTGOING,Adds single-sided liquidity,0x0b4c7e4d
+addLiquidity,BEETHOVEN,V1,LIQUIDITY,OUTGOING,Adds liquidity to specific pool,0xe8e33700
+addLiquidity,BISWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,CAMELOT,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,CHRONOS,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,DYSTOPIA,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,HASHFLOW,V3,POOLS,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,KYBERSWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,LOOPRING,V3,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,MAVERICK,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,MAVERICK,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,MESH_SWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,MIX_SWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,PANCAKESWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity to token pair,0xe8e33700
+addLiquidity,PLATYPUS,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,QUICKSWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,RAMSES,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,RAYDIUM,V3,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SOLIDLY,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SPIRITSWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SPOOKYSWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SUSHISWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity to token pair,0xe8e33700
+addLiquidity,SUSHISWAP,V2,LIQUIDITY,OUTGOING,Adds concentrated liquidity to pool,0x0f4f8da7
+addLiquidity,TRADERJOE,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,UNISWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,UNISWAP,V4,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,VELODROME,V2,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,VULPEFI,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,WOMBAT,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,ZERION,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,ZYBERSWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,POLYMARKET,V1,LIQUIDITY,OUTGOING,Adds liquidity to market,0xe8e33700
+addLiquidity,NFTX,V2,TRADING,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,SUDOSWAP,V1,POOL,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,LYRA,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xe8e33700
+addLiquidity,PREMIA,V1,POOLS,OUTGOING,Adds pool liquidity,0xe8e33700
+addLiquidity,MONERO,V1,LIQUIDITY,OUTGOING,Adds bridge liquidity,0xe8e33700
+addLiquidity,ZCASH,V1,LIQUIDITY,OUTGOING,Adds bridge liquidity,0xe8e33700
+addLiquidity,STAKEWISE,V2,POOL,OUTGOING,Adds pool liquidity,0xe8e33700
+addLiquidityETH,CAMELOT,V2,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,CHRONOS,V1,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,DYSTOPIA,V1,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,PANCAKESWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity with BNB,0xf305d719
+addLiquidityETH,QUICKSWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,RAMSES,V1,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,SUSHISWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,UNISWAP,V2,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+addLiquidityETH,ZYBERSWAP,V1,LIQUIDITY,OUTGOING,Adds liquidity with ETH,0xf305d719
+approve,UNISWAP,V3,POSITION,OUTGOING,Approves position transfer,0x095ea7b3
+approve,ERC20,V1,BASIC,OUTGOING,Approves token allowance,0x095ea7b3
+approve,ERC3525,V1,BASIC,OUTGOING,Approves value transfer,0x095ea7b3
+approve,ERC721,V1,BASIC,OUTGOING,Approves NFT transfer,0x095ea7b3
+approveAndCall,not found,,,,,
+approveDelegation,not found,,,,,
+batch,not found,,,,,
+borrow,DYDX,V3,MARGIN,INCOMING,Borrows from margin pool,0xc858f5ba
+borrow,TRADERJOE,V1,LENDING,INCOMING,Borrows assets from lending pool,0xc858f5ba
+borrow,AAVE,V1,LENDING,INCOMING,Borrows tokens from the lending pool,0xc858f5ba
+borrow,AAVE,V2,LENDING,INCOMING,Borrows an amount of asset with stable or variable rate,0xc858f5ba
+borrow,AAVE,V3,LENDING,INCOMING,Borrows an amount of asset with stable or variable rate,0xa415bcad
+borrow,BENQI,V1,LENDING,INCOMING,Borrows assets against collateral,0xc5ebeaec
+borrow,COMPOUND,V2,LENDING,INCOMING,Borrows assets,0xc5ebeaec
+borrow,COMPOUND,V3,LENDING,INCOMING,Borrows assets,0xc5ebeaec
+borrow,CREAM,V1,LENDING,INCOMING,Borrows assets,0xc5ebeaec
+borrow,EULER,V1,LENDING,INCOMING,Borrows assets,0xc5ebeaec
+borrow,FRAX,V1,LENDING,INCOMING,Borrows FRAX tokens,0xc5ebeaec
+borrow,GEIST,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,GRANARY,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,HUNDRED,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,IRONBANK,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,MORPHO,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,RADIANT,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,VENUS,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrow,ALPACA,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
+borrowETH,not found,,,,,
+build,not found,,,,,
+burn,SYNTHETIX,V2,STAKING,INCOMING,Burns sUSD for SNX,0x89afcb44
+burn,KYBERSWAP,V1,ELASTIC,INCOMING,Burns elastic pool position,0x89afcb44
+burn,PANCAKESWAP,V3,POSITION_MANAGER,INCOMING,Burns liquidity position NFT,0x89afcb44
+burn,SOLIDLY,V1,LIQUIDITY,INCOMING,Burns LP tokens,0x89afcb44
+burn,SUSHISWAP,V3,LIQUIDITY,INCOMING,Burns concentrated liquidity position,0x89afcb44
+burn,UNISWAP,V2,POSITION,INCOMING,Burns liquidity position,0x89afcb44
+burn,UNISWAP,V3,LIQUIDITY,INCOMING,Burns liquidity position,0x89afcb44
+burn,RARIBLE,V2,CREATION,OUTGOING,Burns existing NFT,0x89afcb44
+burn,ERC1155,V1,MINT,OUTGOING,Burns tokens,0x42966c68
+burn,ERC20,V1,MINT,OUTGOING,Burns existing tokens,0x42966c68
+burn,ERC3525,V1,MINT,OUTGOING,Burns token,0x42966c68
+burn,ERC721,V1,MINT,OUTGOING,Burns existing NFT,0x42966c68
+burnToEther,not found,,,,,
+burnToToken,not found,,,,,
+cast,FARCASTER,V1,SOCIAL,OUTGOING,Creates new cast message,0x1698ee82
+claim,ACROSS,V1,BRIDGE,INCOMING,Claims bridged tokens,0x4e71d92d
+claim,ACROSS,V2,BRIDGE,INCOMING,Claims bridged tokens V2,0x4e71d92d
+claim,ALLBRIDGE,V1,BRIDGE,INCOMING,Claims bridged tokens,0x4e71d92d
+claim,SYMBIOSIS,V1,BRIDGE,INCOMING,Claims bridged tokens,0x4e71d92d
+claim,CURVE,COMMON,STAKING,INCOMING,Claims staking rewards,0x4e71d92d
+claim,ONEINCH,V5,FARMING,INCOMING,Claims farming rewards,0x4e71d92d
+claim,PANCAKESWAP,V2,PREDICTION,INCOMING,Claims prediction rewards,0x4e71d92d
+claim,PLATYPUS,V1,VESTING,INCOMING,Claims vested tokens,0x4e71d92d
+claim,POCKET,V1,GOVERNANCE,INCOMING,Claims governance rewards,0x4e71d92d
+claim,BULLPERKS,V1,DEALS,INCOMING,Claims purchased tokens,0x4e71d92d
+claim,COINLIST,V1,COINLIST,INCOMING,Claims purchased tokens,0x4e71d92d
+claim,COPPER_LAUNCH,V1,COPPER_LAUNCH,INCOMING,Claims won tokens,0x4e71d92d
+claim,DAOMAKER,V1,DAO_MAKER,INCOMING,Claims SHO tokens,0x4e71d92d
+claim,GAMEFI,V1,IGO,INCOMING,Claims purchased game tokens,0x4e71d92d
+claim,GAMESTARTER,V1,IGO,INCOMING,Claims purchased game tokens,0x4e71d92d
+claim,PINKSALE,V1,PINKSALE,INCOMING,Claims presale tokens,0x4e71d92d
+claim,POLKSTARTER,V1,POLKASTARTER,INCOMING,Claims IDO tokens,0x4e71d92d
+claim,SEEDIFY,V1,SEEDIFY,INCOMING,Claims IGO tokens,0x4e71d92d
+claim,GEIST,V1,VESTING,INCOMING,Claims vested tokens,0x4e71d92d
+claimAll,not found,,,,,
+claimBalance,not found,,,,,
+claimComp,not found,,,,,
+claimDistributions,not found,,,,,
+claimFor,not found,,,,,
+claimRewards,ACROSS,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,ACROSS,V2,REWARDS,INCOMING,Claims ACX rewards,0xe6f1daf2
+claimRewards,CELER,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,HOP,V1,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,HOP,V2,REWARDS,INCOMING,Claims staking rewards V2,0xe6f1daf2
+claimRewards,POLYGON,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,STARGATE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,SYMBIOSIS,V1,REWARDS,INCOMING,Claims protocol rewards,0xe6f1daf2
+claimRewards,DRIFT,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,DYDX,V3,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,GAINS,V6,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,HUBBLE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,KWENTA,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,LEVEL,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MYCELIUM,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,PERPETUAL,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,POLYNOMIAL,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,RIBBON,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,SYNTHETIX,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,VELA,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BALANCER,V2,LIQUIDITY_MINING,INCOMING,Claims mining rewards,0x372500ab
+claimRewards,BANCOR,V2,LIQUIDITY,INCOMING,Claims liquidity mining rewards,0xe6f1daf2
+claimRewards,BANCOR,V3,REWARDS,INCOMING,Claims trading rewards,0xe6f1daf2
+claimRewards,CHRONOS,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,DYSTOPIA,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,LOOPRING,V3,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MAVERICK,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MAVERICK,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,QUICKSWAP,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,RAMSES,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,RAYDIUM,V3,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,SPOOKYSWAP,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,TRADERJOE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,WOMBAT,V1,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,ZAPPER,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,AXIE,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BETSWIRL,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BIGTIME,V1,GAMEPLAY,INCOMING,Claims mission rewards,0x4e71d92d
+claimRewards,CRYPTO_UNICORNS,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,DECENTRAL,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,DEFI_KINGDOMS,V1,HEROES,INCOMING,Claims quest rewards,0x4e71d92d
+claimRewards,EMBER_SWORD,V1,GAMEPLAY,INCOMING,Claims gameplay rewards,0x4e71d92d
+claimRewards,GALA,V1,GAMING,INCOMING,Claims gaming rewards,0x4e71d92d
+claimRewards,GODS_UNCHAINED,V1,GAMEPLAY,INCOMING,Claims match rewards,0x4e71d92d
+claimRewards,ILLUVIUM,V1,GAMEPLAY,INCOMING,Claims gameplay rewards,0x4e71d92d
+claimRewards,ILLUVIUM,V2,GAMEPLAY,INCOMING,Claims gameplay rewards,0x4e71d92d
+claimRewards,PEGAXY,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,ROLLBIT,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,SORARE,V1,GAMEPLAY,INCOMING,Claims tournament rewards,0x4e71d92d
+claimRewards,SPLINTERLANDS,V1,GAMEPLAY,INCOMING,Claims battle rewards,0x4e71d92d
+claimRewards,STEPN,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,THETAN_ARENA,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,ZED_RUN,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,CIVIC,V1,TOKEN,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,WORLDCOIN,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,ARWEAVE,V1,MINING,INCOMING,Claims mining rewards,0x4e71d92d
+claimRewards,POCKET,V1,NODES,INCOMING,Claims node rewards,0x4e71d92d
+claimRewards,INSURACE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,NEXUS_MUTUAL,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,NEXUS_MUTUAL,V1,GOVERNANCE,INCOMING,Claims governance rewards,0x4e71d92d
+claimRewards,UNSLASHED,V1,CAPITAL,INCOMING,Claims capital rewards,0x4e71d92d
+claimRewards,BULLPERKS,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,GAMEFI,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,GAMESTARTER,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,AAVE,V3,STAKING,INCOMING,Claims accumulated rewards,0xe6f1daf2
+claimRewards,BENQI,V1,STAKING,INCOMING,Claims staking rewards,0xe09c3b93
+claimRewards,FRAX,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,GEIST,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,GRANARY,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,HUNDRED,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MAPLE,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MORPHO,V1,REWARDS,INCOMING,Claims protocol rewards,0xe6f1daf2
+claimRewards,RADIANT,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,COWSWAP,V1,SOLVER,INCOMING,Claims solver rewards,0xe6f1daf2
+claimRewards,ROOK,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BLUR,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,LOOKSRARE,V1,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MAGICEDEN,V2,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,NFTX,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,X2Y2,V1,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,DOPEX,V1,SSOV,INCOMING,Claims SSOV rewards,0xe6f1daf2
+claimRewards,HEGIC,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,LYRA,V1,LIQUIDITY,INCOMING,Claims liquidity rewards,0xe6f1daf2
+claimRewards,PREMIA,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,API3,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BAND,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,DIA,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,PYTH,V1,GOVERNANCE,INCOMING,Claims oracle rewards,0xe6f1daf2
+claimRewards,UMA,V1,VOTING,INCOMING,Claims voting rewards,0xe6f1daf2
+claimRewards,UMBRELLA,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,TORNADO,V1,MINING,INCOMING,Claims mining rewards,0xe6f1daf2
+claimRewards,CENTRIFUGE,V1,FINANCING,INCOMING,Claims pool rewards,0x4e71d92d
+claimRewards,TRUEFI,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,LENS,V2,MONETIZATION,INCOMING,Claims module rewards,0x4e71d92d
+claimRewards,ANKR,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BINANCE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,EIGENLAYER,V1,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,LIDO,V1,REWARDS,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,MANTLE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,STADER,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,STAKESTONE,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,STAKEWISE,V2,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,SWELL,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,BEEFY,V1,BOOST,INCOMING,Claims boost rewards,0xe6f1daf2
+claimRewards,CONVEX,V1,REWARDS,INCOMING,Claims pool rewards,0xe6f1daf2
+claimRewards,JONES,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,PICKLE,V1,DILL,INCOMING,Claims DILL rewards,0xe6f1daf2
+claimRewards,PIREX,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,REDACTED,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimRewards,YEARN,V2,REWARDS,INCOMING,Claims vault rewards,0xe6f1daf2
+claimRewards,YEARN,V3,REWARDS,INCOMING,Claims vault rewards,0xe6f1daf2
+claimRewards,YIELD_YAK,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
+claimStakerReward,not found,,,,,
+claimTokens,not found,,,,,
+claimWeeks,not found,,,,,
+convertByPath,BANCOR,V2,TRADING,BOTH,Converts tokens through conversion path,0xb77d239b
+cooldown,AAVE,V3,STAKING,OUTGOING,Activates the cooldown period,0x7fb52f1a
+create_lock,not found,,,,,
+createProxy,not found,,,,,
+delegate,DYDX,V3,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,GNOSIS,V2,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,THE_GRAPH,V1,INDEXING,OUTGOING,Delegates to indexer,0x5c19a95c
+delegate,NEXUS_MUTUAL,V1,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,UNSLASHED,V1,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,AAVE,V3,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,FRAX,V1,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,MAKER,V1,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,BAND,V1,STAKING,OUTGOING,Delegates BAND tokens,0x5c19a95c
+delegate,BINANCE,V1,DELEGATION,OUTGOING,Delegates to validator,0x5c19a95c
+delegate,LIDO,V1,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,MANTLE,V1,DELEGATION,OUTGOING,Delegates to validator,0x5c19a95c
+delegate,STAKESTONE,V1,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+delegate,STAKEWISE,V2,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
+deposit,ACROSS,V1,BRIDGE,OUTGOING,Deposits tokens for bridging,0xb6b55f25
+deposit,ACROSS,V2,BRIDGE,OUTGOING,Deposits tokens for bridging V2,0xb6b55f25
+deposit,DYDX,V3,MARGIN,OUTGOING,Deposits collateral,0x47e7ef24
+deposit,GAINS,V6,VAULT,OUTGOING,Deposits assets to vault,0x47e7ef24
+deposit,RIBBON,V2,VAULT,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,BANCOR,V3,LIQUIDITY,OUTGOING,Deposits tokens into pool,0x47e7ef24
+deposit,BISWAP,V2,FARMING,OUTGOING,Stakes LP tokens in farm,0xe2bbb158
+deposit,CURVE,V1,GAUGE,OUTGOING,Stakes LP tokens in gauge,0xb6b55f25
+deposit,KYBERSWAP,V1,FARMING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,LOOPRING,V3,L2_OPERATIONS,OUTGOING,Deposits assets to L2,0xb6b55f25
+deposit,ORCA,V2,FARMING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,PANCAKESWAP,V2,FARMING,OUTGOING,Deposits LP tokens for farming,0xe2bbb158
+deposit,PLATYPUS,V1,LIQUIDITY,OUTGOING,Deposits tokens to pool,0xb6b55f25
+deposit,QUICKSWAP,V2,FARMING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,RAYDIUM,V3,FARMING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,SPIRITSWAP,V2,FARMING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,SPOOKYSWAP,V2,FARMING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,SUSHISWAP,V1,FARMING,OUTGOING,Deposits LP tokens for farming,0xe2bbb158
+deposit,SUSHISWAP,V2,BENTOBOX,OUTGOING,Deposits tokens into BentoBox,0xe2bbb158
+deposit,VULPEFI,V1,YIELD,OUTGOING,Deposits assets for yield,0xb6b55f25
+deposit,WOMBAT,V1,STAKING,OUTGOING,Stakes LP tokens,0xe2bbb158
+deposit,AAVE,V1,LENDING,OUTGOING,Deposits tokens into the lending pool,0xe8eda9df
+deposit,AAVE,V2,LENDING,OUTGOING,Deposits an amount of underlying asset into the reserve,0xe8eda9df
+deposit,EULER,V1,LENDING,OUTGOING,Deposits assets,0x6e553f65
+deposit,MAPLE,V2,LENDING,OUTGOING,Deposits into pool,0x47e7ef24
+deposit,DOPEX,V1,SSOV,OUTGOING,Deposits into SSOV vault,0x47e7ef24
+deposit,AZTEC,V2,SHIELD,OUTGOING,Deposits public assets,0x47e7ef24
+deposit,RAILWAY,V1,PRIVACY,OUTGOING,Deposits into privacy pool,0x47e7ef24
+deposit,TORNADO,V1,PRIVACY,OUTGOING,Deposits into privacy pool,0x47e7ef24
+deposit,GOLDFINCH,V1,POOLS,OUTGOING,Deposits into senior pool,0x47e7ef24
+deposit,BINANCE,V1,GOVERNANCE,OUTGOING,Deposits for proposal,0x47e7ef24
+deposit,EIGENLAYER,V1,STAKING,OUTGOING,Deposits assets for restaking,0x47e7ef24
+deposit,OETH,V1,VAULT,OUTGOING,Deposits assets to vault,0x47e7ef24
+deposit,STADER,V1,STAKING,OUTGOING,Deposits ETH for staking,0x47e7ef24
+deposit,ERC4626,V1,VAULT,OUTGOING,Deposits assets into vault,0x6e553f65
+deposit,ALPACA,V1,LENDING,OUTGOING,Deposits assets into lending pool,0x47e7ef24
+deposit,BEEFY,V1,VAULT,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,CONCENTRATOR,V1,VAULT,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,CONVEX,V1,BOOSTER,OUTGOING,Deposits LP tokens,0x47e7ef24
+deposit,JONES,V1,VAULTS,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,PICKLE,V1,FARM,OUTGOING,Deposits assets into farm,0x47e7ef24
+deposit,PIREX,V1,STAKING,OUTGOING,Deposits assets for staking,0x47e7ef24
+deposit,YEARN,V1,VAULT,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,YEARN,V2,VAULT,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,YEARN,V3,VAULT,OUTGOING,Deposits assets into vault,0x47e7ef24
+deposit,YIELD_YAK,V1,FARMING,OUTGOING,Deposits assets for farming,0x47e7ef24
+depositAave,AAVE,V1,LENDING,OUTGOING,Deposits AAVE tokens into the protocol,0x47e7ef24
+depositAave,AAVE,V2,LENDING,OUTGOING,Deposits AAVE tokens into the protocol,0x47e7ef24
+depositAave,AAVE,V3,LENDING,OUTGOING,Deposits AAVE tokens into the protocol,0x47e7ef24
+depositAll,BEEFY,V1,VAULT,OUTGOING,Deposits all available assets,0x3ccfd60b
+depositAll,CONVEX,V1,BOOSTER,OUTGOING,Deposits all LP tokens,0x3ccfd60b
+depositAll,PICKLE,V1,GAUGE,OUTGOING,Deposits all tokens,0x3ccfd60b
+depositBase,DODO,V1,LIQUIDITY,OUTGOING,Deposits base token,0x4c505d91
+depositETH,ARBITRUM,V1,BRIDGE,OUTGOING,Deposits ETH to L2,0xb1a1a882
+depositPool,not found,,,,,
+depositQuote,DODO,V1,LIQUIDITY,OUTGOING,Deposits quote token,0x5a45c6fc
+depositSavings,not found,,,,,
+depositV3,not found,,,,,
+disperseEther,not found,,,,,
+enterMarkets,COMPOUND,V2,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
+enterMarkets,CREAM,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
+enterMarkets,HUNDRED,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
+enterMarkets,IRONBANK,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
+enterMarkets,VENUS,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
+ETH transfer,not found,,,,,
+ethToTokenSwapInput,not found,,,,,
+ethToTokenSwapOutput,not found,,,,,
+exactInput,PANCAKESWAP,V3,SWAP,BOTH,Swaps exact tokens via multiple pools,0xc04b8d59
+exactInput,SUSHISWAP,V2,SWAP,BOTH,Swaps exact tokens via multiple pools,0xc04b8d59
+exactInput,UNISWAP,V3,SWAP,BOTH,Swaps exact tokens through multiple pools,0xc04b8d59
+exchange_multiple,not found,,,,,
+exchange,SYNTHETIX,V2,TRADING,BOTH,Exchanges synths directly,0x128acb08
+exchange,CURVE,V1,POOL,BOTH,Swaps between tokens in pool,0x3df02124
+exchange,CURVE,V2,POOL,BOTH,Swaps between tokens in pool,0x3df02124
+exchange,CURVE,V2,TRICRYPTO,BOTH,Swaps in tricrypto pool,0x3df02124
+execute,DYDX,V3,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,BALANCER,V2,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,BANCOR,V3,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,GNOSIS,V2,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,DECENTRAL,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,ILLUVIUM,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,INSURACE,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,UNSLASHED,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,BULLPERKS,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,BENQI,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,FRAX,V1,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,GRANARY,V1,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,MAPLE,V2,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,RADIANT,V1,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,DOPEX,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,HEGIC,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,LYRA,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,PREMIA,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,API3,V1,DAO,OUTGOING,Executes proposal,0xfe0d94c1
+execute,BAND,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,DIA,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,TELLOR,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,UMA,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,UMBRELLA,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,MONERO,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,RAILWAY,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,TORNADO,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,CENTRIFUGE,V1,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,GOLDFINCH,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,TRUEFI,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,LENS,V1,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,ANKR,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,OETH,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,STAKESTONE,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,STAKEWISE,V2,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,SWELL,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,ALPACA,V1,GOVERNANCE,OUTGOING,Executes passed proposal,0xfe0d94c1
+execute,PIREX,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+execute,YEARN,V1,GOVERNANCE,OUTGOING,Executes proposal,0xfe0d94c1
+exit,POLYGON,V1,BRIDGE,INCOMING,Exits assets from Polygon,0x32b7006d
+exit,ONEINCH,V5,FARMING,INCOMING,Exits farming position,0xe9fad8ee
+exit,PICKLE,V1,GAUGE,INCOMING,Exits gauge position,0xe9fad8ee
+exitPool,BALANCER,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0x8bdb3913
+exitPool,BALANCER,V2,VAULT,INCOMING,Removes liquidity from pool,0x8bdb3913
+exitPool,BEETHOVEN,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0x8bdb3913
+exitPool,STAKESTONE,V1,POOL,INCOMING,Exits liquidity pool,0x8bdb3913
+exitPool,STAKEWISE,V2,POOL,INCOMING,Exits liquidity pool,0x8bdb3913
+exitswapPoolAmountIn,not found,,,,,
+fillBounty,not found,,,,,
+flashLoan,HOP,V2,AMM,BOTH,Executes flash loan,0x5cffe9de
+flashLoan,SYNAPSE,V1,POOLS,BOTH,Executes flash loan,0x5cffe9de
+flashLoan,BALANCER,V2,VAULT,BOTH,Executes flash loan,0x5c38449e
+flashLoan,AAVE,V2,LENDING,BOTH,Executes a flash loan operation,0xab9c4b5d
+flashLoan,AAVE,V3,LENDING,BOTH,Executes a flash loan operation,0xab9c4b5d
+flashLoan,NFTX,V2,TRADING,BOTH,Executes flash loan,0x5cffe9de
+getReward,MULTICHAIN,V3,FARMING,INCOMING,Claims farming rewards,0x3d18b912
+getReward,BEETHOVEN,V1,STAKING,INCOMING,Claims staking rewards,0x3d18b912
+getReward,SOLIDLY,V1,STAKING,INCOMING,Claims staking rewards,0x3d18b912
+getReward,SUSHISWAP,V2,STAKING,INCOMING,Claims staking rewards,0x3d18b912
+getReward,VELODROME,V2,STAKING,INCOMING,Claims staking rewards,0x3d18b912
+getReward,ZYBERSWAP,V1,STAKING,INCOMING,Claims staking rewards,0x3d18b912
+getReward,CONCENTRATOR,V1,REWARDS,INCOMING,Claims vault rewards,0x3d18b912
+getReward,CONVEX,V1,STAKING,INCOMING,Claims staking rewards,0x3d18b912
+getReward,PICKLE,V1,GAUGE,INCOMING,Claims gauge rewards,0x3d18b912
+increase_amount,not found,,,,,
+increase_unlock_time,not found,,,,,
+increaseCustodyAllowance,not found,,,,,
+intendToUnstake,not found,,,,,
+invalidateUnorderedNonces,not found,,,,,
+joinPool,BALANCER,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0x4f69c0d4
+joinPool,BALANCER,V2,VAULT,OUTGOING,Adds liquidity to pool,0xb95cac28
+joinPool,BEETHOVEN,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xb95cac28
+joinPool,GAMEFI,V1,POOLS,OUTGOING,Joins existing IGO pool,0x9b3d47b4
+joinPool,STAKESTONE,V1,POOL,OUTGOING,Joins liquidity pool,0xb95cac28
+joinPool,STAKEWISE,V2,POOL,OUTGOING,Joins liquidity pool,0xb95cac28
+JunionYoutubeXD_dashhvetozhe,not found,,,,,
+LetsInvest,not found,,,,,
+migrate,YEARN,V1,STRATEGIES,BOTH,Migrates to new strategy,0x4ce38b5f
+migrate,YEARN,V2,VAULT,BOTH,Migrates vault assets,0x4ce38b5f
+migrate,YEARN,V3,VAULT,BOTH,Migrates vault assets,0x4ce38b5f
+migrateAll,not found,,,,,
+migrateFromLegacyReputationToken,not found,,,,,
+migrateFromLEND,not found,,,,,
+migrateSafe2,not found,,,,,
+mint,SYNTHETIX,V2,STAKING,OUTGOING,Mints sUSD with SNX,0x40c10f19
+mint,CURVE,V1,GAUGE,OUTGOING,Mints CRV tokens,0x40c10f19
+mint,KYBERSWAP,V1,ELASTIC,OUTGOING,Mints elastic pool position,0x88316456
+mint,PANCAKESWAP,V3,LIQUIDITY,OUTGOING,Creates new position in V3 pool,0x88316456
+mint,SOLIDLY,V1,LIQUIDITY,OUTGOING,Mints LP tokens,0x6a627842
+mint,SUSHISWAP,V3,LIQUIDITY,OUTGOING,Creates new concentrated liquidity position,0x88316456
+mint,UNISWAP,V2,POSITION,OUTGOING,Creates new position in pool,0x6a627842
+mint,UNISWAP,V3,LIQUIDITY,OUTGOING,Creates new position,0x88316456
+mint,COMPOUND,V2,LENDING,OUTGOING,Mints cTokens by supplying assets,0xa0712d68
+mint,CREAM,V1,LENDING,OUTGOING,Mints crTokens,0xa0712d68
+mint,VENUS,V1,LENDING,OUTGOING,Mints vTokens by supplying assets,0x40c10f19
+mint,NFTX,V2,VAULT,OUTGOING,Mints vault tokens,0x40c10f19
+mint,RARIBLE,V2,CREATION,OUTGOING,Mints new NFT,0x40c10f19
+mint,OETH,V1,STAKING,OUTGOING,Mints OETH tokens,0x40c10f19
+mint,ERC1155,V1,MINT,OUTGOING,Mints new tokens,0x40c10f19
+mint,ERC20,V1,MINT,OUTGOING,Mints new tokens,0x40c10f19
+mint,ERC3525,V1,MINT,OUTGOING,Mints new token,0x40c10f19
+mint,ERC4626,V1,VAULT,OUTGOING,Mints vault shares,0x40c10f19
+mint,ERC721,V1,MINT,OUTGOING,Mints new NFT,0x40c10f19
+mintToken,ARWEAVE,V1,STORAGE,OUTGOING,Mints AR tokens,0x40c10f19
+mintWithEther,not found,,,,,
+mintWithToken,not found,,,,,
+mixSwap,not found,,,,,
+multicall,PANCAKESWAP,V3,POSITION_MANAGER,BOTH,Executes multiple position operations,0xac9650d8
+newAccount,not found,,,,,
+purchase,not found,,,,,
+redeem,ARBITRUM,V1,RETRYABLE,BOTH,Redeems retryable ticket,0xdb006a75
+redeem,SYNAPSE,V1,BRIDGE,INCOMING,Redeems bridged tokens,0xdb006a75
+redeem,AAVE,V1,LENDING,INCOMING,Redeems aTokens for underlying tokens,0xdb006a75
+redeem,AAVE,V2,STAKING,INCOMING,Redeems staked tokens,0xdb006a75
+redeem,COMPOUND,V2,LENDING,INCOMING,Redeems cTokens for assets,0xdb006a75
+redeem,CREAM,V1,LENDING,INCOMING,Redeems underlying tokens,0xdb006a75
+redeem,VENUS,V1,LENDING,INCOMING,Redeems vTokens for assets,0xdb006a75
+redeem,NFTX,V2,VAULT,BOTH,Redeems vault tokens,0xdb006a75
+redeem,CENTRIFUGE,V1,FINANCING,INCOMING,Redeems pool investment,0xdb006a75
+redeem,TRUEFI,V1,PORTFOLIO,INCOMING,Redeems portfolio tokens,0xdb006a75
+redeem,OETH,V1,STAKING,INCOMING,Redeems OETH for ETH,0xdb006a75
+redeem,ERC4626,V1,VAULT,INCOMING,Redeems vault shares,0xdb006a75
+redeemUnderlying,not found,,,,,
+register,COINLIST,V1,COINLIST,OUTGOING,Registers for sale whitelist,0x1698ee82
+register,FARCASTER,V1,PROFILE,OUTGOING,Registers new FID,0x1698ee82
+remove_liquidity_one_coin,CURVE,V1,POOL,INCOMING,Removes liquidity in single token,0x1a4d01d2
+remove_liquidity_one_coin,CURVE,V2,POOL,INCOMING,Removes single token liquidity,0x1a4d01d2
+remove_liquidity_one_coin,CURVE,V2,TRICRYPTO,INCOMING,Removes single token from tricrypto,0x1a4d01d2
+remove_liquidity,CURVE,V1,POOL,INCOMING,Removes liquidity proportionally,0x5b36389c
+remove_liquidity,CURVE,V2,POOL,INCOMING,Removes liquidity from pool,0x5b36389c
+removeLiquidity,ACROSS,V1,LIQUIDITY,INCOMING,Removes liquidity from bridge pool,0xbaa2abde
+removeLiquidity,ACROSS,V2,LIQUIDITY,INCOMING,Removes liquidity from bridge pool V2,0xbaa2abde
+removeLiquidity,ALLBRIDGE,V1,LIQUIDITY,INCOMING,Removes liquidity from bridge pool,0xbaa2abde
+removeLiquidity,CELER,V1,LIQUIDITY,INCOMING,Removes liquidity from bridge,0xbaa2abde
+removeLiquidity,HOP,V1,AMM,INCOMING,Removes liquidity from bridge pool,0xbaa2abde
+removeLiquidity,HOP,V2,AMM,INCOMING,Removes liquidity from bridge pool V2,0xbaa2abde
+removeLiquidity,MULTICHAIN,V3,ROUTER,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,STARGATE,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SYMBIOSIS,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SYNAPSE,V1,POOLS,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,DRIFT,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,GMX,V1,LIQUIDITY,INCOMING,Removes liquidity from GLP,0x39603469
+removeLiquidity,LEVEL,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,MYCELIUM,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,VELA,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,BANCOR,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0x32f6e3a8
+removeLiquidity,BEETHOVEN,V1,LIQUIDITY,INCOMING,Removes liquidity from specific pool,0xbaa2abde
+removeLiquidity,BISWAP,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,CAMELOT,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,CHRONOS,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,DYSTOPIA,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,HASHFLOW,V3,POOLS,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,KYBERSWAP,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,LOOPRING,V3,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,MAVERICK,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,MAVERICK,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,MESH_SWAP,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,MIX_SWAP,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,PANCAKESWAP,V2,LIQUIDITY,INCOMING,Removes liquidity from token pair,0xbaa2abde
+removeLiquidity,PLATYPUS,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,QUICKSWAP,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,RAMSES,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,RAYDIUM,V3,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SOLIDLY,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SPIRITSWAP,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SPOOKYSWAP,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SUSHISWAP,V1,LIQUIDITY,INCOMING,Removes liquidity from token pair,0xbaa2abde
+removeLiquidity,SUSHISWAP,V2,LIQUIDITY,INCOMING,Removes concentrated liquidity from pool,0x0c49ccbe
+removeLiquidity,TRADERJOE,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,UNISWAP,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,UNISWAP,V4,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,VELODROME,V2,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,VULPEFI,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,WOMBAT,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,ZERION,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,ZYBERSWAP,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,POLYMARKET,V1,LIQUIDITY,INCOMING,Removes liquidity from market,0xbaa2abde
+removeLiquidity,NFTX,V2,TRADING,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,SUDOSWAP,V1,POOL,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,LYRA,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0xbaa2abde
+removeLiquidity,PREMIA,V1,POOLS,INCOMING,Removes pool liquidity,0xbaa2abde
+removeLiquidity,MONERO,V1,LIQUIDITY,INCOMING,Removes bridge liquidity,0xbaa2abde
+removeLiquidity,ZCASH,V1,LIQUIDITY,INCOMING,Removes bridge liquidity,0xbaa2abde
+removeLiquidity,STAKEWISE,V2,POOL,INCOMING,Removes pool liquidity,0xbaa2abde
+removeLiquidityETHWithPermit,UNISWAP,V2,LIQUIDITY,INCOMING,Removes ETH liquidity with permit,0xded9382a
+removeLiquidityWithPermit,UNISWAP,V2,LIQUIDITY,INCOMING,Removes liquidity using permit,0x2195995c
+repay,DYDX,V3,MARGIN,OUTGOING,Repays margin loan,0x573ade81
+repay,TRADERJOE,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,AAVE,V1,LENDING,OUTGOING,Repays borrowed tokens,0x5ceae9c4
+repay,AAVE,V2,LENDING,OUTGOING,Repays a borrowed amount on the specific reserve,0x573ade81
+repay,AAVE,V3,LENDING,OUTGOING,Repays a borrowed amount,0x573ade81
+repay,BENQI,V1,LENDING,OUTGOING,Repays borrowed assets,0x0e752702
+repay,COMPOUND,V3,LENDING,OUTGOING,Repays borrowed assets,0x0e752702
+repay,CREAM,V1,LENDING,OUTGOING,Repays borrowed assets,0x0e752702
+repay,EULER,V1,LENDING,OUTGOING,Repays borrowed assets,0x0e752702
+repay,FRAX,V1,LENDING,OUTGOING,Repays borrowed FRAX,0x573ade81
+repay,GEIST,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,GRANARY,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,HUNDRED,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,IRONBANK,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,MORPHO,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,RADIANT,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,VENUS,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repay,ALPACA,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
+repayBorrow,COMPOUND,V2,LENDING,OUTGOING,Repays borrowed assets,0x0e752702
+repayETH,not found,,,,,
+requestL2Transaction,ARBITRUM,V1,BRIDGE,OUTGOING,Requests L2 transaction execution,0x7c025200
+safeTransferFrom,ERC1155,V1,BASIC,OUTGOING,Safely transfers tokens,0xf242432a
+safeTransferFrom,ERC721,V1,BASIC,OUTGOING,Safely transfers NFT,0x42842e0e
+send,CELER,V1,BRIDGE,OUTGOING,Sends tokens across bridge,0x9b3d47b4
+send,HOP,V1,BRIDGE,OUTGOING,Sends tokens across bridge,0x9b3d47b4
+send,HOP,V2,BRIDGE,OUTGOING,Sends tokens across bridge V2,0x9b3d47b4
+send,LAYERZERO,V1,BRIDGE,OUTGOING,Sends message across chains,0x9b3d47b4
+sendMessage,ARBITRUM,V1,BRIDGE,OUTGOING,Sends message to L2,0x9b3d47b4
+sendMessage,LAYERZERO,V1,MESSAGING,OUTGOING,Sends arbitrary message,0x9b3d47b4
+sendMessage,OPTIMISM,V1,L1_CROSS_DOMAIN,OUTGOING,Sends message to L2,0x9b3d47b4
+sendMessage,FRIEND_TECH,V1,MESSAGING,OUTGOING,Sends holder message,0x9b3d47b4
+setBatchAllocation,not found,,,,,
+setRelayerApproval,not found,,,,,
+setUserUseReserveAsCollateral,AAVE,V2,LENDING,OUTGOING,Enables/disables an asset as collateral,0x5a3b74b9
+setUserUseReserveAsCollateral,AAVE,V3,LENDING,OUTGOING,Enables/disables an asset as collateral,0x5a3b74b9
+stake,ACROSS,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,ALLBRIDGE,V1,FARMING,OUTGOING,Stakes tokens in farm,0xa694fc3a
+stake,HOP,V1,REWARDS,OUTGOING,Stakes HOP tokens,0xa694fc3a
+stake,HOP,V2,REWARDS,OUTGOING,Stakes HOP tokens V2,0xa694fc3a
+stake,MULTICHAIN,V3,FARMING,OUTGOING,Stakes LP tokens,0xa694fc3a
+stake,POLYGON,V1,STAKING,OUTGOING,Stakes MATIC tokens,0xa694fc3a
+stake,SYNAPSE,V1,STAKING,OUTGOING,Stakes SYN tokens,0xa694fc3a
+stake,GMX,V1,LIQUIDITY,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,SYNTHETIX,V2,STAKING,OUTGOING,Stakes SNX tokens,0xa694fc3a
+stake,BALANCER,V2,LIQUIDITY_MINING,OUTGOING,Stakes BPT tokens,0xa694fc3a
+stake,BANCOR,V2,STAKING,OUTGOING,Stakes BNT in the protocol,0xa694fc3a
+stake,BEETHOVEN,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,CAMELOT,V2,STAKING,OUTGOING,Stakes LP tokens,0xa694fc3a
+stake,CURVE,COMMON,STAKING,OUTGOING,Stakes CRV tokens,0xa694fc3a
+stake,MAVERICK,V1,STAKING,OUTGOING,Stakes tokens,0xa694fc3a
+stake,MAVERICK,V2,STAKING,OUTGOING,Stakes tokens,0xa694fc3a
+stake,MIX_SWAP,V1,FARMING,OUTGOING,Stakes LP tokens,0xa694fc3a
+stake,ONEINCH,V5,FARMING,OUTGOING,Stakes tokens,0xa694fc3a
+stake,PLATYPUS,V1,FARMING,OUTGOING,Stakes LP tokens,0xa694fc3a
+stake,SOLIDLY,V1,STAKING,OUTGOING,Stakes LP tokens,0xa694fc3a
+stake,SUSHISWAP,V2,STAKING,OUTGOING,Stakes SUSHI tokens,0xa694fc3a
+stake,TRADERJOE,V1,STAKING,OUTGOING,Stakes JOE tokens,0xa694fc3a
+stake,VELODROME,V2,STAKING,OUTGOING,Stakes VELO tokens,0xa694fc3a
+stake,ZEROEX,V4,STAKING,OUTGOING,Stakes ZRX tokens,0xa694fc3a
+stake,ZYBERSWAP,V1,STAKING,OUTGOING,Stakes LP tokens,0xa694fc3a
+stake,CIVIC,V1,TOKEN,OUTGOING,Stakes CVC tokens,0xa694fc3a
+stake,THE_GRAPH,V1,INDEXING,OUTGOING,Stakes GRT tokens,0xa694fc3a
+stake,DAOMAKER,V1,DAO_MAKER,OUTGOING,Stakes DAO tokens,0xa694fc3a
+stake,SEEDIFY,V1,SEEDIFY,OUTGOING,Stakes SFUND tokens,0xa694fc3a
+stake,AAVE,V2,STAKING,OUTGOING,Stakes tokens in the Safety Module,0xa694fc3a
+stake,AAVE,V3,STAKING,OUTGOING,Stakes tokens in the Safety Module,0xa694fc3a
+stake,BENQI,V1,STAKING,OUTGOING,Stakes QI tokens,0xa694fc3a
+stake,NFTX,V2,STAKING,OUTGOING,Stakes vault tokens,0xa694fc3a
+stake,TORNADO,V1,MINING,OUTGOING,Stakes TORN tokens,0xa694fc3a
+stake,GOLDFINCH,V1,POOLS,OUTGOING,Stakes pool tokens,0xa694fc3a
+stake,ANKR,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,BINANCE,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,LIDO,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,MANTLE,V1,STAKING,OUTGOING,Stakes MNT tokens,0xa694fc3a
+stake,STAKESTONE,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,STAKEWISE,V2,STAKING,OUTGOING,Stakes ETH in protocol,0xa694fc3a
+stake,SWELL,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
+stake,ALPACA,V1,FARMING,OUTGOING,Stakes LP tokens in farm,0xa694fc3a
+stake,BEEFY,V1,BOOST,OUTGOING,Stakes BIFI tokens,0xa694fc3a
+stake,CONVEX,V1,STAKING,OUTGOING,Stakes CVX tokens,0xa694fc3a
+stake,PICKLE,V1,DILL,OUTGOING,Stakes PICKLE tokens,0xa694fc3a
+stakeRewards,not found,,,,,
+supply,TRADERJOE,V1,LENDING,OUTGOING,Supplies assets to lending pool,0x617ba037
+supply,AAVE,V3,LENDING,OUTGOING,Supplies an amount of underlying asset into the protocol,0x617ba037
+supply,BENQI,V1,LENDING,OUTGOING,Supplies assets to the protocol,0x1249c58b
+supply,COMPOUND,V3,LENDING,OUTGOING,Supplies assets to protocol,0x4b8a3529
+supply,GEIST,V1,LENDING,OUTGOING,Supplies assets to protocol,0x617ba037
+supply,GRANARY,V1,LENDING,OUTGOING,Supplies assets to protocol,0x617ba037
+supply,HUNDRED,V1,LENDING,OUTGOING,Supplies assets to protocol,0x617ba037
+supply,IRONBANK,V1,LENDING,OUTGOING,Supplies assets to protocol,0x617ba037
+supply,MORPHO,V1,LENDING,OUTGOING,Supplies assets to protocol,0x617ba037
+supply,RADIANT,V1,LENDING,OUTGOING,Supplies assets to protocol,0x617ba037
+swap,ALLBRIDGE,V1,BRIDGE,BOTH,Swaps tokens across chains,0x128acb08
+swap,HOP,V1,AMM,BOTH,Swaps between bridge tokens,0x128acb08
+swap,HOP,V2,AMM,BOTH,Swaps between bridge tokens V2,0x128acb08
+swap,STARGATE,V1,BRIDGE,BOTH,Swaps tokens across chains,0x128acb08
+swap,SYMBIOSIS,V1,BRIDGE,BOTH,Swaps tokens across chains,0x128acb08
+swap,SYNAPSE,V1,POOLS,BOTH,Swaps between pool tokens,0x128acb08
+swap,GMX,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,BALANCER,V2,VAULT,BOTH,Performs single swap,0x52bbbe29
+swap,BEETHOVEN,V1,TRADING,BOTH,Performs single token swap,0x52bbbe29
+swap,LOOPRING,V3,TRADING,BOTH,Executes token swap,0x128acb08
+swap,MAVERICK,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,MAVERICK,V2,TRADING,BOTH,Executes token swap,0x128acb08
+swap,MIX_SWAP,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,ONEINCH,V5,SWAP,BOTH,Executes token swap,0x128acb08
+swap,ORCA,V2,SWAP,BOTH,Executes token swap,0x128acb08
+swap,PARASWAP,V5,TRADING,BOTH,Executes token swap,0x128acb08
+swap,PLATYPUS,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,RAYDIUM,V3,SWAP,BOTH,Executes token swap,0x128acb08
+swap,SUSHISWAP,V3,SWAP,BOTH,Performs swap with concentrated liquidity,0x128acb08
+swap,UNISWAP,V3,SWAP,BOTH,Performs swap in pool,0x128acb08
+swap,UNISWAP,V4,SWAP,BOTH,Performs swap in pool,0x128acb08
+swap,VULPEFI,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,WOMBAT,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,ZERION,V1,TRADING,BOTH,Executes token swap,0x128acb08
+swap,NFTX,V2,TRADING,BOTH,Swaps vault tokens,0x128acb08
+swapAndDeposit,not found,,,,,
+swapAndRepay,not found,,,,,
+swapAndSendV2,not found,,,,,
+swapBorrowRateMode,AAVE,V2,LENDING,BOTH,Switches between stable and variable borrow rate,0x94ba89a2
+swapBorrowRateMode,AAVE,V3,LENDING,BOTH,Switches between stable and variable borrow rate,0x94ba89a2
+swapExactETHForAlpha,not found,,,,,
+swapExactETHForTokens,CAMELOT,V2,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,CHRONOS,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,DYSTOPIA,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,KYBERSWAP,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,PANCAKESWAP,V2,SWAP,OUTGOING,Swaps exact amount of BNB for tokens,0x7ff36ab5
+swapExactETHForTokens,QUICKSWAP,V2,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,RAMSES,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,SOLIDLY,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,SUSHISWAP,V1,SWAP,OUTGOING,Swaps exact amount of ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,UNISWAP,V2,SWAP,OUTGOING,Swaps exact amount of ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,VELODROME,V2,SWAP,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,ZYBERSWAP,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
+swapExactTokensForETH,PANCAKESWAP,V2,SWAP,BOTH,Swaps exact amount of tokens for BNB,0x18cbafe5
+swapExactTokensForETH,SOLIDLY,V1,TRADING,BOTH,Swaps exact tokens for ETH,0x18cbafe5
+swapExactTokensForETH,UNISWAP,V2,SWAP,BOTH,Swaps exact amount of tokens for ETH,0x18cbafe5
+swapExactTokensForTokens,MULTICHAIN,V3,ROUTER,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,BISWAP,V2,SWAP,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,CAMELOT,V2,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,CHRONOS,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,DYSTOPIA,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,KYBERSWAP,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,MESH_SWAP,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,PANCAKESWAP,V2,SWAP,BOTH,Swaps exact amount of tokens for another token,0x38ed1739
+swapExactTokensForTokens,QUICKSWAP,V2,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,RAMSES,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,SOLIDLY,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,SPIRITSWAP,V2,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,SPOOKYSWAP,V2,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,SUSHISWAP,V1,SWAP,BOTH,Swaps exact amount of tokens for another token,0x38ed1739
+swapExactTokensForTokens,TRADERJOE,V1,SWAP,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,UNISWAP,V2,SWAP,BOTH,Swaps exact amount of tokens for another token,0x38ed1739
+swapExactTokensForTokens,VELODROME,V2,SWAP,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,WOMBAT,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,ZYBERSWAP,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
+swapExactTokensForTokens,STAKEWISE,V2,POOL,BOTH,Swaps exact tokens,0x38ed1739
+swapSaiToDai,MAKER,MIGRATION,SCD_SHUTDOWN,BOTH,Swaps SAI to DAI,0x3df02124
+tokenToEthSwapInput,not found,,,,,
+tokenToTokenSwapInput,not found,,,,,
+tradeWithHint,not found,,,,,
+tradeWithHintAndFee,not found,,,,,
+transfer,LOOPRING,V3,L2_OPERATIONS,BOTH,Transfers assets on L2,0xa9059cbb
+transfer,SUSHISWAP,V2,BENTOBOX,BOTH,Transfers tokens within BentoBox,0x23b872dd
+transfer,UNISWAP,V3,POSITION,BOTH,Transfers position,0x23b872dd
+transfer,AZTEC,V2,SHIELD,BOTH,Transfers private notes,0x23b872dd
+transfer,ERC20,V1,BASIC,OUTGOING,Transfers tokens to address,0xa9059cbb
+transformERC20,ZEROEX,V4,BRIDGE,BOTH,Transforms token format,0x415565b0
+unoswap,ONEINCH,V5,SWAP,BOTH,Executes optimized swap,0x0502b1c5
+unoswapWithPermit,not found,,,,,
+unstake,ACROSS,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,ALLBRIDGE,V1,FARMING,INCOMING,Unstakes tokens from farm,0x2e1a7d4d
+unstake,HOP,V1,REWARDS,INCOMING,Unstakes HOP tokens,0x2e1a7d4d
+unstake,HOP,V2,REWARDS,INCOMING,Unstakes HOP tokens V2,0x2e1a7d4d
+unstake,MULTICHAIN,V3,FARMING,INCOMING,Unstakes LP tokens,0x2e1a7d4d
+unstake,POLYGON,V1,STAKING,INCOMING,Unstakes MATIC tokens,0x2e1a7d4d
+unstake,SYNAPSE,V1,STAKING,INCOMING,Unstakes SYN tokens,0x2e1a7d4d
+unstake,GMX,V1,LIQUIDITY,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,SYNTHETIX,V2,STAKING,INCOMING,Unstakes SNX tokens,0x2e1a7d4d
+unstake,BALANCER,V2,LIQUIDITY_MINING,INCOMING,Unstakes BPT tokens,0x2e1a7d4d
+unstake,BANCOR,V2,STAKING,INCOMING,Unstakes BNT from protocol,0x2e1a7d4d
+unstake,BEETHOVEN,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,CAMELOT,V2,STAKING,INCOMING,Unstakes LP tokens,0x2e1a7d4d
+unstake,CURVE,COMMON,STAKING,INCOMING,Unstakes CRV tokens,0x2e1a7d4d
+unstake,MAVERICK,V1,STAKING,INCOMING,Unstakes tokens,0x2e1a7d4d
+unstake,MAVERICK,V2,STAKING,INCOMING,Unstakes tokens,0x2e1a7d4d
+unstake,MIX_SWAP,V1,FARMING,INCOMING,Unstakes LP tokens,0x2e1a7d4d
+unstake,ONEINCH,V5,FARMING,INCOMING,Unstakes tokens,0x2e1a7d4d
+unstake,PLATYPUS,V1,FARMING,INCOMING,Unstakes LP tokens,0x2e1a7d4d
+unstake,SOLIDLY,V1,STAKING,INCOMING,Unstakes LP tokens,0x2e1a7d4d
+unstake,SUSHISWAP,V2,STAKING,INCOMING,Unstakes SUSHI tokens,0x2e1a7d4d
+unstake,TRADERJOE,V1,STAKING,INCOMING,Unstakes JOE tokens,0x2e1a7d4d
+unstake,VELODROME,V2,STAKING,INCOMING,Unstakes VELO tokens,0x2e1a7d4d
+unstake,ZEROEX,V4,STAKING,INCOMING,Unstakes ZRX tokens,0x2e1a7d4d
+unstake,ZYBERSWAP,V1,STAKING,INCOMING,Unstakes LP tokens,0x2e1a7d4d
+unstake,CIVIC,V1,TOKEN,INCOMING,Unstakes CVC tokens,0x2e1a7d4d
+unstake,THE_GRAPH,V1,INDEXING,INCOMING,Unstakes GRT tokens,0x2e1a7d4d
+unstake,SEEDIFY,V1,SEEDIFY,INCOMING,Unstakes SFUND tokens,0x2e1a7d4d
+unstake,AAVE,V3,STAKING,INCOMING,Unstakes tokens from Safety Module,0x3d02c422
+unstake,BENQI,V1,STAKING,INCOMING,Unstakes QI tokens,0x2e17de78
+unstake,NFTX,V2,STAKING,INCOMING,Unstakes vault tokens,0x2e1a7d4d
+unstake,TORNADO,V1,MINING,INCOMING,Unstakes TORN tokens,0x2e1a7d4d
+unstake,GOLDFINCH,V1,POOLS,INCOMING,Unstakes pool tokens,0x2e1a7d4d
+unstake,ANKR,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,BINANCE,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,EIGENLAYER,V1,STAKING,INCOMING,Unstakes from protocol,0x2e1a7d4d
+unstake,LIDO,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,MANTLE,V1,STAKING,INCOMING,Unstakes MNT tokens,0x2e1a7d4d
+unstake,STAKESTONE,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,STAKEWISE,V2,STAKING,INCOMING,Unstakes ETH from protocol,0x2e1a7d4d
+unstake,SWELL,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
+unstake,ALPACA,V1,FARMING,INCOMING,Unstakes LP tokens from farm,0x2e1a7d4d
+unstake,BEEFY,V1,BOOST,INCOMING,Unstakes BIFI tokens,0x2e1a7d4d
+unstake,PICKLE,V1,DILL,INCOMING,Unstakes PICKLE tokens,0x2e1a7d4d
+updateAccountAndDeposit,not found,,,,,
+user_checkpoint,not found,,,,,
+vote_for_gauge_weights,CURVE,COMMON,STAKING,OUTGOING,Votes for gauge weights,0x6d46e987
+vote,DYDX,V3,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,BALANCER,V2,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,BANCOR,V3,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,GNOSIS,V2,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,SOLIDLY,V1,VOTING,OUTGOING,Votes for gauge weights,0x15373e3d
+vote,VELODROME,V2,STAKING,OUTGOING,Votes for gauge weights,0x15373e3d
+vote,DECENTRAL,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,ILLUVIUM,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,WALLFAIR,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,POCKET,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,INSURACE,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,NEXUS_MUTUAL,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,UNSLASHED,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,BULLPERKS,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,BENQI,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x0121b93f
+vote,FRAX,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,GRANARY,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,MAPLE,V2,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,MAKER,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,RADIANT,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,DOPEX,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,HEGIC,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,LYRA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,PREMIA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,API3,V1,DAO,OUTGOING,Votes on proposal,0x15373e3d
+vote,BAND,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,DIA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,TELLOR,V1,ORACLE,OUTGOING,Votes on dispute,0x15373e3d
+vote,TELLOR,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,UMA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,UMBRELLA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,MONERO,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,RAILWAY,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,TORNADO,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,CENTRIFUGE,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,GOLDFINCH,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,TRUEFI,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,LENS,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,ANKR,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,BINANCE,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,LIDO,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,OETH,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,STAKESTONE,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,STAKEWISE,V2,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,SWELL,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,ALPACA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,PIREX,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+vote,YEARN,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
+voteFor,not found,,,,,
+withdraw,CELER,V1,BRIDGE,INCOMING,Withdraws bridged tokens,0x2e1a7d4d
+withdraw,HOP,V1,BRIDGE,INCOMING,Withdraws bridged tokens,0x2e1a7d4d
+withdraw,HOP,V2,BRIDGE,INCOMING,Withdraws bridged tokens V2,0x2e1a7d4d
+withdraw,OPTIMISM,V1,BRIDGE,INCOMING,Withdraws assets from L2,0x2e1a7d4d
+withdraw,ORBITER,V1,BRIDGE,INCOMING,Withdraws bridged tokens,0x2e1a7d4d
+withdraw,POLYGON,V1,BRIDGE,INCOMING,Withdraws assets to root chain,0x2e1a7d4d
+withdraw,DYDX,V3,MARGIN,INCOMING,Withdraws collateral,0x69328dec
+withdraw,GAINS,V6,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,RIBBON,V2,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,BANCOR,V3,LIQUIDITY,INCOMING,Withdraws tokens from pool,0x441a3e70
+withdraw,BISWAP,V2,FARMING,INCOMING,Withdraws LP tokens from farm,0x441a3e70
+withdraw,CURVE,V1,GAUGE,INCOMING,Withdraws LP tokens from gauge,0x2e1a7d4d
+withdraw,KYBERSWAP,V1,FARMING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,LOOPRING,V3,L2_OPERATIONS,INCOMING,Withdraws assets from L2,0x2e1a7d4d
+withdraw,ORCA,V2,FARMING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,PANCAKESWAP,V2,FARMING,INCOMING,Withdraws LP tokens from farming,0x441a3e70
+withdraw,PLATYPUS,V1,LIQUIDITY,INCOMING,Withdraws tokens from pool,0x2e1a7d4d
+withdraw,QUICKSWAP,V2,FARMING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,RAYDIUM,V3,FARMING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,SPIRITSWAP,V2,FARMING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,SPOOKYSWAP,V2,FARMING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,SUSHISWAP,V1,FARMING,INCOMING,Withdraws LP tokens from farming,0x441a3e70
+withdraw,SUSHISWAP,V2,BENTOBOX,INCOMING,Withdraws tokens from BentoBox,0x441a3e70
+withdraw,TRADERJOE,V1,LENDING,INCOMING,Withdraws assets from lending pool,0x69328dec
+withdraw,VULPEFI,V1,YIELD,INCOMING,Withdraws yielded assets,0x2e1a7d4d
+withdraw,WOMBAT,V1,STAKING,INCOMING,Unstakes LP tokens,0x441a3e70
+withdraw,THE_GRAPH,V1,CURATION,INCOMING,Withdraws curation shares,0x69328dec
+withdraw,INSURACE,V1,INVESTMENT,INCOMING,Withdraws investment,0x69328dec
+withdraw,COINLIST,V1,COINLIST,INCOMING,Withdraws from sale,0x69328dec
+withdraw,AAVE,V2,LENDING,INCOMING,Withdraws an amount of underlying asset from the reserve,0x69328dec
+withdraw,AAVE,V3,LENDING,INCOMING,Withdraws an amount of underlying asset,0x69328dec
+withdraw,BENQI,V1,LENDING,INCOMING,Withdraws supplied assets,0x2e1a7d4d
+withdraw,COMPOUND,V3,LENDING,INCOMING,Withdraws supplied assets,0x0babd745
+withdraw,EULER,V1,LENDING,INCOMING,Withdraws assets,0x69328dec
+withdraw,GEIST,V1,LENDING,INCOMING,Withdraws supplied assets,0x69328dec
+withdraw,GRANARY,V1,LENDING,INCOMING,Withdraws supplied assets,0x69328dec
+withdraw,HUNDRED,V1,LENDING,INCOMING,Withdraws supplied assets,0x69328dec
+withdraw,IRONBANK,V1,LENDING,INCOMING,Withdraws supplied assets,0x69328dec
+withdraw,MAPLE,V2,LENDING,INCOMING,Withdraws from pool,0x69328dec
+withdraw,MORPHO,V1,LENDING,INCOMING,Withdraws supplied assets,0x69328dec
+withdraw,RADIANT,V1,LENDING,INCOMING,Withdraws supplied assets,0x69328dec
+withdraw,DOPEX,V1,SSOV,INCOMING,Withdraws from SSOV vault,0x69328dec
+withdraw,AZTEC,V2,SHIELD,INCOMING,Withdraws to public,0x69328dec
+withdraw,RAILWAY,V1,PRIVACY,INCOMING,Withdraws from privacy pool,0x69328dec
+withdraw,TORNADO,V1,PRIVACY,INCOMING,Withdraws from privacy pool,0x69328dec
+withdraw,GOLDFINCH,V1,POOLS,INCOMING,Withdraws from senior pool,0x69328dec
+withdraw,EIGENLAYER,V1,STAKING,INCOMING,Withdraws restaked assets,0x69328dec
+withdraw,LIDO,V1,STAKING,INCOMING,Withdraws staked assets,0x69328dec
+withdraw,OETH,V1,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,ERC4626,V1,VAULT,INCOMING,Withdraws assets from vault,0x2e1a7d4d
+withdraw,ALPACA,V1,LENDING,INCOMING,Withdraws assets from lending pool,0x69328dec
+withdraw,BEEFY,V1,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,CONCENTRATOR,V1,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,CONVEX,V1,STAKING,INCOMING,Withdraws staked tokens,0x69328dec
+withdraw,CONVEX,V1,BOOSTER,INCOMING,Withdraws LP tokens,0x69328dec
+withdraw,JONES,V1,VAULTS,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,PICKLE,V1,FARM,INCOMING,Withdraws farmed assets,0x69328dec
+withdraw,PIREX,V1,STAKING,INCOMING,Withdraws staked assets,0x69328dec
+withdraw,YEARN,V1,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,YEARN,V2,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,YEARN,V3,VAULT,INCOMING,Withdraws assets from vault,0x69328dec
+withdraw,YIELD_YAK,V1,FARMING,INCOMING,Withdraws farmed assets,0x69328dec
+withdrawAave,AAVE,V1,LENDING,INCOMING,Withdraws AAVE tokens from the protocol,0x69328dec
+withdrawAave,AAVE,V2,LENDING,INCOMING,Withdraws AAVE tokens from the protocol,0x69328dec
+withdrawAave,AAVE,V3,LENDING,INCOMING,Withdraws AAVE tokens from the protocol,0x69328dec
+withdrawAll,BEEFY,V1,VAULT,INCOMING,Withdraws all deposited assets,0x853828b6
+withdrawAll,CONVEX,V1,BOOSTER,INCOMING,Withdraws all LP tokens,0x853828b6
+withdrawAll,PICKLE,V1,GAUGE,INCOMING,Withdraws all tokens,0x853828b6
+withdrawAllBase,not found,,,,,
+withdrawAllQuote,not found,,,,,
+withdrawERC20For,not found,,,,,
+withdrawFunds,not found,,,,,
+ZapOut2PairToken,not found,,,,,
