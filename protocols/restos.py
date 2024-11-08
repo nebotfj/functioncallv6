@@ -98,13 +98,13 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Add liquidity to pool',
             'method': '0x4515cef3',
-            'protocols': ['Curve V1', 'Balancer V1']
+            'protocol': ['Curve V1', 'Balancer V1']
         },
         'ZapOut2PairToken': {
             'direction': 'INCOMING',
             'description': 'Remove liquidity and convert to token pair',
             'method': '0x41f13681',
-            'protocols': ['Zapper.fi']
+            'protocol': ['Zapper.fi']
         }
     },
 
@@ -113,43 +113,43 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Swap exact ETH for Alpha token',
             'method': '0x7ff36ab5',
-            'protocols': ['Uniswap V2']
+            'protocol': ['Uniswap V2']
         },
         'swapAndDeposit': {
             'direction': 'OUTGOING',
             'description': 'Swap token and deposit in one transaction',
             'method': '0x5a0c7376',
-            'protocols': ['Compound', 'Aave V2']
+            'protocol': ['Compound', 'Aave V2']
         },
         'swapAndRepay': {
             'direction': 'OUTGOING',
             'description': 'Swap token and repay loan',
             'method': '0x2db1e36c',
-            'protocols': ['Aave V2', 'Aave V3']
+            'protocol': ['Aave V2', 'Aave V3']
         },
         'swapAndSendV2': {
             'direction': 'BOTH',
             'description': 'Swap and send tokens to recipient',
             'method': '0x985d7a89',
-            'protocols': ['1inch V2', 'ParaSwap']
+            'protocol': ['1inch V2', 'ParaSwap']
         },
         'mixSwap': {
             'direction': 'BOTH',
             'description': 'Aggregated token swap',
             'method': '0x13240b31',
-            'protocols': ['MixSwap', '1inch']
+            'protocol': ['MixSwap', '1inch']
         },
         'tradeWithHint': {
             'direction': 'BOTH',
             'description': 'Trade with routing hint',
             'method': '0x6cf68693',
-            'protocols': ['KyberSwap V2']
+            'protocol': ['KyberSwap V2']
         },
         'tradeWithHintAndFee': {
             'direction': 'BOTH',
             'description': 'Trade with hint and fee structure',
             'method': '0xae591d54',
-            'protocols': ['KyberSwap V2']
+            'protocol': ['KyberSwap V2']
         }
     },
 
@@ -158,31 +158,31 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Lock tokens for voting rights',
             'method': '0x65fc3873',
-            'protocols': ['Curve veCRV']
+            'protocol': ['Curve veCRV']
         },
         'increase_amount': {
             'direction': 'OUTGOING',
             'description': 'Increase locked amount',
             'method': '0x5ef8f675',
-            'protocols': ['Curve veCRV']
+            'protocol': ['Curve veCRV']
         },
         'increase_unlock_time': {
             'direction': 'OUTGOING',
             'description': 'Extend lock duration',
             'method': '0xc27f24d2',
-            'protocols': ['Curve veCRV']
+            'protocol': ['Curve veCRV']
         },
         'intendToUnstake': {
             'direction': 'OUTGOING',
             'description': 'Signal intention to unstake',
             'method': '0xc32f7f73',
-            'protocols': ['Generic Staking']
+            'protocol': ['Generic Staking']
         },
         'stakeRewards': {
             'direction': 'OUTGOING',
             'description': 'Stake reward tokens',
             'method': '0x8f31c7f9',
-            'protocols': ['Generic Staking']
+            'protocol': ['Generic Staking']
         }
     },
 
@@ -191,31 +191,31 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'INCOMING',
             'description': 'Claim all pending rewards',
             'method': '0x4e71d92d',
-            'protocols': ['Generic Claims']
+            'protocol': ['Generic Claims']
         },
         'claimBalance': {
             'direction': 'INCOMING',
             'description': 'Claim available balance',
             'method': '0x8f31c7f9',
-            'protocols': ['Generic Claims']
+            'protocol': ['Generic Claims']
         },
         'claimDistributions': {
             'direction': 'INCOMING',
             'description': 'Claim token distributions',
             'method': '0x9af6b617',
-            'protocols': ['Generic Claims']
+            'protocol': ['Generic Claims']
         },
         'claimFor': {
             'direction': 'INCOMING',
             'description': 'Claim rewards for another address',
             'method': '0x2f6c493c',
-            'protocols': ['Generic Claims']
+            'protocol': ['Generic Claims']
         },
         'claimStakerReward': {
             'direction': 'INCOMING',
             'description': 'Claim staking rewards',
             'method': '0x7c3b74a1',
-            'protocols': ['Generic Staking']
+            'protocol': ['Generic Staking']
         }
     },
 
@@ -224,19 +224,19 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Deposit into liquidity pool',
             'method': '0x43a0d066',
-            'protocols': ['Generic Pools']
+            'protocol': ['Generic Pools']
         },
         'depositSavings': {
             'direction': 'OUTGOING',
             'description': 'Deposit into savings protocol',
             'method': '0x234c0aa9',
-            'protocols': ['Yield Protocols']
+            'protocol': ['Yield Protocols']
         },
         'depositV3': {
             'direction': 'OUTGOING',
             'description': 'Deposit assets in Aave V3',
             'method': '0xe8eda9df',
-            'protocols': ['Aave V3']
+            'protocol': ['Aave V3']
         }
     },
 
@@ -245,25 +245,25 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'INCOMING',
             'description': 'Withdraw all base tokens',
             'method': '0x1f1fcd51',
-            'protocols': ['Generic Protocols']
+            'protocol': ['Generic Protocols']
         },
         'withdrawAllQuote': {
             'direction': 'INCOMING',
             'description': 'Withdraw all quote tokens',
             'method': '0x89b7daa9',
-            'protocols': ['Generic Protocols']
+            'protocol': ['Generic Protocols']
         },
         'withdrawERC20For': {
             'direction': 'INCOMING',
             'description': 'Withdraw ERC20 tokens for another address',
             'method': '0x9e281a98',
-            'protocols': ['Generic Protocols']
+            'protocol': ['Generic Protocols']
         },
         'withdrawFunds': {
             'direction': 'INCOMING',
             'description': 'Generic withdrawal function',
             'method': '0x24ed7740',
-            'protocols': ['Generic Protocols']
+            'protocol': ['Generic Protocols']
         }
     },
 
@@ -272,13 +272,13 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Mint tokens with ETH',
             'method': '0x90a56f37',
-            'protocols': ['Generic Minting']
+            'protocol': ['Generic Minting']
         },
         'mintWithToken': {
             'direction': 'OUTGOING',
             'description': 'Mint tokens with another token',
             'method': '0x8f31c7f9',
-            'protocols': ['Generic Minting']
+            'protocos': ['Generic Minting']
         }
     },
 
@@ -287,13 +287,13 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Burn tokens for ETH',
             'method': '0x3f7d753c',
-            'protocols': ['Generic Burning']
+            'protocol': ['Generic Burning']
         },
         'burnToToken': {
             'direction': 'BOTH',
             'description': 'Burn tokens for another token',
             'method': '0x7ebf1db5',
-            'protocols': ['Generic Burning']
+            'protocol': ['Generic Burning']
         }
     },
 
@@ -302,13 +302,13 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Migrate all assets',
             'method': '0x6e7cf85f',
-            'protocols': ['Generic Migration']
+            'protocol': ['Generic Migration']
         },
         'migrateFromLEND': {
             'direction': 'BOTH',
             'description': 'Migrate from LEND to AAVE token',
             'method': '0xd34a9e4a',
-            'protocols': ['Aave V2']
+            'protocol': ['Aave V2']
         }
     },
 
@@ -317,13 +317,13 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Cast vote for proposal',
             'method': '0x86a50535',
-            'protocols': ['DAO Voting']
+            'protocol': ['DAO Voting']
         },
         'user_checkpoint': {
             'direction': 'NEUTRAL',
             'description': 'Update user rewards checkpoint',
             'method': '0x4b820093',
-            'protocols': ['Curve', 'Convex']
+            'protocol': ['Curve', 'Convex']
         }
     },
 
@@ -332,25 +332,25 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Approve and execute in one transaction',
             'method': '0xcae9ca51',
-            'protocols': ['ERC20 Extended']
+            'protocol': ['ERC20 Extended']
         },
         'build': {
             'direction': 'OUTGOING',
             'description': 'Build position',
             'method': '0x9d94c8b3',
-            'protocols': ['Maker', 'Compound']
+            'protocol': ['Maker', 'Compound']
         },
         'disperseEther': {
             'direction': 'OUTGOING',
             'description': 'Disperse ETH to multiple addresses',
             'method': '0xe63d38ed',
-            'protocols': ['Disperse.app']
+            'protocol': ['Disperse.app']
         },
         'invalidateUnorderedNonces': {
             'direction': 'OUTGOING',
             'description': 'Invalidate unused nonces',
             'method': '0x9e7b8d61',
-            'protocols': ['Security Protocols']
+            'protocol': ['Security Protocols']
         }
     },
 
@@ -359,7 +359,7 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Native ETH transfer',
             'method': '0x',  #Native transfer has no method ID
-            'protocols': ['Ethereum']
+            'protocol': ['Ethereum']
         }
     },
  
@@ -368,13 +368,13 @@ PROTOCOL_FUNCTIONS = {
             'direction': 'UNKNOWN',
             'description': 'Suspicious function - potential scam',
             'method': 'UNKNOWN',
-            'protocols': ['SUSPICIOUS']
+            'protocol': ['SUSPICIOUS']
         },
         'LetsInvest': {
             'direction': 'UNKNOWN',
             'description': 'Suspicious function - potential scam',
             'method': 'UNKNOWN',
-            'protocols': ['SUSPICIOUS']
+            'protocol': ['SUSPICIOUS']
         }
     }
 }
