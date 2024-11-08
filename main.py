@@ -7,7 +7,7 @@ from protocols. gaming import
 from protocols.identity import brightid, civic, polygonid, worldcoin
 from protocols.infrastructure import arweave, filecoin, ipfs, pocket, the_graph
 from protocols.insurance import insurace, nexus_mutual, unslashed
-from protocols. launchpad import bullperks, gamefi, gamestarter, launchpad_repasar
+from protocols. launchpad import bullperks, daomaker, gamefi, gamestarter
 from protocols.lending import aave, benqi, compound, cream, euler, frax, geist, granary, hundred, ironbank, maple, maker, morpho, radiant, venus
 from protocols.mev import 
 from protocols.nft import 
