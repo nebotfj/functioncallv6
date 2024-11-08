@@ -60,6 +60,6 @@ MONERO_BRIDGE_V1_FUNCTIONS = {
 }
 
 # Combined functions for all versions
-MONERO_BRIDGE_FUNCTIONS = {
+MONERO_FUNCTIONS = {
     'V1': MONERO_BRIDGE_V1_FUNCTIONS
 }

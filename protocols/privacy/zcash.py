@@ -60,6 +60,6 @@ ZCASH_BRIDGE_V1_FUNCTIONS = {
 }
 
 # Combined functions for all versions
-ZCASH_BRIDGE_FUNCTIONS = {
+ZCASH_FUNCTIONS = {
     'V1': ZCASH_BRIDGE_V1_FUNCTIONS
 }

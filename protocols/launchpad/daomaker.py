@@ -26,6 +26,6 @@ DAO_MAKER_V1_FUNCTIONS = {
 }
 
 # Combined functions for all versions
-DAO_MAKER_FUNCTIONS = {
+DAOMAKER_FUNCTIONS = {
     'V1': DAO_MAKER_V1_FUNCTIONS
 }

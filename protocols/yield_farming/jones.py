@@ -65,6 +65,6 @@ JONES_DAO_V1_FUNCTIONS = {
 }
 
 # Combined functions for all versions
-JONES_DAO_FUNCTIONS = {
+JONES_FUNCTIONS = {
     'V1': JONES_DAO_V1_FUNCTIONS
 }

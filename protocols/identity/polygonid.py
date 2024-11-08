@@ -94,6 +94,6 @@ POLYGON_ID_V1_FUNCTIONS = {
 }
 
 # Combined functions for all versions
-POLYGON_ID_FUNCTIONS = {
+POLYGONID_FUNCTIONS = {
     'V1': POLYGON_ID_V1_FUNCTIONS
 }
