@@ -54,6 +54,11 @@ BALANCER_V2_FUNCTIONS = {
             'description': 'Performs multiple swaps',
             'method': '0x945bcec9'
         },
+        'batch': {
+            'direction': 'OUTGOING',
+            'description': 'Executes multiple operations in a single transaction',
+            'method': '0x7f9fc72c'
+        },
         'joinPool': {
             'direction': 'OUTGOING',
             'description': 'Adds liquidity to pool',
@@ -68,6 +73,11 @@ BALANCER_V2_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Executes flash loan',
             'method': '0x5c38449e'
+        },
+        'exitswapPoolAmountIn': {
+            'direction': 'OUTGOING',
+            'description': 'Exits a pool by providing pool tokens',
+            'method': '0x46ab38f1'
         }
     },
     'WEIGHTED_POOL': {

@@ -56,6 +56,16 @@ GNOSIS_V2_FUNCTIONS = {
             'description': 'Creates new Safe',
             'method': '0x0ec78d9e'
         },
+        'createProxy': {
+            'direction': 'OUTGOING',
+            'description': 'Creates a new proxy contract',
+            'method': '0x5b5e139f'
+        },
+        'migrateSafe2': {
+            'direction': 'OUTGOING',
+            'description': 'Migrates a Safe to a newer version',
+            'method': '0x9d4d7b1f'
+        },
         'executeTransaction': {
             'direction': 'OUTGOING',
             'description': 'Executes Safe transaction',

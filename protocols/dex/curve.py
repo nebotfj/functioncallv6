@@ -26,6 +26,11 @@ CURVE_V1_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Swaps between underlying tokens',
             'method': '0xa6417ed6'
+        },
+        'exchange_multiple': {
+            'direction': 'OUTGOING',
+            'description': 'Performs multiple token swaps in a single transaction',
+            'method': '0x353ca424'
         }
     },
     'GAUGE': {

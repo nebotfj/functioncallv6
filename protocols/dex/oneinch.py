@@ -22,6 +22,11 @@ ONEINCH_V5_FUNCTIONS = {
             'description': 'Fills limit order',
             'method': '0xbc61394a'
         },
+        'unoswapWithPermit': {
+            'direction': 'BOTH',
+            'description': 'Performs a swap with signed permit',
+            'method': '0x2e95b6c8'
+        },
         'swapWithPermit': {
             'direction': 'BOTH',
             'description': 'Swaps with permit signature',

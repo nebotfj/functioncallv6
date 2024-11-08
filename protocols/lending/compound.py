@@ -27,7 +27,19 @@ COMPOUND_FUNCTIONS = {
                 'direction': 'BOTH',
                 'description': 'Liquidates position',
                 'method': '0xf5e3c462'
+            },
+            'redeemUnderlying': {
+                'direction': 'OUTGOING',
+                'description': 'Redeems the underlying asset from cToken',
+                'method': '0x852a12e3'
             }
+        },
+        'CLAIM': {
+            'claimComp': {
+                'direction': 'INCOMING',
+                'description': 'Claims COMP tokens from the Compound protocol',
+                'method': '0x1c8ead12'
+            },
         },
         'MARKETS': {
             'enterMarkets': {

@@ -13,7 +13,7 @@ UNISWAP_V2_FUNCTIONS = {
             'method': '0x8803dbee'
         },
         'swapExactETHForTokens': {
-            'direction': 'OUTGOING',
+            'direction': 'BOTH',
             'description': 'Swaps exact amount of ETH for tokens',
             'method': '0x7ff36ab5'
         },
@@ -28,9 +28,29 @@ UNISWAP_V2_FUNCTIONS = {
             'method': '0x18cbafe5'
         },
         'swapETHForExactTokens': {
-            'direction': 'OUTGOING',
+            'direction': 'BOTH',
             'description': 'Swaps ETH for exact amount of tokens',
             'method': '0xfb3bdb41'
+        },
+        'ethToTokenSwapInput': {
+            'direction': 'BOTH',
+            'description': 'Swaps ETH for tokens with input amount specified',
+            'method': '0xf39b5b9b'
+        },
+        'ethToTokenSwapOutput': {
+            'direction': 'BOTH',
+            'description': 'Swaps ETH for exact token amount',
+            'method': '0x6b1d4db7'
+        },
+        'tokenToEthSwapInput': {
+            'direction': 'BOTH',
+            'description': 'Swaps tokens for ETH with input amount specified',
+            'method': '0x95e3c50b'
+        },
+        'tokenToTokenSwapInput': {
+            'direction': 'BOTH',
+            'description': 'Swaps tokens for tokens with input amount specified',
+            'method': '0xddf7e1a7'
         }
     },
     'POSITION': {

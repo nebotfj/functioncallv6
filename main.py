@@ -6,10 +6,11 @@ import pandas as pd
 
 
 import protocols
+from protocols import restos
 from protocols.bridges import across, allbridge, arbitrum, celer, hop, layerzero, multichain, optimism, orbiter, polygon, portal, stargate, symbiosis, synapse, wormhole
 from protocols.derivatives import drift, dydx, gains, gmx, hubble, kwenta, level, mycelium, perpetual, polynomial, ribbon, synthetix, vela
 from protocols.dex import balancer, bancor, beethoven, biswap, camelot, chronos, curve, dodo, dystopia, gmx, gnosis, hashflow, kyberswap, loopring, maverick, meshswap, mixswap, oneinch, orca, pancakeswap, paraswap, platypus, quickswap, ramses, raydium, solidly, spiritswap, spookyswap, sushiswap, traderjoe, uniswap, velodrome, vulpefi, wombat, zapper, zerion, zeroex, zyberswap
-from protocols. gaming import axie, betswirl, bigtime, crypto_unicorns, decentral, defi_kingdoms, ember_sword, gala, gods_unchained, illuvium, pegaxy, polymarket, rollbit, sorare, splinterlands, star_atlas, stepn, thetan_arena, wallfair, zed_run
+from protocols. gaming import axie, augur, betswirl, bigtime, crypto_unicorns, decentral, defi_kingdoms, ember_sword, gala, gods_unchained, illuvium, pegaxy, polymarket, rollbit, sorare, splinterlands, star_atlas, stepn, thetan_arena, wallfair, zed_run
 from protocols.identity import brightid, civic, polygonid, worldcoin
 from protocols.infrastructure import arweave, filecoin, ipfs, pocket, the_graph
 from protocols.insurance import insurace, nexus_mutual, unslashed
@@ -25,6 +26,9 @@ from protocols.social_media import farcaster, friend_tech, lens
 from protocols.staking import ankr, binance, eigenlayer, lido, mantle, oeth, rocketpool, stader, stakestone, stakewise, swell
 from protocols.tokens import erc1155, erc20, erc2981, erc3525, erc4626, erc5192, erc721
 from protocols.yield_farming import alpaca, beefy, concentrator, convex, jones, pickle, pirex, redacted, yearn, yield_yak
+
+#RESTOS
+from protocols.restos import PROTOCOL_FUNCTIONS
 
 #BRIDGES
 from protocols.bridges.across import ACROSS_FUNCTIONS
@@ -100,6 +104,7 @@ from protocols.dex.zyberswap import ZYBERSWAP_FUNCTIONS
 
 # GAMING
 from protocols.gaming.axie import AXIE_FUNCTIONS
+from protocols.gaming.augur import AUGUR_FUNCTIONS
 from protocols.gaming.betswirl import BETSWIRL_FUNCTIONS
 from protocols.gaming.bigtime import BIGTIME_FUNCTIONS
 from protocols.gaming.crypto_unicorns import CRYPTO_UNICORNS_FUNCTIONS
@@ -258,7 +263,9 @@ from protocols.yield_farming.yield_yak import YIELD_YAK_FUNCTIONS
 
 def search_function(function_name):
     protocols = {
-        
+        #RESTOS
+    "OTHERS": PROTOCOL_FUNCTIONS,
+
         # BRIDGES
     "ACROSS": ACROSS_FUNCTIONS,
     "ALLBRIDGE": ALLBRIDGE_FUNCTIONS,
@@ -333,6 +340,7 @@ def search_function(function_name):
 
     # GAMING
     "AXIE": AXIE_FUNCTIONS,
+    "AUGUR" :  AUGUR_FUNCTIONS,
     "BETSWIRL": BETSWIRL_FUNCTIONS,
     "BIGTIME": BIGTIME_FUNCTIONS,
     "CRYPTO_UNICORNS": CRYPTO_UNICORNS_FUNCTIONS,

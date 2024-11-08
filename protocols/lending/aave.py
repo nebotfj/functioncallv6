@@ -131,7 +131,29 @@ AAVE_FUNCTIONS = {
                 'description': 'Delegates voting power of a specific type',
                 'method': '0x0185f782'
             }
-        }
+        },
+        'BORROW': {
+            'approveDelegation': {
+                'direction': 'OUTGOING',
+                'description': 'Approves credit delegation for another address',
+                'method': '0x7d7a70b7'
+            },
+            'borrowETH': {
+                'direction': 'OUTGOING',
+                'description': 'Borrows ETH from the Aave protocol',
+                'method': '0x66514c97'
+            },
+            'repayETH': {
+                'direction': 'OUTGOING',
+                'description': 'Repays borrowed ETH to the protocol',
+                'method': '0x563dd613'
+            },
+            'setRelayerApproval': {
+                'direction': 'OUTGOING',
+                'description': 'Approves/disapproves a relayer to operate on behalf of the user',
+                'method': '0x3c462743'
+            }
+        },
     },
     'V3': {
         'LENDING': {

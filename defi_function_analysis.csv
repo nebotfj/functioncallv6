@@ -70,8 +70,8 @@ approve,ERC20,V1,BASIC,OUTGOING,Approves token allowance,0x095ea7b3
 approve,ERC3525,V1,BASIC,OUTGOING,Approves value transfer,0x095ea7b3
 approve,ERC721,V1,BASIC,OUTGOING,Approves NFT transfer,0x095ea7b3
 approveAndCall,not found,,,,,
-approveDelegation,not found,,,,,
-batch,not found,,,,,
+approveDelegation,AAVE,V2,BORROW,OUTGOING,Approves credit delegation for another address,0x7d7a70b7
+batch,BALANCER,V2,VAULT,OUTGOING,Executes multiple operations in a single transaction,0x7f9fc72c
 borrow,DYDX,V3,MARGIN,INCOMING,Borrows from margin pool,0xc858f5ba
 borrow,TRADERJOE,V1,LENDING,INCOMING,Borrows assets from lending pool,0xc858f5ba
 borrow,AAVE,V1,LENDING,INCOMING,Borrows tokens from the lending pool,0xc858f5ba
@@ -91,7 +91,7 @@ borrow,MORPHO,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
 borrow,RADIANT,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
 borrow,VENUS,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
 borrow,ALPACA,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
-borrowETH,not found,,,,,
+borrowETH,AAVE,V2,BORROW,OUTGOING,Borrows ETH from the Aave protocol,0x66514c97
 build,not found,,,,,
 burn,SYNTHETIX,V2,STAKING,INCOMING,Burns sUSD for SNX,0x89afcb44
 burn,KYBERSWAP,V1,ELASTIC,INCOMING,Burns elastic pool position,0x89afcb44
@@ -129,7 +129,7 @@ claim,SEEDIFY,V1,SEEDIFY,INCOMING,Claims IGO tokens,0x4e71d92d
 claim,GEIST,V1,VESTING,INCOMING,Claims vested tokens,0x4e71d92d
 claimAll,not found,,,,,
 claimBalance,not found,,,,,
-claimComp,not found,,,,,
+claimComp,COMPOUND,V2,CLAIM,INCOMING,Claims COMP tokens from the Compound protocol,0x1c8ead12
 claimDistributions,not found,,,,,
 claimFor,not found,,,,,
 claimRewards,ACROSS,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
@@ -250,7 +250,7 @@ claimWeeks,not found,,,,,
 convertByPath,BANCOR,V2,TRADING,BOTH,Converts tokens through conversion path,0xb77d239b
 cooldown,AAVE,V3,STAKING,OUTGOING,Activates the cooldown period,0x7fb52f1a
 create_lock,not found,,,,,
-createProxy,not found,,,,,
+createProxy,GNOSIS,V2,SAFE,OUTGOING,Creates a new proxy contract,0x5b5e139f
 delegate,DYDX,V3,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
 delegate,GNOSIS,V2,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
 delegate,THE_GRAPH,V1,INDEXING,OUTGOING,Delegates to indexer,0x5c19a95c
@@ -330,12 +330,12 @@ enterMarkets,HUNDRED,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 enterMarkets,IRONBANK,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 enterMarkets,VENUS,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 ETH transfer,not found,,,,,
-ethToTokenSwapInput,not found,,,,,
-ethToTokenSwapOutput,not found,,,,,
+ethToTokenSwapInput,UNISWAP,V2,SWAP,BOTH,Swaps ETH for tokens with input amount specified,0xf39b5b9b
+ethToTokenSwapOutput,UNISWAP,V2,SWAP,BOTH,Swaps ETH for exact token amount,0x6b1d4db7
 exactInput,PANCAKESWAP,V3,SWAP,BOTH,Swaps exact tokens via multiple pools,0xc04b8d59
 exactInput,SUSHISWAP,V2,SWAP,BOTH,Swaps exact tokens via multiple pools,0xc04b8d59
 exactInput,UNISWAP,V3,SWAP,BOTH,Swaps exact tokens through multiple pools,0xc04b8d59
-exchange_multiple,not found,,,,,
+exchange_multiple,CURVE,V1,POOL,OUTGOING,Performs multiple token swaps in a single transaction,0x353ca424
 exchange,SYNTHETIX,V2,TRADING,BOTH,Exchanges synths directly,0x128acb08
 exchange,CURVE,V1,POOL,BOTH,Swaps between tokens in pool,0x3df02124
 exchange,CURVE,V2,POOL,BOTH,Swaps between tokens in pool,0x3df02124
@@ -387,7 +387,7 @@ exitPool,BALANCER,V2,VAULT,INCOMING,Removes liquidity from pool,0x8bdb3913
 exitPool,BEETHOVEN,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0x8bdb3913
 exitPool,STAKESTONE,V1,POOL,INCOMING,Exits liquidity pool,0x8bdb3913
 exitPool,STAKEWISE,V2,POOL,INCOMING,Exits liquidity pool,0x8bdb3913
-exitswapPoolAmountIn,not found,,,,,
+exitswapPoolAmountIn,BALANCER,V2,VAULT,OUTGOING,Exits a pool by providing pool tokens,0x46ab38f1
 fillBounty,not found,,,,,
 flashLoan,HOP,V2,AMM,BOTH,Executes flash loan,0x5cffe9de
 flashLoan,SYNAPSE,V1,POOLS,BOTH,Executes flash loan,0x5cffe9de
@@ -421,9 +421,9 @@ migrate,YEARN,V1,STRATEGIES,BOTH,Migrates to new strategy,0x4ce38b5f
 migrate,YEARN,V2,VAULT,BOTH,Migrates vault assets,0x4ce38b5f
 migrate,YEARN,V3,VAULT,BOTH,Migrates vault assets,0x4ce38b5f
 migrateAll,not found,,,,,
-migrateFromLegacyReputationToken,not found,,,,,
+migrateFromLegacyReputationToken,AUGUR,V2,LEGACY,OUTGOING,Migrates REP tokens from legacy to new version,0x7f9f19a5
 migrateFromLEND,not found,,,,,
-migrateSafe2,not found,,,,,
+migrateSafe2,GNOSIS,V2,SAFE,OUTGOING,Migrates a Safe to a newer version,0x9d4d7b1f
 mint,SYNTHETIX,V2,STAKING,OUTGOING,Mints sUSD with SNX,0x40c10f19
 mint,CURVE,V1,GAUGE,OUTGOING,Mints CRV tokens,0x40c10f19
 mint,KYBERSWAP,V1,ELASTIC,OUTGOING,Mints elastic pool position,0x88316456
@@ -462,7 +462,7 @@ redeem,CENTRIFUGE,V1,FINANCING,INCOMING,Redeems pool investment,0xdb006a75
 redeem,TRUEFI,V1,PORTFOLIO,INCOMING,Redeems portfolio tokens,0xdb006a75
 redeem,OETH,V1,STAKING,INCOMING,Redeems OETH for ETH,0xdb006a75
 redeem,ERC4626,V1,VAULT,INCOMING,Redeems vault shares,0xdb006a75
-redeemUnderlying,not found,,,,,
+redeemUnderlying,COMPOUND,V2,LENDING,OUTGOING,Redeems the underlying asset from cToken,0x852a12e3
 register,COINLIST,V1,COINLIST,OUTGOING,Registers for sale whitelist,0x1698ee82
 register,FARCASTER,V1,PROFILE,OUTGOING,Registers new FID,0x1698ee82
 remove_liquidity_one_coin,CURVE,V1,POOL,INCOMING,Removes liquidity in single token,0x1a4d01d2
@@ -545,7 +545,7 @@ repay,RADIANT,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
 repay,VENUS,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
 repay,ALPACA,V1,LENDING,OUTGOING,Repays borrowed assets,0x573ade81
 repayBorrow,COMPOUND,V2,LENDING,OUTGOING,Repays borrowed assets,0x0e752702
-repayETH,not found,,,,,
+repayETH,AAVE,V2,BORROW,OUTGOING,Repays borrowed ETH to the protocol,0x563dd613
 requestL2Transaction,ARBITRUM,V1,BRIDGE,OUTGOING,Requests L2 transaction execution,0x7c025200
 safeTransferFrom,ERC1155,V1,BASIC,OUTGOING,Safely transfers tokens,0xf242432a
 safeTransferFrom,ERC721,V1,BASIC,OUTGOING,Safely transfers NFT,0x42842e0e
@@ -558,7 +558,7 @@ sendMessage,LAYERZERO,V1,MESSAGING,OUTGOING,Sends arbitrary message,0x9b3d47b4
 sendMessage,OPTIMISM,V1,L1_CROSS_DOMAIN,OUTGOING,Sends message to L2,0x9b3d47b4
 sendMessage,FRIEND_TECH,V1,MESSAGING,OUTGOING,Sends holder message,0x9b3d47b4
 setBatchAllocation,not found,,,,,
-setRelayerApproval,not found,,,,,
+setRelayerApproval,AAVE,V2,BORROW,OUTGOING,Approves/disapproves a relayer to operate on behalf of the user,0x3c462743
 setUserUseReserveAsCollateral,AAVE,V2,LENDING,OUTGOING,Enables/disables an asset as collateral,0x5a3b74b9
 setUserUseReserveAsCollateral,AAVE,V3,LENDING,OUTGOING,Enables/disables an asset as collateral,0x5a3b74b9
 stake,ACROSS,V1,STAKING,OUTGOING,Stakes tokens in protocol,0xa694fc3a
@@ -658,7 +658,7 @@ swapExactETHForTokens,QUICKSWAP,V2,TRADING,OUTGOING,Swaps exact ETH for tokens,0
 swapExactETHForTokens,RAMSES,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
 swapExactETHForTokens,SOLIDLY,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
 swapExactETHForTokens,SUSHISWAP,V1,SWAP,OUTGOING,Swaps exact amount of ETH for tokens,0x7ff36ab5
-swapExactETHForTokens,UNISWAP,V2,SWAP,OUTGOING,Swaps exact amount of ETH for tokens,0x7ff36ab5
+swapExactETHForTokens,UNISWAP,V2,SWAP,BOTH,Swaps exact amount of ETH for tokens,0x7ff36ab5
 swapExactETHForTokens,VELODROME,V2,SWAP,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
 swapExactETHForTokens,ZYBERSWAP,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
 swapExactTokensForETH,PANCAKESWAP,V2,SWAP,BOTH,Swaps exact amount of tokens for BNB,0x18cbafe5
@@ -685,8 +685,8 @@ swapExactTokensForTokens,WOMBAT,V1,TRADING,BOTH,Swaps exact amount of tokens,0x3
 swapExactTokensForTokens,ZYBERSWAP,V1,TRADING,BOTH,Swaps exact amount of tokens,0x38ed1739
 swapExactTokensForTokens,STAKEWISE,V2,POOL,BOTH,Swaps exact tokens,0x38ed1739
 swapSaiToDai,MAKER,MIGRATION,SCD_SHUTDOWN,BOTH,Swaps SAI to DAI,0x3df02124
-tokenToEthSwapInput,not found,,,,,
-tokenToTokenSwapInput,not found,,,,,
+tokenToEthSwapInput,UNISWAP,V2,SWAP,BOTH,Swaps tokens for ETH with input amount specified,0x95e3c50b
+tokenToTokenSwapInput,UNISWAP,V2,SWAP,BOTH,Swaps tokens for tokens with input amount specified,0xddf7e1a7
 tradeWithHint,not found,,,,,
 tradeWithHintAndFee,not found,,,,,
 transfer,LOOPRING,V3,L2_OPERATIONS,BOTH,Transfers assets on L2,0xa9059cbb
@@ -696,7 +696,7 @@ transfer,AZTEC,V2,SHIELD,BOTH,Transfers private notes,0x23b872dd
 transfer,ERC20,V1,BASIC,OUTGOING,Transfers tokens to address,0xa9059cbb
 transformERC20,ZEROEX,V4,BRIDGE,BOTH,Transforms token format,0x415565b0
 unoswap,ONEINCH,V5,SWAP,BOTH,Executes optimized swap,0x0502b1c5
-unoswapWithPermit,not found,,,,,
+unoswapWithPermit,ONEINCH,V5,SWAP,BOTH,Performs a swap with signed permit,0x2e95b6c8
 unstake,ACROSS,V1,STAKING,INCOMING,Unstakes tokens from protocol,0x2e1a7d4d
 unstake,ALLBRIDGE,V1,FARMING,INCOMING,Unstakes tokens from farm,0x2e1a7d4d
 unstake,HOP,V1,REWARDS,INCOMING,Unstakes HOP tokens,0x2e1a7d4d
