@@ -358,7 +358,7 @@ PROTOCOL_FUNCTIONS = {
         'ETH transfer': {
             'direction': 'OUTGOING',
             'description': 'Native ETH transfer',
-            'method': '0x',  // Native transfer has no method ID
+            'method': '0x',  #Native transfer has no method ID
             'protocols': ['Ethereum']
         }
     },
