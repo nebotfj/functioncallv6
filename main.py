@@ -6,7 +6,7 @@ import pandas as pd
 
 
 import protocols
-from protocols import restos
+
 from protocols.bridges import across, allbridge, arbitrum, celer, hop, layerzero, multichain, optimism, orbiter, polygon, portal, stargate, symbiosis, synapse, wormhole
 from protocols.derivatives import drift, dydx, gains, gmx, hubble, kwenta, level, mycelium, perpetual, polynomial, ribbon, synthetix, vela
 from protocols.dex import balancer, bancor, beethoven, biswap, camelot, chronos, curve, dodo, dystopia, gmx, gnosis, hashflow, kyberswap, loopring, maverick, meshswap, mixswap, oneinch, orca, pancakeswap, paraswap, platypus, quickswap, ramses, raydium, solidly, spiritswap, spookyswap, sushiswap, traderjoe, uniswap, velodrome, vulpefi, wombat, zapper, zerion, zeroex, zyberswap
@@ -25,10 +25,8 @@ from protocols.rwa import centrifuge, goldfinch, maple, truefi
 from protocols.social_media import farcaster, friend_tech, lens
 from protocols.staking import ankr, binance, eigenlayer, lido, mantle, oeth, rocketpool, stader, stakestone, stakewise, swell
 from protocols.tokens import erc1155, erc20, erc2981, erc3525, erc4626, erc5192, erc721
+from protocols.tokens import restos
 from protocols.yield_farming import alpaca, beefy, concentrator, convex, jones, pickle, pirex, redacted, yearn, yield_yak
-
-#RESTOS
-from protocols.restos import PROTOCOL_FUNCTIONS
 
 #BRIDGES
 from protocols.bridges.across import ACROSS_FUNCTIONS
@@ -244,6 +242,8 @@ from protocols.tokens.erc3525 import ERC3525_FUNCTIONS
 from protocols.tokens.erc4626 import ERC4626_FUNCTIONS
 from protocols.tokens.erc5192 import ERC5192_FUNCTIONS
 from protocols.tokens.erc721 import ERC721_FUNCTIONS
+#RESTOS
+from protocols.tokens.restos import PROTOCOL_FUNCTIONS
 
 # YIELD FARMING
 from protocols.yield_farming.alpaca import ALPACA_FUNCTIONS
@@ -264,7 +264,7 @@ from protocols.yield_farming.yield_yak import YIELD_YAK_FUNCTIONS
 def search_function(function_name):
     protocols = {
         #RESTOS
-    "OTHERS": PROTOCOL_FUNCTIONS,
+    "GENERIC": PROTOCOL_FUNCTIONS,
 
         # BRIDGES
     "ACROSS": ACROSS_FUNCTIONS,

@@ -380,3 +380,7 @@ PROTOCOL_FUNCTIONS = {
 }
 
 
+# Combined functions for all versions
+PROTOCOL_FUNCTIONS = {
+    'V1': PROTOCOL_FUNCTIONS
+}
