@@ -91,7 +91,24 @@ KYBERSWAP_V1_FUNCTIONS = {
     }
 }
 
+KYBERSWAP_V2_FUNCTIONS = {
+    'TRADING': {
+        'tradeWithHint': {
+            'direction': 'BOTH',
+            'description': 'Trade with routing hint',
+            'method': '0x6cf68693',
+            #'protocol': ['KyberSwap V2']
+        },
+        'tradeWithHintAndFee': {
+            'direction': 'BOTH',
+            'description': 'Trade with hint and fee structure',
+            'method': '0xae591d54',
+            #'protocol': ['KyberSwap V2']
+        },
+    }
+}
 # Combined functions for all versions
 KYBERSWAP_FUNCTIONS = {
-    'V1': KYBERSWAP_V1_FUNCTIONS
+    'V1': KYBERSWAP_V1_FUNCTIONS,
+    'V2': KYBERSWAP_V2_FUNCTIONS,
 }

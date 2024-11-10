@@ -31,7 +31,19 @@ ONEINCH_V5_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Swaps with permit signature',
             'method': '0x2521b930'
-        }
+        },
+         'swapAndSendV2': {
+            'direction': 'BOTH',
+            'description': 'Swap and send tokens to recipient',
+            'method': '0x985d7a89',
+           # 'protocol': ['1inch V2', 'ParaSwap']
+        },
+        'mixSwap': {
+            'direction': 'BOTH',
+            'description': 'Aggregated token swap',
+            'method': '0x13240b31',
+           # 'protocol': ['MixSwap', '1inch']
+        },
     },
     'LIMIT_ORDER': {
         'placeLimitOrder': {

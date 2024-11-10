@@ -1,5 +1,5 @@
 function,protocol,version,category,direction,description,method_id
-add_liquidity,GENERIC,V1,LIQUIDITY,OUTGOING,Add liquidity to pool,0x4515cef3
+add_liquidity,BALANCER,V1,LIQUIDITY,OUTGOING,Add liquidity to pool,0x4515cef3
 add_liquidity,CURVE,V1,POOL,OUTGOING,Adds liquidity to pool,0x0b4c7e4d
 add_liquidity,CURVE,V2,POOL,OUTGOING,Adds liquidity to pool,0x0b4c7e4d
 add_liquidity,CURVE,V2,TRICRYPTO,OUTGOING,Adds liquidity to tricrypto,0x0b4c7e4d
@@ -70,8 +70,8 @@ approve,UNISWAP,V3,POSITION,OUTGOING,Approves position transfer,0x095ea7b3
 approve,ERC20,V1,BASIC,OUTGOING,Approves token allowance,0x095ea7b3
 approve,ERC3525,V1,BASIC,OUTGOING,Approves value transfer,0x095ea7b3
 approve,ERC721,V1,BASIC,OUTGOING,Approves NFT transfer,0x095ea7b3
-approveAndCall,GENERIC,V1,GENERIC_ERC20,OUTGOING,Approves spending and calls another contract,0xcae9ca51
-approveAndCall,GENERIC,V1,UTILITY,OUTGOING,Approve and execute in one transaction,0xcae9ca51
+approveAndCall,ETH_GENERIC,ETH_GENERIC,GENERIC_ERC20,OUTGOING,Approves spending and calls another contract,0xcae9ca51
+approveAndCall,ETH_GENERIC,ETH_GENERIC,UTILITY,OUTGOING,Approve and execute in one transaction,0xcae9ca51
 approveDelegation,AAVE,V2,BORROW,OUTGOING,Approves credit delegation for another address,0x7d7a70b7
 batch,BALANCER,V2,VAULT,OUTGOING,Executes multiple operations in a single transaction,0x7f9fc72c
 borrow,DYDX,V3,MARGIN,INCOMING,Borrows from margin pool,0xc858f5ba
@@ -94,7 +94,8 @@ borrow,RADIANT,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
 borrow,VENUS,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
 borrow,ALPACA,V1,LENDING,INCOMING,Borrows assets from protocol,0xc5ebeaec
 borrowETH,AAVE,V2,BORROW,OUTGOING,Borrows ETH from the Aave protocol,0x66514c97
-build,GENERIC,V1,UTILITY,OUTGOING,Build position,0x9d94c8b3
+build,COMPOUND,V2,MARKETS,OUTGOING,Build position,0x9d94c8b3
+build,MAKER,V1,VAULT,OUTGOING,Build position,0x9d94c8b3
 burn,SYNTHETIX,V2,STAKING,INCOMING,Burns sUSD for SNX,0x89afcb44
 burn,KYBERSWAP,V1,ELASTIC,INCOMING,Burns elastic pool position,0x89afcb44
 burn,PANCAKESWAP,V3,POSITION_MANAGER,INCOMING,Burns liquidity position NFT,0x89afcb44
@@ -107,8 +108,8 @@ burn,ERC1155,V1,MINT,OUTGOING,Burns tokens,0x42966c68
 burn,ERC20,V1,MINT,OUTGOING,Burns existing tokens,0x42966c68
 burn,ERC3525,V1,MINT,OUTGOING,Burns token,0x42966c68
 burn,ERC721,V1,MINT,OUTGOING,Burns existing NFT,0x42966c68
-burnToEther,GENERIC,V1,BURNING,BOTH,Burn tokens for ETH,0x3f7d753c
-burnToToken,GENERIC,V1,BURNING,BOTH,Burn tokens for another token,0x7ebf1db5
+burnToEther,ETH_GENERIC,ETH_GENERIC,BURNING,BOTH,Burn tokens for ETH,0x3f7d753c
+burnToToken,ETH_GENERIC,ETH_GENERIC,BURNING,BOTH,Burn tokens for another token,0x7ebf1db5
 cast,FARCASTER,V1,SOCIAL,OUTGOING,Creates new cast message,0x1698ee82
 claim,ACROSS,V1,BRIDGE,INCOMING,Claims bridged tokens,0x4e71d92d
 claim,ACROSS,V2,BRIDGE,INCOMING,Claims bridged tokens V2,0x4e71d92d
@@ -129,12 +130,12 @@ claim,PINKSALE,V1,PINKSALE,INCOMING,Claims presale tokens,0x4e71d92d
 claim,POLKSTARTER,V1,POLKASTARTER,INCOMING,Claims IDO tokens,0x4e71d92d
 claim,SEEDIFY,V1,SEEDIFY,INCOMING,Claims IGO tokens,0x4e71d92d
 claim,GEIST,V1,VESTING,INCOMING,Claims vested tokens,0x4e71d92d
-claimAll,GENERIC,V1,CLAIMS,INCOMING,Claim all pending rewards,0x4e71d92d
-claimBalance,GENERIC,V1,CLAIMS,INCOMING,Claim available balance,0x8f31c7f9
+claimAll,ETH_GENERIC,ETH_GENERIC,CLAIMS,INCOMING,Claim all pending rewards,0x4e71d92d
+claimBalance,ETH_GENERIC,ETH_GENERIC,CLAIMS,INCOMING,Claim available balance,0x8f31c7f9
 claimComp,COMPOUND,V2,CLAIM,INCOMING,Claims COMP tokens from the Compound protocol,0x1c8ead12
-claimDistributions,GENERIC,V1,DISTRIBUTION,INCOMING,Claims tokens from multiple distributions,0x89f9aab7
-claimDistributions,GENERIC,V1,CLAIMS,INCOMING,Claim token distributions,0x9af6b617
-claimFor,GENERIC,V1,CLAIMS,INCOMING,Claim rewards for another address,0x2f6c493c
+claimDistributions,ETH_GENERIC,ETH_GENERIC,DISTRIBUTION,INCOMING,Claims tokens from multiple distributions,0x89f9aab7
+claimDistributions,ETH_GENERIC,ETH_GENERIC,CLAIMS,INCOMING,Claim token distributions,0x9af6b617
+claimFor,ETH_GENERIC,ETH_GENERIC,CLAIMS,INCOMING,Claim rewards for another address,0x2f6c493c
 claimRewards,ACROSS,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
 claimRewards,ACROSS,V2,REWARDS,INCOMING,Claims ACX rewards,0xe6f1daf2
 claimRewards,CELER,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
@@ -247,14 +248,14 @@ claimRewards,REDACTED,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
 claimRewards,YEARN,V2,REWARDS,INCOMING,Claims vault rewards,0xe6f1daf2
 claimRewards,YEARN,V3,REWARDS,INCOMING,Claims vault rewards,0xe6f1daf2
 claimRewards,YIELD_YAK,V1,STAKING,INCOMING,Claims staking rewards,0xe6f1daf2
-claimStakerReward,GENERIC,V1,STAKING_PROTOCOLS,INCOMING,Claims staking rewards,0x87788782
-claimStakerReward,GENERIC,V1,CLAIMS,INCOMING,Claim staking rewards,0x7c3b74a1
-claimTokens,GENERIC,V1,GENERIC_ERC20,INCOMING,Claims tokens from a distribution,0xdf8de3e7
+claimStakerReward,ETH_GENERIC,ETH_GENERIC,STAKING_PROTOCOLS,INCOMING,Claims staking rewards,0x87788782
+claimStakerReward,ETH_GENERIC,ETH_GENERIC,CLAIMS,INCOMING,Claim staking rewards,0x7c3b74a1
+claimTokens,ETH_GENERIC,ETH_GENERIC,GENERIC_ERC20,INCOMING,Claims tokens from a distribution,0xdf8de3e7
 claimWeeks,not found,,,,,
 convertByPath,BANCOR,V2,TRADING,BOTH,Converts tokens through conversion path,0xb77d239b
 cooldown,AAVE,V3,STAKING,OUTGOING,Activates the cooldown period,0x7fb52f1a
-create_lock,GENERIC,V1,VESTING_CONTRACTS,OUTGOING,Creates a new lock for tokens,0x65fc3873
-create_lock,GENERIC,V1,STAKING,OUTGOING,Lock tokens for voting rights,0x65fc3873
+create_lock,ETH_GENERIC,ETH_GENERIC,VESTING_CONTRACTS,OUTGOING,Creates a new lock for tokens,0x65fc3873
+create_lock,CURVE,COMMON,STAKING,OUTGOING,Lock tokens for voting rights,0x65fc3873
 createProxy,GNOSIS,V2,SAFE,OUTGOING,Creates a new proxy contract,0x5b5e139f
 delegate,DYDX,V3,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
 delegate,GNOSIS,V2,GOVERNANCE,OUTGOING,Delegates voting power,0x5c19a95c
@@ -324,21 +325,21 @@ depositAll,CONVEX,V1,BOOSTER,OUTGOING,Deposits all LP tokens,0x3ccfd60b
 depositAll,PICKLE,V1,GAUGE,OUTGOING,Deposits all tokens,0x3ccfd60b
 depositBase,DODO,V1,LIQUIDITY,OUTGOING,Deposits base token,0x4c505d91
 depositETH,ARBITRUM,V1,BRIDGE,OUTGOING,Deposits ETH to L2,0xb1a1a882
-depositPool,GENERIC,V1,YIELD_AGGREGATOR,OUTGOING,Deposits assets into a yield pool,0x5f7c6d37
-depositPool,GENERIC,V1,DEPOSITS,OUTGOING,Deposit into liquidity pool,0x43a0d066
+depositPool,ETH_GENERIC,ETH_GENERIC,YIELD_AGGREGATOR,OUTGOING,Deposits assets into a yield pool,0x5f7c6d37
+depositPool,ETH_GENERIC,ETH_GENERIC,DEPOSITS,OUTGOING,Deposit into liquidity pool,0x43a0d066
 depositQuote,DODO,V1,LIQUIDITY,OUTGOING,Deposits quote token,0x5a45c6fc
-depositSavings,GENERIC,V1,YIELD_AGGREGATOR,OUTGOING,Deposits assets into a savings protocol,0x34f4fd51
-depositSavings,GENERIC,V1,DEPOSITS,OUTGOING,Deposit into savings protocol,0x234c0aa9
-depositV3,GENERIC,V1,YIELD_AGGREGATOR,OUTGOING,Deposits assets using V3 contract,0x9aa5d462
-depositV3,GENERIC,V1,DEPOSITS,OUTGOING,Deposit assets in Aave V3,0xe8eda9df
-disperseEther,GENERIC,V1,DISTRIBUTION,OUTGOING,Distributes ETH to multiple addresses,0xd152cd41
-disperseEther,GENERIC,V1,UTILITY,OUTGOING,Disperse ETH to multiple addresses,0xe63d38ed
+depositSavings,ETH_GENERIC,ETH_GENERIC,YIELD_AGGREGATOR,OUTGOING,Deposits assets into a savings protocol,0x34f4fd51
+depositSavings,ETH_GENERIC,ETH_GENERIC,DEPOSITS,OUTGOING,Deposit into savings protocol,0x234c0aa9
+depositV3,ETH_GENERIC,ETH_GENERIC,YIELD_AGGREGATOR,OUTGOING,Deposits assets using V3 contract,0x9aa5d462
+depositV3,AAVE,V3,LENDING,OUTGOING,Deposit assets in Aave V3,0xe8eda9df
+disperseEther,ETH_GENERIC,ETH_GENERIC,DISTRIBUTION,OUTGOING,Distributes ETH to multiple addresses,0xd152cd41
+disperseEther,ETH_GENERIC,ETH_GENERIC,SWAPS,OUTGOING,Disperse ETH to multiple addresses,0xe63d38ed
 enterMarkets,COMPOUND,V2,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 enterMarkets,CREAM,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 enterMarkets,HUNDRED,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 enterMarkets,IRONBANK,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
 enterMarkets,VENUS,V1,MARKETS,OUTGOING,Enters markets as collateral,0xc2998238
-ETH transfer,GENERIC,V1,TRANSFERS,OUTGOING,Native ETH transfer,0x
+ETH transfer,ETH_GENERIC,ETH_GENERIC,TRANSFERS,OUTGOING,Native ETH transfer,0x
 ethToTokenSwapInput,UNISWAP,V2,SWAP,BOTH,Swaps ETH for tokens with input amount specified,0xf39b5b9b
 ethToTokenSwapOutput,UNISWAP,V2,SWAP,BOTH,Swaps ETH for exact token amount,0x6b1d4db7
 exactInput,PANCAKESWAP,V3,SWAP,BOTH,Swaps exact tokens via multiple pools,0xc04b8d59
@@ -397,7 +398,7 @@ exitPool,BEETHOVEN,V1,LIQUIDITY,INCOMING,Removes liquidity from pool,0x8bdb3913
 exitPool,STAKESTONE,V1,POOL,INCOMING,Exits liquidity pool,0x8bdb3913
 exitPool,STAKEWISE,V2,POOL,INCOMING,Exits liquidity pool,0x8bdb3913
 exitswapPoolAmountIn,BALANCER,V2,VAULT,OUTGOING,Exits a pool by providing pool tokens,0x46ab38f1
-fillBounty,GENERIC,V1,NFT_MARKETPLACE,OUTGOING,Completes a bounty by providing required NFT,0x78b85579
+fillBounty,ETH_GENERIC,ETH_GENERIC,NFT_MARKETPLACE,OUTGOING,Completes a bounty by providing required NFT,0x78b85579
 flashLoan,HOP,V2,AMM,BOTH,Executes flash loan,0x5cffe9de
 flashLoan,SYNAPSE,V1,POOLS,BOTH,Executes flash loan,0x5cffe9de
 flashLoan,BALANCER,V2,VAULT,BOTH,Executes flash loan,0x5c38449e
@@ -413,28 +414,28 @@ getReward,ZYBERSWAP,V1,STAKING,INCOMING,Claims staking rewards,0x3d18b912
 getReward,CONCENTRATOR,V1,REWARDS,INCOMING,Claims vault rewards,0x3d18b912
 getReward,CONVEX,V1,STAKING,INCOMING,Claims staking rewards,0x3d18b912
 getReward,PICKLE,V1,GAUGE,INCOMING,Claims gauge rewards,0x3d18b912
-increase_amount,GENERIC,V1,VESTING_CONTRACTS,OUTGOING,Increases the amount of locked tokens,0x4957677c
-increase_amount,GENERIC,V1,STAKING,OUTGOING,Increase locked amount,0x5ef8f675
-increase_unlock_time,GENERIC,V1,VESTING_CONTRACTS,OUTGOING,Extends the lock duration,0xc27f68a5
-increase_unlock_time,GENERIC,V1,STAKING,OUTGOING,Extend lock duration,0xc27f24d2
+increase_amount,ETH_GENERIC,ETH_GENERIC,VESTING_CONTRACTS,OUTGOING,Increases the amount of locked tokens,0x4957677c
+increase_amount,CURVE,COMMON,STAKING,OUTGOING,Increase locked amount,0x5ef8f675
+increase_unlock_time,ETH_GENERIC,ETH_GENERIC,VESTING_CONTRACTS,OUTGOING,Extends the lock duration,0xc27f68a5
+increase_unlock_time,CURVE,COMMON,STAKING,OUTGOING,Extend lock duration,0xc27f24d2
 increaseCustodyAllowance,not found,,,,,
-intendToUnstake,GENERIC,V1,STAKING_PROTOCOLS,OUTGOING,Signals intention to unstake tokens,0xc32c92b1
-intendToUnstake,GENERIC,V1,STAKING,OUTGOING,Signal intention to unstake,0xc32f7f73
-invalidateUnorderedNonces,GENERIC,V1,UTILITY,OUTGOING,Invalidate unused nonces,0x9e7b8d61
+intendToUnstake,ETH_GENERIC,ETH_GENERIC,STAKING_PROTOCOLS,OUTGOING,Signals intention to unstake tokens,0xc32c92b1
+intendToUnstake,ETH_GENERIC,ETH_GENERIC,STAKING,OUTGOING,Signal intention to unstake,0xc32f7f73
+invalidateUnorderedNonces,not found,,,,,
 joinPool,BALANCER,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0x4f69c0d4
 joinPool,BALANCER,V2,VAULT,OUTGOING,Adds liquidity to pool,0xb95cac28
 joinPool,BEETHOVEN,V1,LIQUIDITY,OUTGOING,Adds liquidity to pool,0xb95cac28
 joinPool,GAMEFI,V1,POOLS,OUTGOING,Joins existing IGO pool,0x9b3d47b4
 joinPool,STAKESTONE,V1,POOL,OUTGOING,Joins liquidity pool,0xb95cac28
 joinPool,STAKEWISE,V2,POOL,OUTGOING,Joins liquidity pool,0xb95cac28
-JunionYoutubeXD_dashhvetozhe,GENERIC,V1,SUSPICIOUS,UNKNOWN,Suspicious function - potential scam,UNKNOWN
-LetsInvest,GENERIC,V1,SUSPICIOUS,UNKNOWN,Suspicious function - potential scam,UNKNOWN
+JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,ETH_GENERIC,SUSPICIOUS,UNKNOWN,Suspicious function - potential scam,UNKNOWN
+LetsInvest,ETH_GENERIC,ETH_GENERIC,SUSPICIOUS,UNKNOWN,Suspicious function - potential scam,UNKNOWN
 migrate,YEARN,V1,STRATEGIES,BOTH,Migrates to new strategy,0x4ce38b5f
 migrate,YEARN,V2,VAULT,BOTH,Migrates vault assets,0x4ce38b5f
 migrate,YEARN,V3,VAULT,BOTH,Migrates vault assets,0x4ce38b5f
-migrateAll,GENERIC,V1,MIGRATION,BOTH,Migrate all assets,0x6e7cf85f
+migrateAll,ETH_GENERIC,ETH_GENERIC,MIGRATION,BOTH,Migrate all assets,0x6e7cf85f
 migrateFromLegacyReputationToken,AUGUR,V2,LEGACY,OUTGOING,Migrates REP tokens from legacy to new version,0x7f9f19a5
-migrateFromLEND,GENERIC,V1,MIGRATION,BOTH,Migrate from LEND to AAVE token,0xd34a9e4a
+migrateFromLEND,AAVE,V2,LENDING,BOTH,Migrate from LEND to AAVE token,0xd34a9e4a
 migrateSafe2,GNOSIS,V2,SAFE,OUTGOING,Migrates a Safe to a newer version,0x9d4d7b1f
 mint,SYNTHETIX,V2,STAKING,OUTGOING,Mints sUSD with SNX,0x40c10f19
 mint,CURVE,V1,GAUGE,OUTGOING,Mints CRV tokens,0x40c10f19
@@ -456,12 +457,13 @@ mint,ERC3525,V1,MINT,OUTGOING,Mints new token,0x40c10f19
 mint,ERC4626,V1,VAULT,OUTGOING,Mints vault shares,0x40c10f19
 mint,ERC721,V1,MINT,OUTGOING,Mints new NFT,0x40c10f19
 mintToken,ARWEAVE,V1,STORAGE,OUTGOING,Mints AR tokens,0x40c10f19
-mintWithEther,GENERIC,V1,MINTING,OUTGOING,Mint tokens with ETH,0x90a56f37
-mintWithToken,GENERIC,V1,MINTING,OUTGOING,Mint tokens with another token,0x8f31c7f9
-mixSwap,GENERIC,V1,SWAPS,BOTH,Aggregated token swap,0x13240b31
+mintWithEther,ETH_GENERIC,ETH_GENERIC,MINTING,OUTGOING,Mint tokens with ETH,0x90a56f37
+mintWithToken,ETH_GENERIC,ETH_GENERIC,MINTING,OUTGOING,Mint tokens with another token,0x8f31c7f9
+mixSwap,MIX_SWAP,V1,TRADING,BOTH,Aggregated token swap,0x13240b31
+mixSwap,ONEINCH,V5,SWAP,BOTH,Aggregated token swap,0x13240b31
 multicall,PANCAKESWAP,V3,POSITION_MANAGER,BOTH,Executes multiple position operations,0xac9650d8
 newAccount,not found,,,,,
-purchase,GENERIC,V1,NFT_MARKETPLACE,OUTGOING,Purchases an NFT from the marketplace,0x64849142
+purchase,ETH_GENERIC,ETH_GENERIC,NFT_MARKETPLACE,OUTGOING,Purchases an NFT from the marketplace,0x64849142
 redeem,ARBITRUM,V1,RETRYABLE,BOTH,Redeems retryable ticket,0xdb006a75
 redeem,SYNAPSE,V1,BRIDGE,INCOMING,Redeems bridged tokens,0xdb006a75
 redeem,AAVE,V1,LENDING,INCOMING,Redeems aTokens for underlying tokens,0xdb006a75
@@ -619,8 +621,8 @@ stake,ALPACA,V1,FARMING,OUTGOING,Stakes LP tokens in farm,0xa694fc3a
 stake,BEEFY,V1,BOOST,OUTGOING,Stakes BIFI tokens,0xa694fc3a
 stake,CONVEX,V1,STAKING,OUTGOING,Stakes CVX tokens,0xa694fc3a
 stake,PICKLE,V1,DILL,OUTGOING,Stakes PICKLE tokens,0xa694fc3a
-stakeRewards,GENERIC,V1,STAKING_PROTOCOLS,OUTGOING,Stakes reward tokens,0x93f4bcb8
-stakeRewards,GENERIC,V1,STAKING,OUTGOING,Stake reward tokens,0x8f31c7f9
+stakeRewards,ETH_GENERIC,ETH_GENERIC,STAKING_PROTOCOLS,OUTGOING,Stakes reward tokens,0x93f4bcb8
+stakeRewards,ETH_GENERIC,ETH_GENERIC,STAKING,OUTGOING,Stake reward tokens,0x8f31c7f9
 supply,TRADERJOE,V1,LENDING,OUTGOING,Supplies assets to lending pool,0x617ba037
 supply,AAVE,V3,LENDING,OUTGOING,Supplies an amount of underlying asset into the protocol,0x617ba037
 supply,BENQI,V1,LENDING,OUTGOING,Supplies assets to the protocol,0x1249c58b
@@ -656,12 +658,14 @@ swap,VULPEFI,V1,TRADING,BOTH,Executes token swap,0x128acb08
 swap,WOMBAT,V1,TRADING,BOTH,Executes token swap,0x128acb08
 swap,ZERION,V1,TRADING,BOTH,Executes token swap,0x128acb08
 swap,NFTX,V2,TRADING,BOTH,Swaps vault tokens,0x128acb08
-swapAndDeposit,GENERIC,V1,SWAPS,OUTGOING,Swap token and deposit in one transaction,0x5a0c7376
-swapAndRepay,GENERIC,V1,SWAPS,OUTGOING,Swap token and repay loan,0x2db1e36c
-swapAndSendV2,GENERIC,V1,SWAPS,BOTH,Swap and send tokens to recipient,0x985d7a89
+swapAndDeposit,AAVE,V2,TRADE,OUTGOING,Swap token and deposit in one transaction,0x5a0c7376
+swapAndDeposit,COMPOUND,V2,MARKETS,OUTGOING,Swap token and deposit in one transaction,0x5a0c7376
+swapAndRepay,AAVE,V2,TRADE,OUTGOING,Swap token and repay loan,0x2db1e36c
+swapAndSendV2,ONEINCH,V5,SWAP,BOTH,Swap and send tokens to recipient,0x985d7a89
+swapAndSendV2,PARASWAP,V5,TRADING,BOTH,Swap and send tokens to recipient,0x985d7a89
 swapBorrowRateMode,AAVE,V2,LENDING,BOTH,Switches between stable and variable borrow rate,0x94ba89a2
 swapBorrowRateMode,AAVE,V3,LENDING,BOTH,Switches between stable and variable borrow rate,0x94ba89a2
-swapExactETHForAlpha,GENERIC,V1,SWAPS,OUTGOING,Swap exact ETH for Alpha token,0x7ff36ab5
+swapExactETHForAlpha,UNISWAP,V2,SWAP,OUTGOING,Swap exact ETH for Alpha token,0x7ff36ab5
 swapExactETHForTokens,CAMELOT,V2,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
 swapExactETHForTokens,CHRONOS,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
 swapExactETHForTokens,DYSTOPIA,V1,TRADING,OUTGOING,Swaps exact ETH for tokens,0x7ff36ab5
@@ -700,8 +704,8 @@ swapExactTokensForTokens,STAKEWISE,V2,POOL,BOTH,Swaps exact tokens,0x38ed1739
 swapSaiToDai,MAKER,MIGRATION,SCD_SHUTDOWN,BOTH,Swaps SAI to DAI,0x3df02124
 tokenToEthSwapInput,UNISWAP,V2,SWAP,BOTH,Swaps tokens for ETH with input amount specified,0x95e3c50b
 tokenToTokenSwapInput,UNISWAP,V2,SWAP,BOTH,Swaps tokens for tokens with input amount specified,0xddf7e1a7
-tradeWithHint,GENERIC,V1,SWAPS,BOTH,Trade with routing hint,0x6cf68693
-tradeWithHintAndFee,GENERIC,V1,SWAPS,BOTH,Trade with hint and fee structure,0xae591d54
+tradeWithHint,KYBERSWAP,V2,TRADING,BOTH,Trade with routing hint,0x6cf68693
+tradeWithHintAndFee,KYBERSWAP,V2,TRADING,BOTH,Trade with hint and fee structure,0xae591d54
 transfer,LOOPRING,V3,L2_OPERATIONS,BOTH,Transfers assets on L2,0xa9059cbb
 transfer,SUSHISWAP,V2,BENTOBOX,BOTH,Transfers tokens within BentoBox,0x23b872dd
 transfer,UNISWAP,V3,POSITION,BOTH,Transfers position,0x23b872dd
@@ -755,7 +759,7 @@ unstake,ALPACA,V1,FARMING,INCOMING,Unstakes LP tokens from farm,0x2e1a7d4d
 unstake,BEEFY,V1,BOOST,INCOMING,Unstakes BIFI tokens,0x2e1a7d4d
 unstake,PICKLE,V1,DILL,INCOMING,Unstakes PICKLE tokens,0x2e1a7d4d
 updateAccountAndDeposit,not found,,,,,
-user_checkpoint,GENERIC,V1,GOVERNANCE,NEUTRAL,Update user rewards checkpoint,0x4b820093
+user_checkpoint,CURVE,V1,GAUGE,NEUTRAL,Update user rewards checkpoint,0x4b820093
 vote_for_gauge_weights,CURVE,COMMON,STAKING,OUTGOING,Votes for gauge weights,0x6d46e987
 vote,DYDX,V3,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
 vote,BALANCER,V2,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
@@ -805,7 +809,7 @@ vote,SWELL,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
 vote,ALPACA,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
 vote,PIREX,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
 vote,YEARN,V1,GOVERNANCE,OUTGOING,Votes on proposal,0x15373e3d
-voteFor,GENERIC,V1,GOVERNANCE,OUTGOING,Cast vote for proposal,0x86a50535
+voteFor,ETH_GENERIC,ETH_GENERIC,GOVERNANCE,OUTGOING,Cast vote for proposal,0x86a50535
 withdraw,CELER,V1,BRIDGE,INCOMING,Withdraws bridged tokens,0x2e1a7d4d
 withdraw,HOP,V1,BRIDGE,INCOMING,Withdraws bridged tokens,0x2e1a7d4d
 withdraw,HOP,V2,BRIDGE,INCOMING,Withdraws bridged tokens V2,0x2e1a7d4d
@@ -874,9 +878,9 @@ withdrawAave,AAVE,V3,LENDING,INCOMING,Withdraws AAVE tokens from the protocol,0x
 withdrawAll,BEEFY,V1,VAULT,INCOMING,Withdraws all deposited assets,0x853828b6
 withdrawAll,CONVEX,V1,BOOSTER,INCOMING,Withdraws all LP tokens,0x853828b6
 withdrawAll,PICKLE,V1,GAUGE,INCOMING,Withdraws all tokens,0x853828b6
-withdrawAllBase,GENERIC,V1,WITHDRAWALS,INCOMING,Withdraw all base tokens,0x1f1fcd51
-withdrawAllQuote,GENERIC,V1,WITHDRAWALS,INCOMING,Withdraw all quote tokens,0x89b7daa9
-withdrawERC20For,GENERIC,V1,GENERIC_ERC20,OUTGOING,Withdraws ERC20 tokens on behalf of another address,0x9e281a98
-withdrawERC20For,GENERIC,V1,WITHDRAWALS,INCOMING,Withdraw ERC20 tokens for another address,0x9e281a98
-withdrawFunds,GENERIC,V1,WITHDRAWALS,INCOMING,Generic withdrawal function,0x24ed7740
-ZapOut2PairToken,GENERIC,V1,LIQUIDITY,INCOMING,Remove liquidity and convert to token pair,0x41f13681
+withdrawAllBase,ETH_GENERIC,ETH_GENERIC,WITHDRAWALS,INCOMING,Withdraw all base tokens,0x1f1fcd51
+withdrawAllQuote,ETH_GENERIC,ETH_GENERIC,WITHDRAWALS,INCOMING,Withdraw all quote tokens,0x89b7daa9
+withdrawERC20For,ETH_GENERIC,ETH_GENERIC,GENERIC_ERC20,OUTGOING,Withdraws ERC20 tokens on behalf of another address,0x9e281a98
+withdrawERC20For,ETH_GENERIC,ETH_GENERIC,WITHDRAWALS,INCOMING,Withdraw ERC20 tokens for another address,0x9e281a98
+withdrawFunds,ETH_GENERIC,ETH_GENERIC,WITHDRAWALS,INCOMING,Generic withdrawal function,0x24ed7740
+ZapOut2PairToken,ZAPPER,V1,ZAPS,INCOMING,Remove liquidity and convert to token pair,0x41f13681

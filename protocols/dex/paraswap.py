@@ -21,7 +21,13 @@ PARASWAP_V5_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Executes swap via Uniswap',
             'method': '0x7c025200'
-        }
+        },
+         'swapAndSendV2': {
+            'direction': 'BOTH',
+            'description': 'Swap and send tokens to recipient',
+            'method': '0x985d7a89',
+           # 'protocol': ['1inch V2', 'ParaSwap']
+        },
     },
     'LIMIT_ORDERS': {
         'createLimitOrder': {

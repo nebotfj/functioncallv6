@@ -51,7 +51,13 @@ UNISWAP_V2_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Swaps tokens for tokens with input amount specified',
             'method': '0xddf7e1a7'
-        }
+        },
+        'swapExactETHForAlpha': {
+            'direction': 'OUTGOING',
+            'description': 'Swap exact ETH for Alpha token',
+            'method': '0x7ff36ab5',
+            #'protocol': ['Uniswap V2']
+        },
     },
     'POSITION': {
         'mint': {

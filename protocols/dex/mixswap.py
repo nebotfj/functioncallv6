@@ -21,7 +21,13 @@ MIXSWAP_V1_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Executes routed swap',
             'method': '0x7c025200'
-        }
+        },
+        'mixSwap': {
+            'direction': 'BOTH',
+            'description': 'Aggregated token swap',
+            'method': '0x13240b31',
+           # 'protocol': ['MixSwap', '1inch']
+        },
     },
     'LIQUIDITY': {
         'addLiquidity': {

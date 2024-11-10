@@ -58,6 +58,12 @@ CURVE_V1_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Mints CRV tokens for multiple gauges',
             'method': '0x13c36c92'
+        },
+        'user_checkpoint': {
+            'direction': 'NEUTRAL',
+            'description': 'Update user rewards checkpoint',
+            'method': '0x4b820093',
+            #'protocol': ['Curve', 'Convex']
         }
     }
 }
@@ -162,7 +168,25 @@ CURVE_COMMON_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Deposits reward token',
             'method': '0x3f6bc68b'
-        }
+        },
+        'create_lock': {
+            'direction': 'OUTGOING',
+            'description': 'Lock tokens for voting rights',
+            'method': '0x65fc3873',
+            'protocol': ['Curve veCRV']
+        },
+        'increase_amount': {
+            'direction': 'OUTGOING',
+            'description': 'Increase locked amount',
+            'method': '0x5ef8f675',
+            'protocol': ['Curve veCRV']
+        },
+        'increase_unlock_time': {
+            'direction': 'OUTGOING',
+            'description': 'Extend lock duration',
+            'method': '0xc27f24d2',
+            'protocol': ['Curve veCRV']
+        },
     }
 }
 

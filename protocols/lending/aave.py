@@ -111,18 +111,37 @@ AAVE_FUNCTIONS = {
                 'direction': 'OUTGOING',
                 'description': 'Pauses or unpauses a reserve',
                 'method': '0x48d9f693'
+            },
+            'migrateFromLEND': {
+                'direction': 'BOTH',
+                'description': 'Migrate from LEND to AAVE token',
+                'method': '0xd34a9e4a',
             }
+        },
+        'TRADE': {
+            'swapAndDeposit': {
+                'direction': 'OUTGOING',
+                'description': 'Swap token and deposit in one transaction',
+                'method': '0x5a0c7376',
+                #'protocol': ['Compound', 'Aave V2']
+            },
+            'swapAndRepay': {
+                'direction': 'OUTGOING',
+                'description': 'Swap token and repay loan',
+                'method': '0x2db1e36c',
+               # 'protocol': ['Aave V2', 'Aave V3']
+            },
         },
         'STAKING': {
             'stake': {
                 'direction': 'OUTGOING',
                 'description': 'Stakes tokens in the Safety Module',
-                'method': '0xa694fc3a'
+                'method': '0xa694fc3a',
             },
             'redeem': {
                 'direction': 'INCOMING',
                 'description': 'Redeems staked tokens',
-                'method': '0xdb006a75'
+                'method': '0xdb006a75',
             }
         },
         'GOVERNANCE': {
@@ -261,6 +280,12 @@ AAVE_FUNCTIONS = {
                 'direction': 'OUTGOING',
                 'description': 'Encodes permit data for credit delegation',
                 'method': '0x2d4aafc4'
+            },
+            'depositV3': {
+                'direction': 'OUTGOING',
+                'description': 'Deposit assets in Aave V3',
+                'method': '0xe8eda9df',
+               # 'protocol': ['Aave V3']
             }
         },
         'STAKING': {

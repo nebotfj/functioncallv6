@@ -38,7 +38,13 @@ BALANCER_V1_FUNCTIONS = {
             'direction': 'INCOMING',
             'description': 'Exits pool for exact token amount',
             'method': '0x02c1a3b4'
-        }
+        },
+        'add_liquidity': {
+            'direction': 'OUTGOING',
+            'description': 'Add liquidity to pool',
+            'method': '0x4515cef3',
+            #'protocol': ['Curve V1', 'Balancer V1']
+        },
     }
 }
 

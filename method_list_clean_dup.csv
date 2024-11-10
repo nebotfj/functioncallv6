@@ -1,0 +1,67 @@
+method_id,function,protocol,direction,description
+0x4515cef3,add_liquidity,"BALANCER, KYBERSWAP",OUTGOING,Add liquidity to pool
+0x0b4c7e4d,add_liquidity,"BANCOR, CURVE",OUTGOING,Adds liquidity to pool
+0xe8e33700,addLiquidity,"ACROSS, ALLBRIDGE, BEETHOVEN, BETSWIRL, BISWAP, CAMELOT, CELER, CHRONOS, DRIFT, DYSTOPIA, HASHFLOW, HEGIC, HOP, KYBERSWAP, LEVEL, LOOPRING, LYRA, MAVERICK, MESH_SWAP, MIX_SWAP, MONERO, MULTICHAIN, MYCELIUM, NFTX, ORBITER, PANCAKESWAP, PLATYPUS, POLYMARKET, PREMIA, QUICKSWAP, RAMSES, RAYDIUM, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, TRADERJOE, UNISWAP, VELA, VELODROME, VULPEFI, WOMBAT, ZCASH, ZERION, ZYBERSWAP",OUTGOING,Adds liquidity to bridge pool
+0x68bf9329,addLiquidity,GMX,OUTGOING,Adds liquidity to GLP
+0x0f4f8da7,addLiquidity,SUSHISWAP,OUTGOING,Adds concentrated liquidity to pool
+0xc5ebeaec,borrow,"ALPACA, BENQI, BLUR, COMPOUND, CREAM, EULER, FRAX, GEIST, GRANARY, HUNDRED, IRONBANK, MORPHO, RADIANT, VENUS",INCOMING,Borrows assets against collateral
+0xc858f5ba,borrow,"AAVE, DYDX, TRADERJOE",INCOMING,Borrows from margin pool
+0xa415bcad,borrow,AAVE,INCOMING,Borrows an amount of asset with stable or variable rate
+0x89afcb44,burn,"ANKR, CAMELOT, DYSTOPIA, FRAX, KYBERSWAP, MESH_SWAP, ORCA, PANCAKESWAP, RARIBLE, SOLIDLY, SUSHISWAP, SYNTHETIX, UNISWAP",INCOMING,Burns sUSD for SNX
+0x42966c68,burn,"ERC1155, ERC20, ERC3525, ERC5192, ERC721, ZCASH",OUTGOING,Burns tokens
+0x9af6b617,claimDistributions,ETH_GENERIC,INCOMING,Claim token distributions
+0x89f9aab7,claimDistributions,"AUGUR, BANCOR, ETH_GENERIC, HASHFLOW",INCOMING,Claims tokens from multiple distributions
+0x372500ab,claimRewards,BALANCER,INCOMING,Claims mining rewards
+0xe09c3b93,claimRewards,BENQI,INCOMING,Claims staking rewards
+0x87788782,claimStakerReward,ETH_GENERIC,INCOMING,Claims staking rewards
+0x7c3b74a1,claimStakerReward,ETH_GENERIC,INCOMING,Claim staking rewards
+0xda95691a,createProposal,"ALPACA, ANKR, API3, BANCOR, BAND, BENQI, BINANCE, BULLPERKS, CENTRIFUGE, COMPOUND, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, NEXUS_MUTUAL, OETH, PIREX, POCKET, PREMIA, PYTH, RADIANT, RAILWAY, REDACTED, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, WALLFAIR, WORMHOLE, YEARN",OUTGOING,Creates governance proposal
+0xf8572260,createProposal,BALANCER,OUTGOING,Creates governance proposal
+0x6e553f65,deposit,"BEETHOVEN, ERC4626, EULER, NFTX, ORCA, RARIBLE",OUTGOING,Deposits assets
+0xe2bbb158,deposit,"BISWAP, KYBERSWAP, ORCA, PANCAKESWAP, QUICKSWAP, RAYDIUM, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, WOMBAT, ZAPPER",OUTGOING,Stakes LP tokens in farm
+0xe8eda9df,deposit,AAVE,OUTGOING,Deposits tokens into the lending pool
+0xb6b55f25,deposit,"ACROSS, CURVE, LOOPRING, PLATYPUS, VULPEFI",OUTGOING,Deposits tokens for bridging
+0x43a0d066,depositPool,ETH_GENERIC,OUTGOING,Deposit into liquidity pool
+0x5f7c6d37,depositPool,ETH_GENERIC,OUTGOING,Deposits assets into a yield pool
+0x234c0aa9,depositSavings,ETH_GENERIC,OUTGOING,Deposit into savings protocol
+0x34f4fd51,depositSavings,ETH_GENERIC,OUTGOING,Deposits assets into a savings protocol
+0xd152cd41,disperseEther,ETH_GENERIC,OUTGOING,Distributes ETH to multiple addresses
+0xe63d38ed,disperseEther,ETH_GENERIC,OUTGOING,Disperse ETH to multiple addresses
+0x128acb08,exchange,"ALLBRIDGE, GMX, HOP, LOOPRING, MAVERICK, MIX_SWAP, NFTX, ONEINCH, ORCA, PARASWAP, PLATYPUS, RAYDIUM, STAKESTONE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, SYNTHETIX, UNISWAP, VULPEFI, WOMBAT, YIELD_YAK, ZERION",BOTH,Exchanges synths directly
+0x3df02124,exchange,"CURVE, MAKER",BOTH,Swaps between tokens in pool
+0x6a761202,executeTransaction,GNOSIS,OUTGOING,Executes Safe transaction
+0x0825f38f,executeTransaction,AAVE,OUTGOING,Executes queued proposal
+0xab9c4b5d,flashLoan,AAVE,BOTH,Executes a flash loan operation
+0x5cffe9de,flashLoan,"HOP, NFTX, SYNAPSE",BOTH,Executes flash loan
+0x5c38449e,flashLoan,BALANCER,BOTH,Executes flash loan
+0x5ef8f675,increase_amount,CURVE,OUTGOING,Increase locked amount
+0x4957677c,increase_amount,ETH_GENERIC,OUTGOING,Increases the amount of locked tokens
+0xc27f24d2,increase_unlock_time,CURVE,OUTGOING,Extend lock duration
+0xc27f68a5,increase_unlock_time,ETH_GENERIC,OUTGOING,Extends the lock duration
+0x1673c3c1,initialize,UNISWAP,OUTGOING,Initializes a new pool
+0x4cd88b76,initialize,BALANCER,OUTGOING,Initializes weighted pool
+0xc32f7f73,intendToUnstake,ETH_GENERIC,OUTGOING,Signal intention to unstake
+0xc32c92b1,intendToUnstake,ETH_GENERIC,OUTGOING,Signals intention to unstake tokens
+0xb95cac28,joinPool,"BALANCER, BEETHOVEN, STAKESTONE, STAKEWISE",OUTGOING,Adds liquidity to pool
+0x4f69c0d4,joinPool,BALANCER,OUTGOING,Adds liquidity to pool
+0xf5e3c462,liquidate,"COMPOUND, CREAM",BOTH,Liquidates position
+0x96cd4ddb,liquidate,"ALPACA, DYDX, FRAX, GAINS, GEIST, GMX, GRANARY, HUBBLE, HUNDRED, IRONBANK, LEVEL, MAKER, MORPHO, MYCELIUM, PARASWAP, POLYNOMIAL, PORTAL, RADIANT, SYNTHETIX, TRUEFI, VENUS, WORMHOLE",BOTH,Liquidates margin position
+0xf0988da6,liquidate,BENQI,BOTH,Liquidates undercollateralized positions
+0xdd467064,lock,ERC5192,OUTGOING,Locks token transfer
+0x6d0a6f36,lock,PLATYPUS,OUTGOING,Locks tokens for vesting
+0xa0712d68,mint,"COMPOUND, CREAM",OUTGOING,Mints cTokens by supplying assets
+0x6a627842,mint,"DYSTOPIA, MESH_SWAP, SOLIDLY, UNISWAP",OUTGOING,Mints LP tokens
+0x39603469,removeLiquidity,GMX,INCOMING,Removes liquidity from GLP
+0x32f6e3a8,removeLiquidity,BANCOR,INCOMING,Removes liquidity from pool
+0xbaa2abde,removeLiquidity,"ACROSS, ALLBRIDGE, BEETHOVEN, BETSWIRL, BISWAP, CAMELOT, CELER, CHRONOS, DRIFT, DYSTOPIA, HASHFLOW, HEGIC, HOP, KYBERSWAP, LEVEL, LOOPRING, LYRA, MAVERICK, MESH_SWAP, MIX_SWAP, MONERO, MULTICHAIN, MYCELIUM, NFTX, ORBITER, PANCAKESWAP, PLATYPUS, POLYMARKET, PREMIA, QUICKSWAP, RAMSES, RAYDIUM, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, TRADERJOE, UNISWAP, VELA, VELODROME, VULPEFI, WOMBAT, ZCASH, ZERION, ZYBERSWAP",INCOMING,Removes liquidity from bridge pool
+0x0e752702,repay,"BENQI, COMPOUND, CREAM, EULER",OUTGOING,Repays borrowed assets
+0x5ceae9c4,repay,AAVE,OUTGOING,Repays borrowed tokens
+0x42842e0e,safeTransferFrom,ERC721,OUTGOING,Safely transfers NFT
+0xf242432a,safeTransferFrom,ERC1155,OUTGOING,Safely transfers tokens
+0x617ba037,supply,"AAVE, GEIST, GRANARY, HUNDRED, IRONBANK, MORPHO, RADIANT, TRADERJOE",OUTGOING,Supplies assets to lending pool
+0x4b8a3529,supply,"BRIGHTID, COMPOUND, WORLDCOIN",OUTGOING,Supplies assets to protocol
+0x1249c58b,supply,BENQI,OUTGOING,Supplies assets to the protocol
+0x2f7d5e86,unlock,PLATYPUS,INCOMING,Unlocks vested tokens
+0xa69df4b5,unlock,ERC5192,OUTGOING,Unlocks token transfer
+0x3d02c422,unstake,AAVE,INCOMING,Unstakes tokens from Safety Module
+0x2e17de78,unstake,BENQI,INCOMING,Unstakes QI tokens

@@ -26,6 +26,12 @@ ZAPPER_V1_FUNCTIONS = {
             'direction': 'BOTH',
             'description': 'Zaps between protocols',
             'method': '0x7c025200'
+        },
+         'ZapOut2PairToken': {
+            'direction': 'INCOMING',
+            'description': 'Remove liquidity and convert to token pair',
+            'method': '0x41f13681',
+            'protocol': ['Zapper.fi']
         }
     },
     'FARMING': {

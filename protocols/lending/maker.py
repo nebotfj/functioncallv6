@@ -51,7 +51,13 @@ MAKER_V1_FUNCTIONS = {
             'direction': 'OUTGOING',
             'description': 'Wipes all DAI debt',
             'method': '0x4b84d4c5'
-        }
+        },
+        'build': {
+                'direction': 'OUTGOING',
+                'description': 'Build position',
+                'method': '0x9d94c8b3',
+              #  'protocol': ['Maker', 'Compound']
+        },
     },
     'LIQUIDATION': {
         'bite': {

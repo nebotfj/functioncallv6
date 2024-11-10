@@ -51,7 +51,19 @@ COMPOUND_FUNCTIONS = {
                 'direction': 'INCOMING',
                 'description': 'Exits market',
                 'method': '0xede4edd0'
-            }
+            },
+            'swapAndDeposit': {
+                'direction': 'OUTGOING',
+                'description': 'Swap token and deposit in one transaction',
+                'method': '0x5a0c7376',
+                #'protocol': ['Compound', 'Aave V2']
+            },
+            'build': {
+                'direction': 'OUTGOING',
+                'description': 'Build position',
+                'method': '0x9d94c8b3',
+              #  'protocol': ['Maker', 'Compound']
+            },
         },
         'GOVERNANCE': {
             'propose': {

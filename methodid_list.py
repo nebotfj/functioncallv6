@@ -261,7 +261,8 @@ from protocols.yield_farming.yield_yak import YIELD_YAK_FUNCTIONS
 
 #
 
-def search_function(function_name):
+def main():
+    all_results = []
     protocols = {
         #RESTOS
     "ETH_GENERIC": ETH_GENERIC,
@@ -495,141 +496,46 @@ def search_function(function_name):
 
     }
     
-    results = []
-    
+    #impresión de todos los functioncall y mehodid que aparecen
     for protocol_name, protocol_data in protocols.items():
-        for version, categories in protocol_data.items():
-            for category, functions in categories.items():
-                if function_name in functions:
-                    # Al encontrar la función, añade los detalles al resultado
-                    results.append({
-                        'protocol': protocol_name,
-                        'version': version,
-                        'category': category,
-                        'details': functions[function_name]
-                        # Guarda los detalles de la función
-                    })
-
-    return results
-
-'''def main():
-    print("Welcome to DeFi Function Analyzer")
-    print("Enter function names separated by comma (or 'exit' to quit)")
+        print(f"\nProcessing protocol: {protocol_name}")
+        try:
+            for version, categories in protocol_data.items():
+                for category, functions in categories.items():
+                    for function_name, details in functions.items():
+                        try:
+                            if isinstance(details, dict):
+                                print(f"\nFunction: {function_name}")
+                                print(f"Protocol: {protocol_name}")
+                                print(f"Direction: {details.get('direction', 'N/A')}")
+                                print(f"Description: {details.get('description', 'N/A')}")
+                                print(f"Method ID: {details.get('method', 'N/A')}")
+                                
+                                all_results.append({
+                                    'function': function_name,
+                                    'protocol': protocol_name,
+                                    'direction': details.get('direction', 'N/A'),
+                                    'description': details.get('description', 'N/A'),
+                                    'method_id': details.get('method', 'N/A')
+                                })
+                        except Exception as e:
+                            print(f"Error processing function {function_name}: {str(e)}")
+                            continue
+        except Exception as e:
+            print(f"Error processing protocol {protocol_name}: {str(e)}")
+            continue
     
-    while True:
-        user_input = input("\nEnter function name(s): ").strip()
-        
-        if user_input.lower() == 'exit':
-            break
-        # Divide las funciones introducidas por el usuario
-        functions = [f.strip() for f in user_input.split(',')]
+    # Ordenar resultados alfabéticamente por función
+    all_results.sort(key=lambda x: x['function'].lower())
 
-        # Itera sobre todas las funciones introducidas por el usuario
-        for function in functions:
-            results = search_function(function)
-            
-            if results:
-                print(f"\nResults for '{function}':")
-                for result in results:
-                    print(f"\nProtocol: {result['protocol']} {result['version']}")
-                    print(f"Category: {result['category']}")
-                    print(f"Direction: {result['details']['direction']}")
-                    print(f"Description: {result['details']['description']}")
-                    print(f"Method ID: {result['details']['method']}")
-            else:
-                print(f"\nFunction '{function}' not found in any protocol")'''
-
-
-def main():
-    print("Welcome to DeFi Function Analyzer")
-    print("Enter function names separated by comma (or 'exit' to quit)")
-
-    # Lista para almacenar los resultados
-    all_results = []
-
-    while True:
-        user_input = input("\nEnter function name(s): ").strip()
-
-        if user_input.lower() == 'exit':
-            break
-
-        # Divide las funciones introducidas por el usuario
-        functions = [f.strip() for f in user_input.split(',')]
-
-        # Itera sobre todas las funciones introducidas por el usuario
-        for function in functions:
-            results = search_function(function)
-            
-            if results:
-                print(f"\nResults for '{function}':")
-                for result in results:
-                    print(f"\nProtocol: {result['protocol']} {result['version']}")
-                    print(f"Category: {result['category']}")
-                    print(f"Direction: {result['details']['direction']}")
-                    print(f"Description: {result['details']['description']}")
-                    print(f"Method ID: {result['details']['method']}")
-
-                    # Añadir el resultado a la lista de todos los resultados
-                    all_results.append({
-                        'function': function,
-                        'protocol': result['protocol'],
-                        'version': result['version'],
-                        'category': result['category'],
-                        'direction': result['details']['direction'],
-                        'description': result['details']['description'],
-                        'method_id': result['details']['method']
-                    })
-            else:
-                print(f"\nFunction '{function}' not found in any protocol")
-                    # Añadir el resultado a la lista de todos los resultados
-                all_results.append({
-                        'function': function,
-                        'protocol': 'not found',
-                        'version': '',
-                        'category': '',
-                        'direction': '',
-                        'description': '',
-                        'method_id': ''
-                    })    
-
-    # Guardar todos los resultados en un archivo CSV
-    with open("defi_function_analysis.csv", mode="w", newline='') as file:
-        writer = csv.DictWriter(file, fieldnames=['function', 'protocol', 'version', 'category', 'direction', 'description', 'method_id'])
+    # Guardar en CSV
+    with open("function_analysis.csv", mode="w", newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=['function', 'protocol', 'direction', 'description', 'method_id'])
         writer.writeheader()
         writer.writerows(all_results)
 
-    print("\nResults saved to 'defi_function_analysis.csv' in the current directory.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print(f"\nTotal functions processed: {len(all_results)}")
+    print("Results saved to 'function_analysis.csv' in the current directory.")
 
 if __name__ == "__main__":
     main()
