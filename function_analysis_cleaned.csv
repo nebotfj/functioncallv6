@@ -1,92 +1,92 @@
 method_id,function,protocol,direction,description
-0xbc61394a,acceptBid,"AXIE, BIGTIME, BLUR, CRYPTO_UNICORNS, DYDX, EMBER_SWORD, GODS_UNCHAINED, ILLUVIUM, LOOKSRARE, MAGICEDEN, ONEINCH, OPENSEA, PARASWAP, PEGAXY, RARIBLE, SORARE, STEPN, VELA, X2Y2, ZEROEX",BOTH,Accepts NFT bid
-0x7c025200,acceptQuote,"ACROSS, ANKR, ARBITRUM, BEETHOVEN, BRIGHTID, CELER, DEFI_KINGDOMS, DODO, DOPEX, HASHFLOW, HEGIC, HOP, ILLUVIUM, JONES, LAYERZERO, LENS, LYRA, MIX_SWAP, MORPHO, OPTIMISM, ORCA, PARASWAP, PEGAXY, POLYGONID, PORTAL, PREMIA, RAYDIUM, RIBBON, SPLINTERLANDS, STARGATE, STAR_ATLAS, SUDOSWAP, SYNAPSE, THETAN_ARENA, VULPEFI, WORLDCOIN, WORMHOLE, X2Y2, ZAPPER",BOTH,Accepts RFQ quote
-0x3a088cd2,act,"CIVIC, CONCENTRATOR, DYSTOPIA, FLASHBOTS, LAYERZERO, LENS, MANIFOLD, POLYGONID, PORTAL, RAMSES, VELODROME, WORLDCOIN, WORMHOLE",OUTGOING,Performs publication action
-0x7535d246,activateDeal,"API3, ARWEAVE, AZTEC, BAND, BIGTIME, BINANCE, BRIGHTID, CENTRIFUGE, CIVIC, CONCENTRATOR, CONVEX, COWSWAP, CRYPTO_UNICORNS, DECENTRAL, DEFI_KINGDOMS, DIA, DODO, EDEN, EIGENLAYER, EMBER_SWORD, FARCASTER, FILECOIN, FLASHBOTS, FRIEND_TECH, GALA, GAMESTARTER, GODS_UNCHAINED, GOLDFINCH, ILLUVIUM, INSURACE, IPFS, LAYERZERO, LENS, LIDO, LOOKSRARE, MAGICEDEN, MAKER, MANIFOLD, MANTLE, MAPLE, MONERO, MORPHO, NEXUS_MUTUAL, OPENSEA, PIREX, POCKET, POLYGON, POLYGONID, POLYMARKET, PYTH, RAILWAY, RARIBLE, REDSTONE, ROCKETPOOL, ROOK, SORARE, SPLINTERLANDS, STADER, STAKEWISE, STAR_ATLAS, STEPN, SUDOSWAP, SWELL, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, VELA, VELODROME, VENUS, WORLDCOIN, WORMHOLE, X2Y2, YEARN, ZCASH, ZERION",OUTGOING,Activates storage deal
+0xbc61394a,"acceptBid, acceptOffer, executeBid, executeOrder, fillLimitOrder, fillOrder, fulfillListing, fulfillOffer, matchOrder, tradeLand","AXIE, BIGTIME, BLUR, CRYPTO_UNICORNS, DYDX, EMBER_SWORD, GODS_UNCHAINED, ILLUVIUM, LOOKSRARE, MAGICEDEN, ONEINCH, OPENSEA, PARASWAP, PEGAXY, RARIBLE, SORARE, STEPN, VELA, X2Y2, ZEROEX",BOTH,Accepts NFT bid
+0x7c025200,"acceptQuote, bridgeAndSwap, bulkBuy, convertToShares, exercise, exerciseOption, fightBattle, leaveGroup, marketOrder, matchLenders, minePlanets, post, proveWithdrawal, receive, receiveMessage, redeemLocal, redeemOnEth, relay, relayMessage, rentCard, rentHero, rentPega, requestL2Transaction, routeSwap, routerSwap, sendToL2, smartSwap, speedUpRelay, swapBaseOut, swapOnUniswap, swapTokenForNFT, verifyProof, zapAcross","ACROSS, ANKR, ARBITRUM, BEETHOVEN, BRIGHTID, CELER, DEFI_KINGDOMS, DODO, DOPEX, HASHFLOW, HEGIC, HOP, ILLUVIUM, JONES, LAYERZERO, LENS, LYRA, MIX_SWAP, MORPHO, OPTIMISM, ORCA, PARASWAP, PEGAXY, POLYGONID, PORTAL, PREMIA, RAYDIUM, RIBBON, SPLINTERLANDS, STARGATE, STAR_ATLAS, SUDOSWAP, SYNAPSE, THETAN_ARENA, VULPEFI, WORLDCOIN, WORMHOLE, X2Y2, ZAPPER",BOTH,Accepts RFQ quote
+0x3a088cd2,"act, addBribe, addReward, attestToken, enableFollowModule, enableFrontrunProtection, enableModuleForProfile, enableSandwich, issueClaim, issueCredential, registerChain, registerGatekeeper, registerRelayer","CIVIC, CONCENTRATOR, DYSTOPIA, FLASHBOTS, LAYERZERO, LENS, MANIFOLD, POLYGONID, PORTAL, RAMSES, VELODROME, WORLDCOIN, WORMHOLE",OUTGOING,Performs publication action
+0x7535d246,"activateDeal, analyze, approveLoan, assessLoan, buildOnLand, combineCards, compositeCards, craftItem, createBundle, developLand, distribute, distributeRewards, distributeYield, earmarkRewards, enhanceItem, estimatedTotalAssets, extendCover, feedUnicorns, forgeCard, fuseCards, gauge, getSellPrice, interactContract, levelUpHero, levelUpShoe, link, migrateProxy, operateNode, pinFile, proposePrice, publish, raise, relayBlock, relayTransaction, renewCover, renewPolicy, repairShip, reply, requestLoan, resolveMarket, revealVote, sendBundle, setActionModule, setDelegateTerms, setProfileImageURI, setProfileMetadata, setStrategy, shield, signal, submitBackrun, submitBlock, submitBundle, submitSolution, submitValue, switchMembership, unjailNode, updateAsset, updateBeacon, updateBuilderConfig, updateCache, updateCollection, updateCoordinatorConfig, updateDelta, updateIdentity, updateIndexes, updateMetadata, updateMint, updateOperator, updateOrb, updateOrder, updatePool, updatePoolParameters, updatePower, updatePrice, updatePrices, updateProfile, updateRiskParameters, updateRoyalties, updateSchema, updateStatus, updateStorage, updateStrategyDebtRatio, updateSubgraph, updateValidator, updateValue, updateVending, updateVenusSupplyIndex, upgradeCard, upgradeGear, upgradeHero, upgradeIlluvial, upgradeLand, upgradeNode, upgradeShip, upgradeTier, upgradeUnicorn, useItem, validateCheckpoint, validateDataFeed, validateTransactionProof, verifyBlock, verifyClaim, verifyCredential, verifyGatekeeper, verifyMessage, verifyNote, verifyPrice, verifyProof, verifyRollup, verifyState, verifyStorage, verifyZkProof, waterPlants","API3, ARWEAVE, AZTEC, BAND, BIGTIME, BINANCE, BRIGHTID, CENTRIFUGE, CIVIC, CONCENTRATOR, CONVEX, COWSWAP, CRYPTO_UNICORNS, DECENTRAL, DEFI_KINGDOMS, DIA, DODO, EDEN, EIGENLAYER, EMBER_SWORD, FARCASTER, FILECOIN, FLASHBOTS, FRIEND_TECH, GALA, GAMESTARTER, GODS_UNCHAINED, GOLDFINCH, ILLUVIUM, INSURACE, IPFS, LAYERZERO, LENS, LIDO, LOOKSRARE, MAGICEDEN, MAKER, MANIFOLD, MANTLE, MAPLE, MONERO, MORPHO, NEXUS_MUTUAL, OPENSEA, PIREX, POCKET, POLYGON, POLYGONID, POLYMARKET, PYTH, RAILWAY, RARIBLE, REDSTONE, ROCKETPOOL, ROOK, SORARE, SPLINTERLANDS, STADER, STAKEWISE, STAR_ATLAS, STEPN, SUDOSWAP, SWELL, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, VELA, VELODROME, VENUS, WORLDCOIN, WORMHOLE, X2Y2, YEARN, ZCASH, ZERION",OUTGOING,Activates storage deal
 0x67118c24,activatePool,BANCOR,OUTGOING,Activates pool for trading
-0x4515cef3,add_liquidity,"BALANCER, KYBERSWAP",OUTGOING,Add liquidity to pool
-0x0b4c7e4d,add_liquidity,"BANCOR, CURVE",OUTGOING,Adds liquidity to pool
 0x9f69b6d1,add_liquidity_one_coin,CURVE,OUTGOING,Adds single token liquidity
-0x47e7ef24,addCollateral,"AAVE, ALPACA, AZTEC, BANCOR, BEEFY, BINANCE, BLUR, CENTRIFUGE, CONCENTRATOR, CONVEX, DOPEX, DRIFT, DYDX, EIGENLAYER, FARCASTER, FILECOIN, FRAX, GAINS, GOLDFINCH, HUBBLE, INSURACE, IRONBANK, JONES, MAKER, MAPLE, OETH, PERPETUAL, PICKLE, PIREX, POLYMARKET, POLYNOMIAL, RAILWAY, RIBBON, ROCKETPOOL, ROLLBIT, STADER, SUDOSWAP, SYNTHETIX, TORNADO, TRUEFI, UNSLASHED, YEARN, YIELD_YAK",OUTGOING,Adds collateral to position
-0x4ce38b5f,addContext,"ACROSS, ANKR, API3, ARBITRUM, AZTEC, BAND, BIGTIME, BINANCE, BRIGHTID, CHAINLINK, CONCENTRATOR, CONVEX, COWSWAP, DEFI_KINGDOMS, DOPEX, EMBER_SWORD, FLASHBOTS, GAINS, GALA, GODS_UNCHAINED, HEGIC, HOP, HUBBLE, ILLUVIUM, JONES, LAYERZERO, LENS, LYRA, MAGICEDEN, MAKER, MANIFOLD, MANTLE, MAPLE, MAVERICK, MONERO, MULTICHAIN, NFTX, OETH, OPENSEA, OPTIMISM, PINKSALE, POLYGONID, PORTAL, PREMIA, RAILWAY, RARIBLE, RAYDIUM, REDSTONE, RIBBON, ROCKETPOOL, ROOK, STARGATE, STAR_ATLAS, STEPN, SUDOSWAP, THETAN_ARENA, TRUEFI, UMA, WORMHOLE, YEARN, ZAPPER, ZCASH",OUTGOING,Adds verification context
-0x1698ee82,addFile,"ARWEAVE, AXIE, AZTEC, BANCOR, BIGTIME, BINANCE, BRIGHTID, CENTRIFUGE, CIVIC, COINLIST, COWSWAP, CRYPTO_UNICORNS, DAOMAKER, DECENTRAL, DEFI_KINGDOMS, DODO, EDEN, EIGENLAYER, EMBER_SWORD, FARCASTER, FILECOIN, FLASHBOTS, FRIEND_TECH, GAMEFI, GODS_UNCHAINED, GOLDFINCH, HASHFLOW, HEGIC, ILLUVIUM, IPFS, LENS, MAGICEDEN, MANIFOLD, MANTLE, MAPLE, NFTX, PEGAXY, PINKSALE, POCKET, POLYGONID, POLYMARKET, PORTAL, PREMIA, RAILWAY, RARIBLE, RAYDIUM, ROCKETPOOL, ROOK, SORARE, SPLINTERLANDS, STADER, STARGATE, STAR_ATLAS, STEPN, SUDOSWAP, SUSHISWAP, SWELL, THETAN_ARENA, THE_GRAPH, TORNADO, TRUEFI, UMA, UMBRELLA, UNISWAP, VELODROME, WALLFAIR, WORLDCOIN, WORMHOLE, YEARN, ZED_RUN",OUTGOING,Adds file to IPFS
-0xe8e33700,addLiquidity,"ACROSS, ALLBRIDGE, BEETHOVEN, BETSWIRL, BISWAP, CAMELOT, CELER, CHRONOS, DRIFT, DYSTOPIA, HASHFLOW, HEGIC, HOP, KYBERSWAP, LEVEL, LOOPRING, LYRA, MAVERICK, MESH_SWAP, MIX_SWAP, MONERO, MULTICHAIN, MYCELIUM, NFTX, ORBITER, PANCAKESWAP, PLATYPUS, POLYMARKET, PREMIA, QUICKSWAP, RAMSES, RAYDIUM, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, TRADERJOE, UNISWAP, VELA, VELODROME, VULPEFI, WOMBAT, ZCASH, ZERION, ZYBERSWAP",OUTGOING,Adds liquidity to bridge pool
+0x47e7ef24,"addCollateral, addMargin, addNFT, addStorage, bridgeDeposit, deposit, depositAave, depositCapital, depositCollateral, depositInsurance, depositNode, fundDeal, fundLoan, gaugeDeposit, invest, lendNFT, postCollateral, recollateralize","AAVE, ALPACA, AZTEC, BANCOR, BEEFY, BINANCE, BLUR, CENTRIFUGE, CONCENTRATOR, CONVEX, DOPEX, DRIFT, DYDX, EIGENLAYER, FARCASTER, FILECOIN, FRAX, GAINS, GOLDFINCH, HUBBLE, INSURACE, IRONBANK, JONES, MAKER, MAPLE, OETH, PERPETUAL, PICKLE, PIREX, POLYMARKET, POLYNOMIAL, RAILWAY, RIBBON, ROCKETPOOL, ROLLBIT, STADER, SUDOSWAP, SYNTHETIX, TORNADO, TRUEFI, UNSLASHED, YEARN, YIELD_YAK",OUTGOING,Adds collateral to position
+0x4ce38b5f,"addContext, anySwapIn, approveLoan, bonderFee, bridgeFromMonero, bridgeFromZcash, bridgeInteraction, cacheValues, clearMessage, closeMinipool, closePool, collect, completeMeditation, completeMission, completeQuest, completeTransfer, completeWithdraw, endAuction, endBattle, endMatch, endMove, exercise, finalize, finalizeERC20Withdrawal, finalizeInboundTransfer, finalizeWithdrawal, flashUnstake, fulfillLazyMint, fulfillRandomWords, fulfillRandomness, fulfillRequest, migrate, migrateCollateral, migrateLiquidity, migrateNode, migrateStrategy, migrateToMCD, mix, multiZapOut, processExpiredLocks, processProof, processRollup, quote, rebalance, rebalancePool, rebalanceVault, redeemAndRemove, redeemRemote, redelegate, redelegateStake, robustSwapNFT, rollPosition, salvageItem, settle, settleAuction, settleExpired, settleOption, settleOrder, settlePosition, settleRequest, splitCard, transitionState, updateBuilderPreferences","ACROSS, ANKR, API3, ARBITRUM, AZTEC, BAND, BIGTIME, BINANCE, BRIGHTID, CHAINLINK, CONCENTRATOR, CONVEX, COWSWAP, DEFI_KINGDOMS, DOPEX, EMBER_SWORD, FLASHBOTS, GAINS, GALA, GODS_UNCHAINED, HEGIC, HOP, HUBBLE, ILLUVIUM, JONES, LAYERZERO, LENS, LYRA, MAGICEDEN, MAKER, MANIFOLD, MANTLE, MAPLE, MAVERICK, MONERO, MULTICHAIN, NFTX, OETH, OPENSEA, OPTIMISM, PINKSALE, POLYGONID, PORTAL, PREMIA, RAILWAY, RARIBLE, RAYDIUM, REDSTONE, RIBBON, ROCKETPOOL, ROOK, STARGATE, STAR_ATLAS, STEPN, SUDOSWAP, THETAN_ARENA, TRUEFI, UMA, WORMHOLE, YEARN, ZAPPER, ZCASH",OUTGOING,Adds verification context
+0x1698ee82,"addFile, addPinningService, addStrategy, cast, craftItem, createApp, createAsset, createCollection, createCommunity, createDeal, createEvent, createGroup, createIdentity, createLazyMint, createLineup, createLoan, createMarket, createMiner, createMinipool, createMint, createOption, createPermissionlessNode, createPod, createPool, createPortfolio, createPresale, createProfile, createProfileWithHandle, createProof, createSchema, createVault, createWrapped, deployContract, enterRace, getPool, mine, plantSeeds, publishName, publishSubgraph, register, registerBuilder, registerCoordinator, registerDelegate, registerNode, registerOperator, registerOrb, registerSHO, registerSearcher, registerSolver, registerValidator, reserveSlot, startBattle, startGame, startMatch, startMeditation, startMission, startMove, startQuest, startRace, storeData, uploadData","ARWEAVE, AXIE, AZTEC, BANCOR, BIGTIME, BINANCE, BRIGHTID, CENTRIFUGE, CIVIC, COINLIST, COWSWAP, CRYPTO_UNICORNS, DAOMAKER, DECENTRAL, DEFI_KINGDOMS, DODO, EDEN, EIGENLAYER, EMBER_SWORD, FARCASTER, FILECOIN, FLASHBOTS, FRIEND_TECH, GAMEFI, GODS_UNCHAINED, GOLDFINCH, HASHFLOW, HEGIC, ILLUVIUM, IPFS, LENS, MAGICEDEN, MANIFOLD, MANTLE, MAPLE, NFTX, PEGAXY, PINKSALE, POCKET, POLYGONID, POLYMARKET, PORTAL, PREMIA, RAILWAY, RARIBLE, RAYDIUM, ROCKETPOOL, ROOK, SORARE, SPLINTERLANDS, STADER, STARGATE, STAR_ATLAS, STEPN, SUDOSWAP, SUSHISWAP, SWELL, THETAN_ARENA, THE_GRAPH, TORNADO, TRUEFI, UMA, UMBRELLA, UNISWAP, VELODROME, WALLFAIR, WORLDCOIN, WORMHOLE, YEARN, ZED_RUN",OUTGOING,Adds file to IPFS
 0x68bf9329,addLiquidity,GMX,OUTGOING,Adds liquidity to GLP
 0x0f4f8da7,addLiquidity,SUSHISWAP,OUTGOING,Adds concentrated liquidity to pool
-0xf305d719,addLiquidityAVAX,"BISWAP, CAMELOT, CHRONOS, DYSTOPIA, MESH_SWAP, PANCAKESWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, WOMBAT, ZYBERSWAP",OUTGOING,Adds liquidity with AVAX
-0x9b3d47b4,addLiquidityBinning,"ACROSS, API3, ARBITRUM, ARWEAVE, AZTEC, BAND, BRIGHTID, CELER, CHAINLINK, DECENTRAL, EIGENLAYER, FARCASTER, FILECOIN, FRIEND_TECH, GAMEFI, HOP, INSURACE, IPFS, LAYERZERO, LENS, MAGICEDEN, MAVERICK, MONERO, NEXUS_MUTUAL, OPTIMISM, POCKET, POLKSTARTER, POLYGON, POLYGONID, PORTAL, RAILWAY, SORARE, SPIRITSWAP, STARGATE, TORNADO, UMA, UMBRELLA, UNISWAP, UNSLASHED, WOMBAT, WORLDCOIN, WORMHOLE, ZCASH, ZED_RUN",OUTGOING,Adds liquidity with binning
+0x0b4c7e4d,"addLiquidity, add_liquidity","BANCOR, CURVE",OUTGOING,Adds liquidity to pool
+0xe8e33700,"addLiquidity, provideLiquidity","ACROSS, ALLBRIDGE, BEETHOVEN, BETSWIRL, BISWAP, CAMELOT, CELER, CHRONOS, DRIFT, DYSTOPIA, HASHFLOW, HEGIC, HOP, KYBERSWAP, LEVEL, LOOPRING, LYRA, MAVERICK, MESH_SWAP, MIX_SWAP, MONERO, MULTICHAIN, MYCELIUM, NFTX, ORBITER, PANCAKESWAP, PLATYPUS, POLYMARKET, PREMIA, QUICKSWAP, RAMSES, RAYDIUM, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, TRADERJOE, UNISWAP, VELA, VELODROME, VULPEFI, WOMBAT, ZCASH, ZERION, ZYBERSWAP",OUTGOING,Adds liquidity to bridge pool
+0xf305d719,"addLiquidityAVAX, addLiquidityBNB, addLiquidityETH, addLiquidityFTM, addLiquidityMATIC, addLiquidityNative","BISWAP, CAMELOT, CHRONOS, DYSTOPIA, MESH_SWAP, PANCAKESWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, WOMBAT, ZYBERSWAP",OUTGOING,Adds liquidity with AVAX
+0x9b3d47b4,"addLiquidityBinning, boostFarms, boostRewards, call, comment, declareStorage, donate, enterTournament, fileClaim, fillRelay, generateNote, generateProof, generateZkProof, joinCommunity, joinGroup, joinPod, joinPool, joinTable, publishMessage, recast, registerTournament, requestData, requestPrice, requestRandomWords, requestRandomness, send, sendCredits, sendMessage, startMint, submitAssessment, submitBlock, submitCheckpoint, submitClaim, submitProof, submitRelay, submitReport, submitRiskAssessment, submitVAA, subscribe, whitelist","ACROSS, API3, ARBITRUM, ARWEAVE, AZTEC, BAND, BRIGHTID, CELER, CHAINLINK, DECENTRAL, EIGENLAYER, FARCASTER, FILECOIN, FRIEND_TECH, GAMEFI, HOP, INSURACE, IPFS, LAYERZERO, LENS, MAGICEDEN, MAVERICK, MONERO, NEXUS_MUTUAL, OPTIMISM, POCKET, POLKSTARTER, POLYGON, POLYGONID, PORTAL, RAILWAY, SORARE, SPIRITSWAP, STARGATE, TORNADO, UMA, UMBRELLA, UNISWAP, UNSLASHED, WOMBAT, WORLDCOIN, WORMHOLE, ZCASH, ZED_RUN",OUTGOING,Adds liquidity with binning
 0x82241490,addLiquidityFor,BANCOR,OUTGOING,Adds liquidity on behalf of another address
 0x0d582f13,addOwner,GNOSIS,OUTGOING,Adds Safe owner
-0x219f5d17,addToPosition,"GAINS, LEVEL, MYCELIUM, PANCAKESWAP, UNISWAP",OUTGOING,Increases position size
-0x0c49ccbe,adjustPosition,"CAMELOT, DRIFT, DYDX, DYSTOPIA, GAINS, KWENTA, LEVEL, LIDO, LYRA, MYCELIUM, NFTX, ORCA, PANCAKESWAP, PERPETUAL, POLYNOMIAL, RIBBON, STADER, STAKESTONE, STAKEWISE, SUSHISWAP, TELLOR, UNISWAP",BOTH,Adjusts position parameters
+0x4515cef3,"addStaticLiquidity, add_liquidity","BALANCER, KYBERSWAP",OUTGOING,Add liquidity to pool
+0x219f5d17,"addToPosition, increaseLiquidity, increasePosition","GAINS, LEVEL, MYCELIUM, PANCAKESWAP, UNISWAP",OUTGOING,Increases position size
+0x0c49ccbe,"adjustPosition, decreaseLiquidity, decreasePosition, initiateWithdraw, modifyPosition, partialClosePosition, reducePosition, removeLiquidity, requestStakingWithdraw, requestWithdrawal, requestWithdrawals, stakeLPToken, stakeLiquidity","CAMELOT, DRIFT, DYDX, DYSTOPIA, GAINS, KWENTA, LEVEL, LIDO, LYRA, MYCELIUM, NFTX, ORCA, PANCAKESWAP, PERPETUAL, POLYNOMIAL, RIBBON, STADER, STAKESTONE, STAKEWISE, SUSHISWAP, TELLOR, UNISWAP",BOTH,Adjusts position parameters
 0x91c49bf8,afterInitialize,UNISWAP,OUTGOING,Hook after pool initialization
 0x2c5c3e56,afterModifyPosition,UNISWAP,OUTGOING,Hook after position modification
 0x1c12d3b1,afterSwap,UNISWAP,OUTGOING,Hook after swap
-0x98f4b1b2,aggregateValues,"PYTH, REDSTONE, UMBRELLA",NEUTRAL,Aggregates price values
-0x32b7006d,anySwapInNative,"MULTICHAIN, OPTIMISM, POLYGON",INCOMING,Receives bridged native tokens
-0x8b9e4f93,anySwapOut,"ALLBRIDGE, ANKR, ARBITRUM, BRIGHTID, MAGICEDEN, MONERO, MULTICHAIN, OPTIMISM, ORBITER, POLYGON, POLYMARKET, PORTAL, SYMBIOSIS, SYNAPSE, WORMHOLE, ZCASH, ZEROEX",OUTGOING,Bridges tokens out
-0xb1a1a882,anySwapOutNative,"ARBITRUM, MULTICHAIN, OPTIMISM, ORBITER, POLYGON",OUTGOING,Bridges native tokens out
+0x98f4b1b2,"aggregateValues, getEmaPrice, getPrice","PYTH, REDSTONE, UMBRELLA",NEUTRAL,Aggregates price values
+0x32b7006d,"anySwapInNative, exit, withdrawERC20","MULTICHAIN, OPTIMISM, POLYGON",INCOMING,Receives bridged native tokens
+0x8b9e4f93,"anySwapOut, bridge, bridgeAssets, bridgeNFT, bridgeToMonero, bridgeToZcash, bridgeTokens, bridgeTransfer, depositERC20, depositFor, outboundTransfer, sponsor, transferTokens","ALLBRIDGE, ANKR, ARBITRUM, BRIGHTID, MAGICEDEN, MONERO, MULTICHAIN, OPTIMISM, ORBITER, POLYGON, POLYMARKET, PORTAL, SYMBIOSIS, SYNAPSE, WORMHOLE, ZCASH, ZEROEX",OUTGOING,Bridges tokens out
+0xb1a1a882,"anySwapOutNative, bridgeETH, depositETH, depositEtherFor, depositTransaction","ARBITRUM, MULTICHAIN, OPTIMISM, ORBITER, POLYGON",OUTGOING,Bridges native tokens out
 0x095ea7b3,approve,"ERC20, ERC3525, ERC721, UNISWAP",OUTGOING,Approves position transfer
 0xcae9ca51,approveAndCall,ETH_GENERIC,OUTGOING,Approves spending and calls another contract
 0x7d7a70b7,approveDelegation,AAVE,OUTGOING,Approves credit delegation for another address
 0x1086a9af,approveValue,ERC3525,OUTGOING,Approves specific value
-0x2f4f5cc5,askPool,"ANKR, BINANCE, BRIGHTID, CIVIC, DODO, FARCASTER, HOP, LAYERZERO, LENS, MAGICEDEN, MAKER, MORPHO, NEXUS_MUTUAL, ONEINCH, OPENSEA, OPTIMISM, POCKET, POLYGONID, STAKEWISE, STARGATE, SUDOSWAP, TELLOR, UMA, UNISWAP, VENUS, X2Y2, YEARN, ZERION",OUTGOING,Places ask in pool
+0x2f4f5cc5,"askPool, challengeAssessment, challengeRelay, convertToAssets, discountedSwap, disputePrice, disputeValue, fastWithdraw, instantRedeemLocal, inviteMember, like, matchBorrowers, migrateCDP, mirror, optimize, replayMessage, retryMessage, setHookFees, swapNFTForAnyNFT, tend, unjailValidator, updateGatekeeper, updateMerkleRoot, updateState, updateVenusBorrowIndex, verifyCollection","ANKR, BINANCE, BRIGHTID, CIVIC, DODO, FARCASTER, HOP, LAYERZERO, LENS, MAGICEDEN, MAKER, MORPHO, NEXUS_MUTUAL, ONEINCH, OPENSEA, OPTIMISM, POCKET, POLYGONID, STAKEWISE, STARGATE, SUDOSWAP, TELLOR, UMA, UNISWAP, VENUS, X2Y2, YEARN, ZERION",OUTGOING,Places ask in pool
 0x9f678cca,auctionStart,MAKER,OUTGOING,Starts collateral auction
 0xd65dc7a1,backUnbacked,AAVE,OUTGOING,Backs previously unbacked aTokens with collateral
 0x7f9fc72c,batch,BALANCER,OUTGOING,Executes multiple operations in a single transaction
-0x945bcec9,batchFillOrders,"ALPACA, BALANCER, BEETHOVEN, BETSWIRL, BLUR, COWSWAP, DIA, GNOSIS, LOOKSRARE, MAGICEDEN, MAVERICK, MIX_SWAP, ONEINCH, OPENSEA, PARASWAP, PLATYPUS, PYTH, RARIBLE, ROOK, VULPEFI, X2Y2, YIELD_YAK, ZAPPER, ZERION, ZEROEX",BOTH,Fills multiple orders
-0x6d914547,beefIn,"BEEFY, ZAPPER, ZERION, ZYBERSWAP",OUTGOING,Zaps tokens into vault
-0x29b3d8f1,beefInETH,"BEEFY, ZYBERSWAP",OUTGOING,Zaps ETH into vault
-0x0c2d3f2b,beefOut,"BEEFY, ZAPPER, ZERION, ZYBERSWAP",INCOMING,Zaps out of vault
-0x4c8d8528,beefOutETH,"BEEFY, ZYBERSWAP",INCOMING,Zaps vault to ETH
+0x945bcec9,"batchFillOrders, batchSettlement, batchSwap, batchTrade, bulkExecute, bulkList, bulkListing, bulkOffers, liquidateMultiple, matchOrders, mintBatch, multiSwap, multiZapIn, multibet, setBatch, swapMulti, updatePriceFeeds","ALPACA, BALANCER, BEETHOVEN, BETSWIRL, BLUR, COWSWAP, DIA, GNOSIS, LOOKSRARE, MAGICEDEN, MAVERICK, MIX_SWAP, ONEINCH, OPENSEA, PARASWAP, PLATYPUS, PYTH, RARIBLE, ROOK, VULPEFI, X2Y2, YIELD_YAK, ZAPPER, ZERION, ZEROEX",BOTH,Fills multiple orders
+0x6d914547,"beefIn, zapIn","BEEFY, ZAPPER, ZERION, ZYBERSWAP",OUTGOING,Zaps tokens into vault
+0x29b3d8f1,"beefInETH, zapInETH","BEEFY, ZYBERSWAP",OUTGOING,Zaps ETH into vault
+0x0c2d3f2b,"beefOut, zapOut","BEEFY, ZAPPER, ZERION, ZYBERSWAP",INCOMING,Zaps out of vault
+0x4c8d8528,"beefOutETH, zapOutETH","BEEFY, ZYBERSWAP",INCOMING,Zaps vault to ETH
 0x6d4f0e36,beforeInitialize,UNISWAP,OUTGOING,Hook before pool initialization
 0x3687b58c,beforeModifyPosition,UNISWAP,OUTGOING,Hook before position modification
-0x9d2f32dd,beforeSwap,"API3, ARWEAVE, BAND, CENTRIFUGE, CIVIC, COPPER_LAUNCH, DECENTRAL, DIA, FARCASTER, FLASHBOTS, FRIEND_TECH, GNOSIS, GOLDFINCH, HASHFLOW, IPFS, LAYERZERO, MAGICEDEN, MANIFOLD, OPENSEA, ORCA, POLYGONID, PYTH, RAYDIUM, REDSTONE, ROLLBIT, SORARE, STAR_ATLAS, TELLOR, TRUEFI, UMBRELLA, UNISWAP, WOMBAT, YIELD_YAK, ZERION, ZEROEX",OUTGOING,Hook before swap
+0x9d2f32dd,"beforeSwap, estimateFees, findBestPath, getBuyPrice, getCachedValues, getPrice, getPrices, getReferenceData, getValue, listPinnedFiles, placeBet, placeBid, quotePotentialSwap, rateCredit, readContract, readDataFeed, requestForQuote, requestQuote, resolveName, retrieveData, showHand, simulateBundle, swapBaseIn, track, validateBlock, validateSchema, verifyAddress, verifyCredential, verifyDocument, verifyIdentity, verifyKYC","API3, ARWEAVE, BAND, CENTRIFUGE, CIVIC, COPPER_LAUNCH, DECENTRAL, DIA, FARCASTER, FLASHBOTS, FRIEND_TECH, GNOSIS, GOLDFINCH, HASHFLOW, IPFS, LAYERZERO, MAGICEDEN, MANIFOLD, OPENSEA, ORCA, POLYGONID, PYTH, RAYDIUM, REDSTONE, ROLLBIT, SORARE, STAR_ATLAS, TELLOR, TRUEFI, UMBRELLA, UNISWAP, WOMBAT, YIELD_YAK, ZERION, ZEROEX",OUTGOING,Hook before swap
 0x223c3de5,betBear,PANCAKESWAP,OUTGOING,Places DOWN prediction bet
 0x57fb096f,betBull,PANCAKESWAP,OUTGOING,Places UP prediction bet
-0x454a2ab3,bidPool,"AXIE, DECENTRAL, DODO, DOPEX, FRIEND_TECH, GALA, HEGIC, JONES, POLYMARKET, PREMIA, ZED_RUN",OUTGOING,Places bid in pool
+0x454a2ab3,"bidPool, sellChips, sellHorse, sellItem, sellLand, sellOption, sellOutcome, sellShares","AXIE, DECENTRAL, DODO, DOPEX, FRIEND_TECH, GALA, HEGIC, JONES, POLYMARKET, PREMIA, ZED_RUN",OUTGOING,Places bid in pool
 0xa4c0ed36,bite,MAKER,BOTH,Initiates liquidation
 0xf9f92be4,blacklist,ERC20,OUTGOING,Blacklists address
-0x4b9f2d36,blockProfile,"GMX, LENS",OUTGOING,Blocks profile
+0x4b9f2d36,"blockProfile, setReferralCode","GMX, LENS",OUTGOING,Blocks profile
 0x9b3f3d20,boostStake,BEETHOVEN,OUTGOING,Boosts staking position
-0xc5ebeaec,borrow,"ALPACA, BENQI, BLUR, COMPOUND, CREAM, EULER, FRAX, GEIST, GRANARY, HUNDRED, IRONBANK, MORPHO, RADIANT, VENUS",INCOMING,Borrows assets against collateral
 0xc858f5ba,borrow,"AAVE, DYDX, TRADERJOE",INCOMING,Borrows from margin pool
 0xa415bcad,borrow,AAVE,INCOMING,Borrows an amount of asset with stable or variable rate
+0xc5ebeaec,"borrow, borrowNFT","ALPACA, BENQI, BLUR, COMPOUND, CREAM, EULER, FRAX, GEIST, GRANARY, HUNDRED, IRONBANK, MORPHO, RADIANT, VENUS",INCOMING,Borrows assets against collateral
 0x66514c97,borrowETH,AAVE,OUTGOING,Borrows ETH from the Aave protocol
 0x1a8d3acd,borrowWithPermitSignature,AAVE,INCOMING,Borrows using EIP-2612 permit
-0x8f38249c,breedAxies,"AXIE, BETSWIRL, BISWAP, BULLPERKS, COINLIST, CRYPTO_UNICORNS, DAOMAKER, DECENTRAL, DEFI_KINGDOMS, DODO, DOPEX, EMBER_SWORD, GAMEFI, GAMESTARTER, ILLUVIUM, INSURACE, JONES, NEXUS_MUTUAL, PEGAXY, PINKSALE, POLKSTARTER, RIBBON, ROLLBIT, SEEDIFY, UNSLASHED, WALLFAIR, ZED_RUN",OUTGOING,Breeds new Axie
-0x69328dec,bridgeWithdraw,"AAVE, ALPACA, ARWEAVE, AZTEC, BEEFY, COINLIST, CONCENTRATOR, CONVEX, COPPER_LAUNCH, DOPEX, DRIFT, DYDX, EIGENLAYER, EULER, FARCASTER, FILECOIN, FRAX, FRIEND_TECH, GAINS, GEIST, GOLDFINCH, GRANARY, HUBBLE, HUNDRED, INSURACE, IPFS, IRONBANK, JONES, LIDO, MAKER, MANTLE, MAPLE, MORPHO, NEXUS_MUTUAL, OETH, PERPETUAL, PICKLE, PIREX, POLYMARKET, POLYNOMIAL, RADIANT, RAILWAY, RIBBON, ROCKETPOOL, ROLLBIT, SORARE, SUDOSWAP, SYNTHETIX, THE_GRAPH, TORNADO, TRADERJOE, UNSLASHED, YEARN, YIELD_YAK, ZED_RUN",INCOMING,Withdraws from DeFi bridge
+0x8f38249c,"breedAxies, breedHorses, breedPega, breedUnicorns, buyCover, buyLand, buyOption, buyShares, captureIlluvial, participate, placeBet, purchaseLand, purchaseOption, purchasePolicy, spin, summonHero","AXIE, BETSWIRL, BISWAP, BULLPERKS, COINLIST, CRYPTO_UNICORNS, DAOMAKER, DECENTRAL, DEFI_KINGDOMS, DODO, DOPEX, EMBER_SWORD, GAMEFI, GAMESTARTER, ILLUVIUM, INSURACE, JONES, NEXUS_MUTUAL, PEGAXY, PINKSALE, POLKSTARTER, RIBBON, ROLLBIT, SEEDIFY, UNSLASHED, WALLFAIR, ZED_RUN",OUTGOING,Breeds new Axie
+0x69328dec,"bridgeWithdraw, downloadData, gaugeWithdraw, getFile, processExpiredLocksWithdraw, removeCollateral, removeMargin, removeNFT, removeStorage, retrieveData, withdraw, withdrawAave, withdrawBid, withdrawCapital, withdrawClaim, withdrawCollateral, withdrawCredits, withdrawEntry, withdrawExpiredCover, withdrawFees, withdrawInsurance, withdrawMinipool, withdrawPnl, withdrawRPL, withdrawRewards, withdrawToVault, withdrawUnsuccessful","AAVE, ALPACA, ARWEAVE, AZTEC, BEEFY, COINLIST, CONCENTRATOR, CONVEX, COPPER_LAUNCH, DOPEX, DRIFT, DYDX, EIGENLAYER, EULER, FARCASTER, FILECOIN, FRAX, FRIEND_TECH, GAINS, GEIST, GOLDFINCH, GRANARY, HUBBLE, HUNDRED, INSURACE, IPFS, IRONBANK, JONES, LIDO, MAKER, MANTLE, MAPLE, MORPHO, NEXUS_MUTUAL, OETH, PERPETUAL, PICKLE, PIREX, POLYMARKET, POLYNOMIAL, RADIANT, RAILWAY, RIBBON, ROCKETPOOL, ROLLBIT, SORARE, SUDOSWAP, SYNTHETIX, THE_GRAPH, TORNADO, TRADERJOE, UNSLASHED, YEARN, YIELD_YAK, ZED_RUN",INCOMING,Withdraws from DeFi bridge
 0x9d94c8b3,build,"COMPOUND, MAKER",OUTGOING,Build position
-0x42966c68,burn,"ERC1155, ERC20, ERC3525, ERC5192, ERC721, ZCASH",OUTGOING,Burns tokens
-0x89afcb44,burn,"ANKR, CAMELOT, DYSTOPIA, FRAX, KYBERSWAP, MESH_SWAP, ORCA, PANCAKESWAP, RARIBLE, SOLIDLY, SUSHISWAP, SYNTHETIX, UNISWAP",INCOMING,Burns sUSD for SNX
+0x89afcb44,"burn, burnAETH, burnFrax, burnLPToken, burnPosition, closePosition","ANKR, CAMELOT, DYSTOPIA, FRAX, KYBERSWAP, MESH_SWAP, ORCA, PANCAKESWAP, RARIBLE, SOLIDLY, SUSHISWAP, SYNTHETIX, UNISWAP",INCOMING,Burns sUSD for SNX
+0x42966c68,"burn, shieldedBurn, soulBurn","ERC1155, ERC20, ERC3525, ERC5192, ERC721, ZCASH",OUTGOING,Burns tokens
 0x6b20c454,burnBatch,ERC1155,OUTGOING,Burns multiple tokens
 0x79cc6790,burnFrom,ERC20,OUTGOING,Burns tokens from address
 0x3f7d753c,burnToEther,ETH_GENERIC,BOTH,Burn tokens for ETH
 0x7ebf1db5,burnToToken,ETH_GENERIC,BOTH,Burn tokens for another token
 0x0c46b72a,burnValue,ERC3525,OUTGOING,Burns token value
-0x94b576de,buy,"AAVE, AXIE, BIGTIME, CRYPTO_UNICORNS, DECENTRAL, DEFI_KINGDOMS, DYDX, EMBER_SWORD, GALA, GODS_UNCHAINED, MAGICEDEN, ONEINCH, OPENSEA, PARASWAP, PEGAXY, POLYMARKET, RARIBLE, ROLLBIT, SORARE, SPLINTERLANDS, STAR_ATLAS, STEPN, THETAN_ARENA, VULPEFI, X2Y2, ZERION",OUTGOING,Creates buy order
-0x8a8c523c,buybackFrax,"BANCOR, DODO, FRAX",OUTGOING,Buys back FRAX from market
+0x94b576de,"buy, buyAsset, buyAxie, buyCard, buyChips, buyCredits, buyHero, buyItem, buyNFT, buyOutcome, buyPega, buyShoe, buyUnicorn, createLimitOrder, createOffer, limitOrder, makeOffer, placeLimitOrder, placeTakeProfitOrder, purchaseCards, purchaseItem, repayWithPermit","AAVE, AXIE, BIGTIME, CRYPTO_UNICORNS, DECENTRAL, DEFI_KINGDOMS, DYDX, EMBER_SWORD, GALA, GODS_UNCHAINED, MAGICEDEN, ONEINCH, OPENSEA, PARASWAP, PEGAXY, POLYMARKET, RARIBLE, ROLLBIT, SORARE, SPLINTERLANDS, STAR_ATLAS, STEPN, THETAN_ARENA, VULPEFI, X2Y2, ZERION",OUTGOING,Creates buy order
+0x8a8c523c,"buybackFrax, createVendingMachine, enableTrading","BANCOR, DODO, FRAX",OUTGOING,Buys back FRAX from market
 0x2c70b603,buyFromVending,DODO,OUTGOING,Buys from vending machine
 0x3aa6b597,buyParticipationTokens,AUGUR,OUTGOING,Purchases participation tokens for fee window
-0x6945b123,buyShares,"FRIEND_TECH, HASHFLOW",OUTGOING,Purchases user shares
+0x6945b123,"buyShares, fillQuote","FRIEND_TECH, HASHFLOW",OUTGOING,Purchases user shares
 0x88146cc4,buyTickets,PANCAKESWAP,OUTGOING,Purchases lottery tickets
 0x3c5269a4,calculateMedian,REDSTONE,NEUTRAL,Calculates median price
-0x2e1a7d4d,cancel,"ACROSS, ALLBRIDGE, ALPACA, ANKR, API3, ARBITRUM, AXIE, BALANCER, BANCOR, BAND, BEEFY, BEETHOVEN, BENQI, BETSWIRL, BIGTIME, BINANCE, BLUR, BRIGHTID, BULLPERKS, CAMELOT, CELER, CENTRIFUGE, CHAINLINK, CHRONOS, CIVIC, COWSWAP, CRYPTO_UNICORNS, CURVE, DECENTRAL, DEFI_KINGDOMS, DIA, DOPEX, DRIFT, DYDX, DYSTOPIA, EDEN, EIGENLAYER, EMBER_SWORD, ERC4626, FARCASTER, FILECOIN, FLASHBOTS, FRAX, GAINS, GALA, GAMEFI, GAMESTARTER, GEIST, GMX, GNOSIS, GODS_UNCHAINED, GOLDFINCH, GRANARY, HASHFLOW, HEGIC, HOP, HUBBLE, HUNDRED, ILLUVIUM, INSURACE, IPFS, JONES, KWENTA, LENS, LEVEL, LIDO, LOOKSRARE, LOOPRING, LYRA, MAGICEDEN, MAKER, MANIFOLD, MANTLE, MAPLE, MAVERICK, MESH_SWAP, MIX_SWAP, MULTICHAIN, MYCELIUM, NEXUS_MUTUAL, NFTX, ONEINCH, OPENSEA, OPTIMISM, ORBITER, PARASWAP, PEGAXY, PERPETUAL, PICKLE, PINKSALE, PLATYPUS, POCKET, POLYGON, POLYGONID, POLYNOMIAL, PREMIA, QUICKSWAP, RADIANT, RAMSES, RARIBLE, RAYDIUM, REDACTED, RIBBON, ROLLBIT, ROOK, SEEDIFY, SOLIDLY, SORARE, SPIRITSWAP, SPLINTERLANDS, SPOOKYSWAP, STADER, STAKESTONE, STAKEWISE, STARGATE, STAR_ATLAS, STEPN, SUSHISWAP, SWELL, SYMBIOSIS, SYNAPSE, SYNTHETIX, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRADERJOE, TRUEFI, UMBRELLA, UNSLASHED, VELA, VELODROME, VULPEFI, WALLFAIR, WOMBAT, WORLDCOIN, X2Y2, YEARN, YIELD_YAK, ZAPPER, ZED_RUN, ZEROEX, ZYBERSWAP",OUTGOING,Cancels retryable ticket
-0x5f7b8feb,cancelAction,"BRIGHTID, FARCASTER, FLASHBOTS, LAYERZERO, LENS, MAGICEDEN, MANIFOLD, POLYGONID, WORLDCOIN, ZEROEX",OUTGOING,Cancels publication action
+0x2e1a7d4d,"cancel, cancelBet, cancelBundle, cancelCover, cancelLazyMint, cancelLimitOrder, cancelListing, cancelOffer, cancelOrder, cancelPolicy, cancelPool, cancelReservation, cancelUpkeep, deactivateOrb, deactivateValidator, deleteIdentity, deprecateSubgraph, deregisterOperator, deregisterValidator, endGame, exitValidator, fold, free, freeGem, leavePod, leavePool, leaveTable, removeConnection, removeDelegate, removePinningService, removeStrategy, revokeAccess, revokeIdentity, revokeProof, terminateDeal, undelegate, undelegateFromOperator, unfollow, unlock, unlockSpirit, unlockTokens, unlockWOM, unpinFile, unsignal, unstake, unstakeACX, unstakeAPI3, unstakeATLAS, unstakeAXS, unstakeApp, unstakeBETS, unstakeBLP, unstakeBOO, unstakeBTRFLY, unstakeBlur, unstakeCELR, unstakeCFG, unstakeCHR, unstakeDIA, unstakeDPX, unstakeDRIFT, unstakeDYDX, unstakeDYST, unstakeEDEN, unstakeFxs, unstakeGAFI, unstakeGALA, unstakeGAME, unstakeGEIST, unstakeGMT, unstakeGNS, unstakeGODS, unstakeGRAIN, unstakeHBL, unstakeHEGIC, unstakeICE, unstakeILV, unstakeINSUR, unstakeJONES, unstakeKWENTA, unstakeLOOKS, unstakeLP, unstakeLPToken, unstakeLPTokens, unstakeLRC, unstakeLVL, unstakeLYRA, unstakeMYC, unstakeMaple, unstakeNFT, unstakeNXM, unstakeNode, unstakePERP, unstakePGX, unstakePOLIS, unstakePOLY, unstakePREMIA, unstakeQUICK, unstakeRAM, unstakeRAY, unstakeRBN, unstakeRBW, unstakeRDNT, unstakeRLB, unstakeROOK, unstakeSPS, unstakeSorare, unstakeTHG, unstakeTRU, unstakeTokens, unstakeUMB, unstakeVELA, unstakeWETH, unstakeWFAIR, unstakeWLD, unstakeX2Y2, unstakeYAK, unsubscribe, withdraw, withdrawCollateral, withdrawETH, withdrawLocked, withdrawStake","ACROSS, ALLBRIDGE, ALPACA, ANKR, API3, ARBITRUM, AXIE, BALANCER, BANCOR, BAND, BEEFY, BEETHOVEN, BENQI, BETSWIRL, BIGTIME, BINANCE, BLUR, BRIGHTID, BULLPERKS, CAMELOT, CELER, CENTRIFUGE, CHAINLINK, CHRONOS, CIVIC, COWSWAP, CRYPTO_UNICORNS, CURVE, DECENTRAL, DEFI_KINGDOMS, DIA, DOPEX, DRIFT, DYDX, DYSTOPIA, EDEN, EIGENLAYER, EMBER_SWORD, ERC4626, FARCASTER, FILECOIN, FLASHBOTS, FRAX, GAINS, GALA, GAMEFI, GAMESTARTER, GEIST, GMX, GNOSIS, GODS_UNCHAINED, GOLDFINCH, GRANARY, HASHFLOW, HEGIC, HOP, HUBBLE, HUNDRED, ILLUVIUM, INSURACE, IPFS, JONES, KWENTA, LENS, LEVEL, LIDO, LOOKSRARE, LOOPRING, LYRA, MAGICEDEN, MAKER, MANIFOLD, MANTLE, MAPLE, MAVERICK, MESH_SWAP, MIX_SWAP, MULTICHAIN, MYCELIUM, NEXUS_MUTUAL, NFTX, ONEINCH, OPENSEA, OPTIMISM, ORBITER, PARASWAP, PEGAXY, PERPETUAL, PICKLE, PINKSALE, PLATYPUS, POCKET, POLYGON, POLYGONID, POLYNOMIAL, PREMIA, QUICKSWAP, RADIANT, RAMSES, RARIBLE, RAYDIUM, REDACTED, RIBBON, ROLLBIT, ROOK, SEEDIFY, SOLIDLY, SORARE, SPIRITSWAP, SPLINTERLANDS, SPOOKYSWAP, STADER, STAKESTONE, STAKEWISE, STARGATE, STAR_ATLAS, STEPN, SUSHISWAP, SWELL, SYMBIOSIS, SYNAPSE, SYNTHETIX, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRADERJOE, TRUEFI, UMBRELLA, UNSLASHED, VELA, VELODROME, VULPEFI, WALLFAIR, WOMBAT, WORLDCOIN, X2Y2, YEARN, YIELD_YAK, ZAPPER, ZED_RUN, ZEROEX, ZYBERSWAP",OUTGOING,Cancels retryable ticket
+0x5f7b8feb,"cancelAction, cancelRfqOrder, disableModuleForProfile, disableProtection, disableSandwich, enableReferenceModule, pauseMint, removeContext, removeRelayer, removeVerification, revokeClaim, revokeCredential, unlike","BRIGHTID, FARCASTER, FLASHBOTS, LAYERZERO, LENS, MAGICEDEN, MANIFOLD, POLYGONID, WORLDCOIN, ZEROEX",OUTGOING,Cancels publication action
 0x96b5a755,cancelAuction,"GNOSIS, MAGICEDEN, OPENSEA",OUTGOING,Cancels active auction
 0x56781388,castVote,COMPOUND,OUTGOING,Votes on proposal
 0x694e80c3,changeThreshold,GNOSIS,OUTGOING,Changes Safe threshold
-0x6e04ff0d,checkUpkeep,CHAINLINK,NEUTRAL,Checks if upkeep needed
-0x4e71d92d,claim,"ACROSS, ALLBRIDGE, ANKR, ARWEAVE, AXIE, BETSWIRL, BIGTIME, BLUR, BULLPERKS, CENTRIFUGE, COINLIST, COPPER_LAUNCH, COWSWAP, CRYPTO_UNICORNS, CURVE, DAOMAKER, DECENTRAL, DEFI_KINGDOMS, DRIFT, DYSTOPIA, EDEN, EMBER_SWORD, ETH_GENERIC, FILECOIN, FLASHBOTS, GALA, GAMEFI, GAMESTARTER, GEIST, GODS_UNCHAINED, GOLDFINCH, HUBBLE, ILLUVIUM, INSURACE, KWENTA, LENS, LIDO, LOOKSRARE, MAGICEDEN, MANIFOLD, MORPHO, NEXUS_MUTUAL, ONEINCH, OPENSEA, PANCAKESWAP, PEGAXY, PERPETUAL, PINKSALE, PLATYPUS, POCKET, POLKSTARTER, POLYMARKET, POLYNOMIAL, RAMSES, RARIBLE, REDACTED, ROCKETPOOL, ROLLBIT, ROOK, SEEDIFY, SORARE, SPIRITSWAP, SPLINTERLANDS, STADER, STAKESTONE, STAKEWISE, STAR_ATLAS, STEPN, SYMBIOSIS, TELLOR, THETAN_ARENA, THE_GRAPH, UMA, UNSLASHED, VELODROME, VENUS, WALLFAIR, ZED_RUN",INCOMING,Claims bridged tokens
-0xe6f1daf2,claim_rewards,"AAVE, ACROSS, ANKR, API3, AXIE, BANCOR, BAND, BEEFY, BEETHOVEN, BETSWIRL, BINANCE, BLUR, BULLPERKS, CELER, CENTRIFUGE, CHRONOS, CIVIC, CONVEX, COWSWAP, CRYPTO_UNICORNS, CURVE, DECENTRAL, DIA, DOPEX, DRIFT, DYDX, DYSTOPIA, EDEN, EIGENLAYER, EMBER_SWORD, FRAX, GAINS, GALA, GAMEFI, GAMESTARTER, GEIST, GODS_UNCHAINED, GOLDFINCH, GRANARY, HEGIC, HOP, HUBBLE, HUNDRED, ILLUVIUM, INSURACE, JONES, KWENTA, LEVEL, LIDO, LOOKSRARE, LOOPRING, LYRA, MAGICEDEN, MANTLE, MAPLE, MAVERICK, MORPHO, MYCELIUM, NEXUS_MUTUAL, NFTX, OETH, PEGAXY, PERPETUAL, PICKLE, PIREX, POLYGON, POLYNOMIAL, PREMIA, PYTH, QUICKSWAP, RADIANT, RAMSES, RAYDIUM, REDACTED, RIBBON, ROCKETPOOL, ROLLBIT, ROOK, SPLINTERLANDS, SPOOKYSWAP, STADER, STAKESTONE, STAKEWISE, STARGATE, STEPN, SWELL, SYMBIOSIS, SYNTHETIX, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRADERJOE, TRUEFI, UMA, UMBRELLA, VELA, VENUS, WOMBAT, WORLDCOIN, X2Y2, YEARN, YIELD_YAK, ZAPPER, ZED_RUN, ZEROEX",INCOMING,Claims gauge rewards
+0x6e04ff0d,"checkUpkeep, registerUpkeep",CHAINLINK,NEUTRAL,Checks if upkeep needed
+0x4e71d92d,"claim, claimAll, claimAssessmentReward, claimAssessmentRewards, claimAuction, claimBounty, claimBribe, claimBribes, claimBridged, claimBridgedNFT, claimBuilderRewards, claimCard, claimCards, claimDefaultedNFT, claimETH, claimGST, claimIndexingRewards, claimInsurance, claimInvestmentRewards, claimLiquidation, claimMeditationRewards, claimMerkleRewards, claimMorpho, claimNodeRewards, claimPrize, claimRPLRewards, claimRaceRewards, claimRelayRewards, claimRepayment, claimRevenue, claimReward, claimRewards, claimRoyalties, claimSLP, claimSearcherRewards, claimSlotRewards, claimStakingRewards, claimTHC, claimTip, claimTournamentRewards, claimTraderSurplus, claimTrading, claimVIS, claimValidatorRewards, claimVenusAsCollateral, claimWinnings, claimWithdrawal, claimWithdrawals, collectResources, collectRewards, redeemClaim, settle","ACROSS, ALLBRIDGE, ANKR, ARWEAVE, AXIE, BETSWIRL, BIGTIME, BLUR, BULLPERKS, CENTRIFUGE, COINLIST, COPPER_LAUNCH, COWSWAP, CRYPTO_UNICORNS, CURVE, DAOMAKER, DECENTRAL, DEFI_KINGDOMS, DRIFT, DYSTOPIA, EDEN, EMBER_SWORD, ETH_GENERIC, FILECOIN, FLASHBOTS, GALA, GAMEFI, GAMESTARTER, GEIST, GODS_UNCHAINED, GOLDFINCH, HUBBLE, ILLUVIUM, INSURACE, KWENTA, LENS, LIDO, LOOKSRARE, MAGICEDEN, MANIFOLD, MORPHO, NEXUS_MUTUAL, ONEINCH, OPENSEA, PANCAKESWAP, PEGAXY, PERPETUAL, PINKSALE, PLATYPUS, POCKET, POLKSTARTER, POLYMARKET, POLYNOMIAL, RAMSES, RARIBLE, REDACTED, ROCKETPOOL, ROLLBIT, ROOK, SEEDIFY, SORARE, SPIRITSWAP, SPLINTERLANDS, STADER, STAKESTONE, STAKEWISE, STAR_ATLAS, STEPN, SYMBIOSIS, TELLOR, THETAN_ARENA, THE_GRAPH, UMA, UNSLASHED, VELODROME, VENUS, WALLFAIR, ZED_RUN",INCOMING,Claims bridged tokens
 0x33039b29,claimableRewards,CONVEX,NEUTRAL,Checks claimable rewards
 0x9a756e44,claimAuction,GNOSIS,INCOMING,Claims auction proceeds
-0x8f31c7f9,claimBalance,ETH_GENERIC,INCOMING,Claim available balance
+0x8f31c7f9,"claimBalance, mintWithToken, stakeRewards",ETH_GENERIC,INCOMING,Claim available balance
+0xe6f1daf2,"claimBankrollRewards, claimBeets, claimDelegationRewards, claimHND, claimNodeRewards, claimPoolRewards, claimReward, claimRewards, claimSolverSurplus, claimStaking, claimStakingRewards, claimVenus, claimYield, claim_rewards, withdrawDelegatorRewards","AAVE, ACROSS, ANKR, API3, AXIE, BANCOR, BAND, BEEFY, BEETHOVEN, BETSWIRL, BINANCE, BLUR, BULLPERKS, CELER, CENTRIFUGE, CHRONOS, CIVIC, CONVEX, COWSWAP, CRYPTO_UNICORNS, CURVE, DECENTRAL, DIA, DOPEX, DRIFT, DYDX, DYSTOPIA, EDEN, EIGENLAYER, EMBER_SWORD, FRAX, GAINS, GALA, GAMEFI, GAMESTARTER, GEIST, GODS_UNCHAINED, GOLDFINCH, GRANARY, HEGIC, HOP, HUBBLE, HUNDRED, ILLUVIUM, INSURACE, JONES, KWENTA, LEVEL, LIDO, LOOKSRARE, LOOPRING, LYRA, MAGICEDEN, MANTLE, MAPLE, MAVERICK, MORPHO, MYCELIUM, NEXUS_MUTUAL, NFTX, OETH, PEGAXY, PERPETUAL, PICKLE, PIREX, POLYGON, POLYNOMIAL, PREMIA, PYTH, QUICKSWAP, RADIANT, RAMSES, RAYDIUM, REDACTED, RIBBON, ROCKETPOOL, ROLLBIT, ROOK, SPLINTERLANDS, SPOOKYSWAP, STADER, STAKESTONE, STAKEWISE, STARGATE, STEPN, SWELL, SYMBIOSIS, SYNTHETIX, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRADERJOE, TRUEFI, UMA, UMBRELLA, VELA, VENUS, WOMBAT, WORLDCOIN, X2Y2, YEARN, YIELD_YAK, ZAPPER, ZED_RUN, ZEROEX",INCOMING,Claims gauge rewards
 0x1c8ead12,claimComp,COMPOUND,INCOMING,Claims COMP tokens from the Compound protocol
-0xd294f093,claimCoordinatorFees,"ACROSS, ALLBRIDGE, CELER, DRIFT, FRIEND_TECH, GMX, HEGIC, LEVEL, MONERO, MYCELIUM, ORBITER, POLYMARKET, PREMIA, RAILWAY, ROOK, SYMBIOSIS, VELA, ZCASH",INCOMING,Claims coordinator fees
+0xd294f093,"claimCoordinatorFees, claimFees, claimFunding, harvestFees","ACROSS, ALLBRIDGE, CELER, DRIFT, FRIEND_TECH, GMX, HEGIC, LEVEL, MONERO, MYCELIUM, ORBITER, POLYMARKET, PREMIA, RAILWAY, ROOK, SYMBIOSIS, VELA, ZCASH",INCOMING,Claims coordinator fees
 0x6ab150b4,claimDisputeWindowProceeds,AUGUR,INCOMING,Claims proceeds from dispute window participation
 0x9af6b617,claimDistributions,ETH_GENERIC,INCOMING,Claim token distributions
-0x89f9aab7,claimDistributions,"AUGUR, BANCOR, ETH_GENERIC, HASHFLOW",INCOMING,Claims tokens from multiple distributions
+0x89f9aab7,"claimDistributions, claimMarketsProceeds, completeXConversion, provideQuote","AUGUR, BANCOR, ETH_GENERIC, HASHFLOW",INCOMING,Claims tokens from multiple distributions
 0x84e9fe26,claimEsGmx,GMX,INCOMING,Claims esGMX rewards
 0x2f6c493c,claimFor,ETH_GENERIC,INCOMING,Claim rewards for another address
 0xe7f892a4,claimParticipationTokens,AUGUR,INCOMING,Claims REP from participation token redemption
@@ -94,21 +94,21 @@ method_id,function,protocol,direction,description
 0x5e91d8ec,claimReferralRewards,GMX,INCOMING,Claims referral rewards
 0x372500ab,claimRewards,BALANCER,INCOMING,Claims mining rewards
 0xe09c3b93,claimRewards,BENQI,INCOMING,Claims staking rewards
-0x9a5c32e7,claimRewardsAndStake,"AAVE, VENUS",BOTH,Claims and automatically stakes rewards
-0x6d34b96e,claimRewardsOnBehalf,"AAVE, VENUS",OUTGOING,Claims rewards on behalf of a user
+0x9a5c32e7,"claimRewardsAndStake, distributeSupplierVenus","AAVE, VENUS",BOTH,Claims and automatically stakes rewards
+0x6d34b96e,"claimRewardsOnBehalf, distributeBorrowerVenus","AAVE, VENUS",OUTGOING,Claims rewards on behalf of a user
 0x87788782,claimStakerReward,ETH_GENERIC,INCOMING,Claims staking rewards
 0x7c3b74a1,claimStakerReward,ETH_GENERIC,INCOMING,Claim staking rewards
 0x6f4a2cd0,claimTickets,PANCAKESWAP,INCOMING,Claims lottery winnings
 0xdf8de3e7,claimTokens,ETH_GENERIC,INCOMING,Claims tokens from a distribution
-0x8f2c97d9,claimTradingProceeds,AUGUR,INCOMING,Claims proceeds from completed markets
+0x8f2c97d9,"claimTradingProceeds, claimWinningsTradingProceeds",AUGUR,INCOMING,Claims proceeds from completed markets
 0x84bd6d29,clipperSwap,ONEINCH,BOTH,Executes Clipper swap
-0x82a08fcd,closePosition,"DRIFT, DYDX, GAINS, GMX, HUBBLE, KWENTA, LEVEL, LYRA, MYCELIUM, PERPETUAL, POLYNOMIAL, ROLLBIT",INCOMING,Closes existing position
-0x4f1eb3d8,collect,"KYBERSWAP, LOOPRING, ORCA, PANCAKESWAP, UNISWAP, YEARN",INCOMING,Collects earned fees
-0x52a9c8e6,collect_fees,"DRIFT, DYDX, HASHFLOW, SUSHISWAP, UNISWAP",INCOMING,Collects position fees
-0x4641257d,collectResources,"ALLBRIDGE, ALPACA, AXIE, BISWAP, CAMELOT, CONCENTRATOR, CRYPTO_UNICORNS, DEFI_KINGDOMS, EMBER_SWORD, ILLUVIUM, JONES, KYBERSWAP, MESH_SWAP, MIX_SWAP, OETH, ORCA, PICKLE, PIREX, PLATYPUS, QUICKSWAP, RAYDIUM, REDACTED, SPIRITSWAP, SPOOKYSWAP, SYNAPSE, TRUEFI, VULPEFI, WALLFAIR, WOMBAT, YEARN, YIELD_YAK, ZAPPER",INCOMING,Collects land resources
-0x15373e3d,commitVote,"ALPACA, ANKR, API3, BALANCER, BANCOR, BAND, BINANCE, BULLPERKS, CENTRIFUGE, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, NEXUS_MUTUAL, OETH, PIREX, POCKET, PREMIA, RADIANT, RAILWAY, RAMSES, REDACTED, SOLIDLY, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, VELODROME, WALLFAIR, YEARN",OUTGOING,Commits vote hash
-0x4c4a82f8,completeNFTTransfer,"PARASWAP, PORTAL, WORMHOLE",INCOMING,Completes NFT transfer
-0xf69e2046,compound,"ACROSS, ALLBRIDGE, ALPACA, BEETHOVEN, BETSWIRL, CAMELOT, CHRONOS, CONCENTRATOR, DECENTRAL, DOPEX, FRIEND_TECH, GAINS, GMX, GODS_UNCHAINED, HOP, INSURACE, JONES, KWENTA, KYBERSWAP, LEVEL, LOOKSRARE, LYRA, MAVERICK, MESH_SWAP, MULTICHAIN, MYCELIUM, ORCA, PERPETUAL, PIREX, PLATYPUS, QUICKSWAP, RAMSES, REDACTED, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKESTONE, STAKEWISE, STARGATE, SWELL, SYMBIOSIS, TRADERJOE, UNSLASHED, VULPEFI, WOMBAT, YIELD_YAK, ZAPPER, ZYBERSWAP",OUTGOING,Compounds farming rewards
+0x82a08fcd,"closePosition, decreasePosition","DRIFT, DYDX, GAINS, GMX, HUBBLE, KWENTA, LEVEL, LYRA, MYCELIUM, PERPETUAL, POLYNOMIAL, ROLLBIT",INCOMING,Closes existing position
+0x4f1eb3d8,"collect, collectFees, earn, forceWithdraw","KYBERSWAP, LOOPRING, ORCA, PANCAKESWAP, UNISWAP, YEARN",INCOMING,Collects earned fees
+0x52a9c8e6,"collectFees, collect_fees, limitOrder, placeStopOrder, placeTriggerOrder","DRIFT, DYDX, HASHFLOW, SUSHISWAP, UNISWAP",INCOMING,Collects position fees
+0x4641257d,"collectResources, harvest, harvestCrops, harvestDD, harvestFromLand, harvestPlants, harvestResources, harvestRewards, harvestYield","ALLBRIDGE, ALPACA, AXIE, BISWAP, CAMELOT, CONCENTRATOR, CRYPTO_UNICORNS, DEFI_KINGDOMS, EMBER_SWORD, ILLUVIUM, JONES, KYBERSWAP, MESH_SWAP, MIX_SWAP, OETH, ORCA, PICKLE, PIREX, PLATYPUS, QUICKSWAP, RAYDIUM, REDACTED, SPIRITSWAP, SPOOKYSWAP, SYNAPSE, TRUEFI, VULPEFI, WALLFAIR, WOMBAT, YEARN, YIELD_YAK, ZAPPER",INCOMING,Collects land resources
+0x15373e3d,"commitVote, vote, voteBribe, voteBribes","ALPACA, ANKR, API3, BALANCER, BANCOR, BAND, BINANCE, BULLPERKS, CENTRIFUGE, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, NEXUS_MUTUAL, OETH, PIREX, POCKET, PREMIA, RADIANT, RAILWAY, RAMSES, REDACTED, SOLIDLY, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, VELODROME, WALLFAIR, YEARN",OUTGOING,Commits vote hash
+0x4c4a82f8,"completeNFTTransfer, redeemNFT, wrapNFTs","PARASWAP, PORTAL, WORMHOLE",INCOMING,Completes NFT transfer
+0xf69e2046,"compound, compoundFarm, compoundReward, compoundRewards, compoundStaking, reinvest, reinvestFees, reinvestRewards","ACROSS, ALLBRIDGE, ALPACA, BEETHOVEN, BETSWIRL, CAMELOT, CHRONOS, CONCENTRATOR, DECENTRAL, DOPEX, FRIEND_TECH, GAINS, GMX, GODS_UNCHAINED, HOP, INSURACE, JONES, KWENTA, KYBERSWAP, LEVEL, LOOKSRARE, LYRA, MAVERICK, MESH_SWAP, MULTICHAIN, MYCELIUM, ORCA, PERPETUAL, PIREX, PLATYPUS, QUICKSWAP, RAMSES, REDACTED, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKESTONE, STAKEWISE, STARGATE, SWELL, SYMBIOSIS, TRADERJOE, UNSLASHED, VULPEFI, WOMBAT, YIELD_YAK, ZAPPER, ZYBERSWAP",OUTGOING,Compounds farming rewards
 0x4c2f83c2,contributeToTentative,AUGUR,OUTGOING,Contributes REP to a tentative outcome
 0x0f5a5466,convert,BANCOR,BOTH,Converts between tokens directly
 0xb77d239b,convertByPath,BANCOR,BOTH,Converts tokens through conversion path
@@ -117,33 +117,33 @@ method_id,function,protocol,direction,description
 0x7fb52f1a,cooldown,AAVE,OUTGOING,Activates the cooldown period
 0x65fc3873,create_lock,"CURVE, ETH_GENERIC",OUTGOING,Creates a new lock for tokens
 0x13ead562,createAndInitializePoolIfNecessary,"PANCAKESWAP, UNISWAP",OUTGOING,Creates and initializes new pool if needed
-0x3b11b670,createAuction,"COPPER_LAUNCH, MAGICEDEN, MAKER, MANIFOLD, OPENSEA, SORARE, STAR_ATLAS",OUTGOING,Creates card auction
+0x3b11b670,"createAuction, openVault, startAuction","COPPER_LAUNCH, MAGICEDEN, MAKER, MANIFOLD, OPENSEA, SORARE, STAR_ATLAS",OUTGOING,Creates card auction
 0x1c3b35f2,createCategoricalMarket,AUGUR,OUTGOING,Creates a new categorical prediction market
-0x6c1aaf13,createListing,"AXIE, BIGTIME, COWSWAP, CRYPTO_UNICORNS, DEFI_KINGDOMS, DYDX, EMBER_SWORD, GODS_UNCHAINED, KWENTA, LOOKSRARE, MAGICEDEN, MANIFOLD, OPENSEA, PEGAXY, RARIBLE, ROOK, SORARE, SPLINTERLANDS, STAR_ATLAS, STEPN, THETAN_ARENA, VELA, X2Y2",OUTGOING,Creates NFT listing
+0x6c1aaf13,"createListing, createOrder, list, listAsset, listAxie, listCard, listHero, listItem, listNFT, listPega, listShoe, listUnicorn, placeOrder, sell, submitOrder","AXIE, BIGTIME, COWSWAP, CRYPTO_UNICORNS, DEFI_KINGDOMS, DYDX, EMBER_SWORD, GODS_UNCHAINED, KWENTA, LOOKSRARE, MAGICEDEN, MANIFOLD, OPENSEA, PEGAXY, RARIBLE, ROOK, SORARE, SPLINTERLANDS, STAR_ATLAS, STEPN, THETAN_ARENA, VELA, X2Y2",OUTGOING,Creates NFT listing
 0x79474b24,createMarket,AUGUR,OUTGOING,Creates a new prediction market
 0xf8572260,createProposal,BALANCER,OUTGOING,Creates governance proposal
-0xda95691a,createProposal,"ALPACA, ANKR, API3, BANCOR, BAND, BENQI, BINANCE, BULLPERKS, CENTRIFUGE, COMPOUND, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, NEXUS_MUTUAL, OETH, PIREX, POCKET, PREMIA, PYTH, RADIANT, RAILWAY, REDACTED, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, WALLFAIR, WORMHOLE, YEARN",OUTGOING,Creates governance proposal
+0xda95691a,"createProposal, propose, proposeBribe, proposePurchase, proposeUpdate, proposeVote, submitProposal","ALPACA, ANKR, API3, BANCOR, BAND, BENQI, BINANCE, BULLPERKS, CENTRIFUGE, COMPOUND, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, NEXUS_MUTUAL, OETH, PIREX, POCKET, PREMIA, PYTH, RADIANT, RAILWAY, REDACTED, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, WALLFAIR, WORMHOLE, YEARN",OUTGOING,Creates governance proposal
 0x5b5e139f,createProxy,GNOSIS,OUTGOING,Creates a new proxy contract
 0x679b6ded,createRetryableTicket,ARBITRUM,OUTGOING,Creates retryable ticket
 0x0ec78d9e,createSafe,GNOSIS,OUTGOING,Creates new Safe
 0x4336a37d,createScalarMarket,AUGUR,OUTGOING,Creates a new scalar prediction market
-0x88316456,createWrappedNFT,"CAMELOT, KYBERSWAP, ORCA, PANCAKESWAP, SUSHISWAP, UNISWAP, WORMHOLE",OUTGOING,Creates wrapped NFT version
+0x88316456,"createWrappedNFT, mint, mintPosition, openPosition","CAMELOT, KYBERSWAP, ORCA, PANCAKESWAP, SUSHISWAP, UNISWAP, WORMHOLE",OUTGOING,Creates wrapped NFT version
 0x2c644f32,createYesNoMarket,AUGUR,OUTGOING,Creates a new yes/no prediction market
 0xc959c42b,deal,MAKER,INCOMING,Settles auction
 0xa457c2d7,decreaseAllowance,ERC20,OUTGOING,Decreases token allowance
-0x5c19a95c,delegate,"AAVE, BAND, BINANCE, CENTRIFUGE, DYDX, EIGENLAYER, FARCASTER, FRAX, GNOSIS, LENS, LIDO, MAKER, MANTLE, NEXUS_MUTUAL, STAKESTONE, STAKEWISE, THE_GRAPH, TRUEFI, UNSLASHED",OUTGOING,Delegates voting power
+0x5c19a95c,"delegate, delegateStake, delegateToOperator, delegateVotes, follow","AAVE, BAND, BINANCE, CENTRIFUGE, DYDX, EIGENLAYER, FARCASTER, FRAX, GNOSIS, LENS, LIDO, MAKER, MANTLE, NEXUS_MUTUAL, STAKESTONE, STAKEWISE, THE_GRAPH, TRUEFI, UNSLASHED",OUTGOING,Delegates voting power
 0x0185f782,delegateByType,AAVE,OUTGOING,Delegates voting power of a specific type
 0x7f4f3e52,delegateWithSig,AAVE,OUTGOING,Delegates with signature (gasless)
 0x8e8b8e93,deleteDefaultRoyalty,"ERC1155, ERC2981, ERC721",OUTGOING,Removes default royalty
 0x5ff3a382,dent,MAKER,OUTGOING,Places reverse bid
-0x9d2c1b1f,deploy_metapool,"CURVE, DYSTOPIA",OUTGOING,Deploys new metapool
+0x9d2c1b1f,"deploy_metapool, getBribesForEpoch","CURVE, DYSTOPIA",OUTGOING,Deploys new metapool
 0x6623fc46,deploy_pool,CURVE,OUTGOING,Deploys new pool
-0x6e553f65,deposit,"BEETHOVEN, ERC4626, EULER, NFTX, ORCA, RARIBLE",OUTGOING,Deposits assets
-0xe2bbb158,deposit,"BISWAP, KYBERSWAP, ORCA, PANCAKESWAP, QUICKSWAP, RAYDIUM, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, WOMBAT, ZAPPER",OUTGOING,Stakes LP tokens in farm
-0xe8eda9df,deposit,AAVE,OUTGOING,Deposits tokens into the lending pool
 0xb6b55f25,deposit,"ACROSS, CURVE, LOOPRING, PLATYPUS, VULPEFI",OUTGOING,Deposits tokens for bridging
+0x6e553f65,"deposit, depositDD, depositLP, mintAndSell, mintAndStake","BEETHOVEN, ERC4626, EULER, NFTX, ORCA, RARIBLE",OUTGOING,Deposits assets
+0xe8eda9df,"deposit, depositV3",AAVE,OUTGOING,Deposits tokens into the lending pool
+0xe2bbb158,"deposit, farmDeposit","BISWAP, KYBERSWAP, ORCA, PANCAKESWAP, QUICKSWAP, RAYDIUM, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, WOMBAT, ZAPPER",OUTGOING,Stakes LP tokens in farm
 0x3f6bc68b,deposit_reward_token,CURVE,OUTGOING,Deposits reward token
-0x3ccfd60b,depositAll,"BEEFY, CONVEX, PICKLE",OUTGOING,Deposits all available assets
+0x3ccfd60b,"depositAll, stakeAll","BEEFY, CONVEX, PICKLE",OUTGOING,Deposits all available assets
 0x4c505d91,depositBase,DODO,OUTGOING,Deposits base token
 0x127d1a8e,depositCAKE,PANCAKESWAP,OUTGOING,Deposits CAKE for fixed staking
 0x2929abe7,depositFor,BANCOR,OUTGOING,Deposits tokens for another address
@@ -152,7 +152,7 @@ method_id,function,protocol,direction,description
 0x5a45c6fc,depositQuote,DODO,OUTGOING,Deposits quote token
 0x234c0aa9,depositSavings,ETH_GENERIC,OUTGOING,Deposit into savings protocol
 0x34f4fd51,depositSavings,ETH_GENERIC,OUTGOING,Deposits assets into a savings protocol
-0xa694fc3a,depositStake,"AAVE, ACROSS, ALLBRIDGE, ALPACA, ANKR, API3, AXIE, BALANCER, BANCOR, BEEFY, BEETHOVEN, BENQI, BETSWIRL, BINANCE, BLUR, BULLPERKS, CAMELOT, CELER, CENTRIFUGE, CHRONOS, CIVIC, CONVEX, CRYPTO_UNICORNS, CURVE, DAOMAKER, DECENTRAL, DIA, DOPEX, DRIFT, DYDX, DYSTOPIA, EDEN, EMBER_SWORD, FILECOIN, FRAX, GAINS, GALA, GAMEFI, GAMESTARTER, GEIST, GMX, GODS_UNCHAINED, GOLDFINCH, GRANARY, HEGIC, HOP, HUBBLE, HUNDRED, ILLUVIUM, INSURACE, JONES, KWENTA, LEVEL, LIDO, LOOKSRARE, LOOPRING, LYRA, MAGICEDEN, MANTLE, MAPLE, MAVERICK, MESH_SWAP, MIX_SWAP, MORPHO, MULTICHAIN, MYCELIUM, NEXUS_MUTUAL, NFTX, ONEINCH, PEGAXY, PERPETUAL, PICKLE, PLATYPUS, POCKET, POLYGON, POLYNOMIAL, PREMIA, QUICKSWAP, RADIANT, RAMSES, RAYDIUM, REDACTED, RIBBON, ROCKETPOOL, ROLLBIT, ROOK, SEEDIFY, SOLIDLY, SORARE, SPLINTERLANDS, SPOOKYSWAP, STAKESTONE, STAKEWISE, STARGATE, STAR_ATLAS, STEPN, SUSHISWAP, SWELL, SYMBIOSIS, SYNAPSE, SYNTHETIX, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRADERJOE, TRUEFI, UMBRELLA, VELA, VELODROME, VULPEFI, WALLFAIR, WORLDCOIN, X2Y2, YIELD_YAK, ZAPPER, ZED_RUN, ZEROEX, ZYBERSWAP",OUTGOING,Stakes TRB tokens
+0xa694fc3a,"depositStake, pledgeCollateral, stake, stakeACX, stakeAPI3, stakeATLAS, stakeAXS, stakeApp, stakeBETS, stakeBLP, stakeBOO, stakeBTRFLY, stakeBlur, stakeCELR, stakeCFG, stakeCHR, stakeDIA, stakeDPX, stakeDRIFT, stakeDYDX, stakeDYST, stakeEDEN, stakeFxs, stakeGAFI, stakeGALA, stakeGAME, stakeGEIST, stakeGMT, stakeGNS, stakeGODS, stakeGRAIN, stakeHBL, stakeHEGIC, stakeICE, stakeILV, stakeINSUR, stakeJONES, stakeKWENTA, stakeLOOKS, stakeLP, stakeLPTokens, stakeLRC, stakeLVL, stakeLYRA, stakeLand, stakeMYC, stakeMaple, stakeMinipool, stakeMorpho, stakeNFT, stakeNXM, stakeNode, stakePERP, stakePGX, stakePOLIS, stakePOLY, stakePREMIA, stakeQUICK, stakeRAM, stakeRAY, stakeRBN, stakeRBW, stakeRDNT, stakeRLB, stakeROOK, stakeRPL, stakeSPS, stakeSorare, stakeTHG, stakeTRU, stakeTokens, stakeUMB, stakeVELA, stakeWETH, stakeWFAIR, stakeWLD, stakeX2Y2, stakeYAK","AAVE, ACROSS, ALLBRIDGE, ALPACA, ANKR, API3, AXIE, BALANCER, BANCOR, BEEFY, BEETHOVEN, BENQI, BETSWIRL, BINANCE, BLUR, BULLPERKS, CAMELOT, CELER, CENTRIFUGE, CHRONOS, CIVIC, CONVEX, CRYPTO_UNICORNS, CURVE, DAOMAKER, DECENTRAL, DIA, DOPEX, DRIFT, DYDX, DYSTOPIA, EDEN, EMBER_SWORD, FILECOIN, FRAX, GAINS, GALA, GAMEFI, GAMESTARTER, GEIST, GMX, GODS_UNCHAINED, GOLDFINCH, GRANARY, HEGIC, HOP, HUBBLE, HUNDRED, ILLUVIUM, INSURACE, JONES, KWENTA, LEVEL, LIDO, LOOKSRARE, LOOPRING, LYRA, MAGICEDEN, MANTLE, MAPLE, MAVERICK, MESH_SWAP, MIX_SWAP, MORPHO, MULTICHAIN, MYCELIUM, NEXUS_MUTUAL, NFTX, ONEINCH, PEGAXY, PERPETUAL, PICKLE, PLATYPUS, POCKET, POLYGON, POLYNOMIAL, PREMIA, QUICKSWAP, RADIANT, RAMSES, RAYDIUM, REDACTED, RIBBON, ROCKETPOOL, ROLLBIT, ROOK, SEEDIFY, SOLIDLY, SORARE, SPLINTERLANDS, SPOOKYSWAP, STAKESTONE, STAKEWISE, STARGATE, STAR_ATLAS, STEPN, SUSHISWAP, SWELL, SYMBIOSIS, SYNAPSE, SYNTHETIX, TELLOR, THETAN_ARENA, THE_GRAPH, TORNADO, TRADERJOE, TRUEFI, UMBRELLA, VELA, VELODROME, VULPEFI, WALLFAIR, WORLDCOIN, X2Y2, YIELD_YAK, ZAPPER, ZED_RUN, ZEROEX, ZYBERSWAP",OUTGOING,Stakes TRB tokens
 0x9aa5d462,depositV3,ETH_GENERIC,OUTGOING,Deposits assets using V3 contract
 0x6a1a80fd,disavowMarket,AUGUR,OUTGOING,Allows market creator to disavow a market in fork period
 0xd152cd41,disperseEther,ETH_GENERIC,OUTGOING,Distributes ETH to multiple addresses
@@ -162,12 +162,12 @@ method_id,function,protocol,direction,description
 0x5e9a1a5c,dodoSwap,DODO,BOTH,Performs DODO swap
 0x8ea2cc84,doInitialReport,AUGUR,OUTGOING,Submits initial report for market resolution
 0x3644e515,DOMAIN_SEPARATOR,ERC20,NEUTRAL,Gets domain separator
-0x9dc29fac,draw,"MAKER, MAPLE",INCOMING,Draws DAI from vault
+0x9dc29fac,"draw, drawdownLoan","MAKER, MAPLE",INCOMING,Draws DAI from vault
 0x2b67b570,dynamicSwap,MAVERICK,BOTH,Executes dynamic routing swap
-0x5312ea8e,emergencyWithdraw,"ANKR, BISWAP, KYBERSWAP, MAVERICK, PANCAKESWAP, POLKSTARTER, QUICKSWAP, RAYDIUM, SUSHISWAP",INCOMING,Emergency withdrawal from farm
+0x5312ea8e,"emergencyWithdraw, removeLiquidityBinning","ANKR, BISWAP, KYBERSWAP, MAVERICK, PANCAKESWAP, POLKSTARTER, QUICKSWAP, RAYDIUM, SUSHISWAP",INCOMING,Emergency withdrawal from farm
 0x2d4aafc4,encodeDelegationPermit,AAVE,OUTGOING,Encodes permit data for credit delegation
 0x87d45c33,encodeTokenPermit,AAVE,OUTGOING,Encodes permit data for token approvals
-0xc2998238,enterMarket,"COMPOUND, CREAM, EULER, HUNDRED, IRONBANK, VENUS",OUTGOING,Enters market
+0xc2998238,"enterMarket, enterMarkets","COMPOUND, CREAM, EULER, HUNDRED, IRONBANK, VENUS",OUTGOING,Enters market
 0xdc694d6f,enterStaking,PANCAKESWAP,OUTGOING,Enters CAKE staking pool
 0x,ETH transfer,ETH_GENERIC,OUTGOING,Native ETH transfer
 0xf39b5b9b,ethToTokenSwapInput,UNISWAP,BOTH,Swaps ETH for tokens with input amount specified
@@ -176,14 +176,14 @@ method_id,function,protocol,direction,description
 0x414bf389,exactInputSingle,"PANCAKESWAP, SUSHISWAP, UNISWAP",BOTH,Swaps exact tokens via single pool
 0xf28c0498,exactOutput,"PANCAKESWAP, SUSHISWAP, UNISWAP",BOTH,Swaps tokens for exact output via multiple pools
 0xdb3e2198,exactOutputSingle,"PANCAKESWAP, SUSHISWAP, UNISWAP",BOTH,Swaps tokens for exact output via single pool
-0x128acb08,exchange,"ALLBRIDGE, GMX, HOP, LOOPRING, MAVERICK, MIX_SWAP, NFTX, ONEINCH, ORCA, PARASWAP, PLATYPUS, RAYDIUM, STAKESTONE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, SYNTHETIX, UNISWAP, VULPEFI, WOMBAT, YIELD_YAK, ZERION",BOTH,Exchanges synths directly
-0x3df02124,exchange,"CURVE, MAKER",BOTH,Swaps between tokens in pool
+0x128acb08,"exchange, swap, swapAndBridge, swapAndSend, swapNFTForToken, swapNoSplit, swapPoolTokens","ALLBRIDGE, GMX, HOP, LOOPRING, MAVERICK, MIX_SWAP, NFTX, ONEINCH, ORCA, PARASWAP, PLATYPUS, RAYDIUM, STAKESTONE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, SYNTHETIX, UNISWAP, VULPEFI, WOMBAT, YIELD_YAK, ZERION",BOTH,Exchanges synths directly
+0x3df02124,"exchange, swapSaiToDai","CURVE, MAKER",BOTH,Swaps between tokens in pool
 0x353ca424,exchange_multiple,CURVE,OUTGOING,Performs multiple token swaps in a single transaction
 0xa6417ed6,exchange_underlying,CURVE,BOTH,Swaps between underlying tokens
 0x30d54d8f,exchangeWithTracking,SYNTHETIX,BOTH,Exchanges with fee tracking
 0x0e30a9cf,exchangeWithVirtual,SYNTHETIX,BOTH,Exchanges with virtual synths
-0xfe0d94c1,exec,"ALPACA, ANKR, API3, BALANCER, BANCOR, BAND, BENQI, BULLPERKS, CENTRIFUGE, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, OETH, PIREX, PREMIA, PYTH, RADIANT, RAILWAY, REDACTED, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, WALLFAIR, WORMHOLE, YEARN",OUTGOING,Executes proposal
-0x9a802a6d,executeAsk,"AAVE, BLUR",BOTH,Executes ask for NFT
+0xfe0d94c1,"exec, execute, executeProposal, executePurchase, executeUpdate, executeVote","ALPACA, ANKR, API3, BALANCER, BANCOR, BAND, BENQI, BULLPERKS, CENTRIFUGE, DECENTRAL, DIA, DOPEX, DYDX, FRAX, GNOSIS, GOLDFINCH, GRANARY, HEGIC, ILLUVIUM, INSURACE, LENS, LIDO, LYRA, MAKER, MAPLE, MONERO, OETH, PIREX, PREMIA, PYTH, RADIANT, RAILWAY, REDACTED, STAKESTONE, STAKEWISE, SWELL, TELLOR, TORNADO, TRUEFI, UMA, UMBRELLA, UNSLASHED, WALLFAIR, WORMHOLE, YEARN",OUTGOING,Executes proposal
+0x9a802a6d,"executeAsk, submitVoteBySignature","AAVE, BLUR",BOTH,Executes ask for NFT
 0x6a761202,executeTransaction,GNOSIS,OUTGOING,Executes Safe transaction
 0x0825f38f,executeTransaction,AAVE,OUTGOING,Executes queued proposal
 0xe9fad8ee,exit,"ONEINCH, PICKLE",INCOMING,Exits farming position
@@ -193,25 +193,25 @@ method_id,function,protocol,direction,description
 0x02c1a3b4,exitswapExternAmountOut,BALANCER,INCOMING,Exits pool for exact token amount
 0x46ab38f1,exitswapPoolAmountIn,BALANCER,OUTGOING,Exits a pool by providing pool tokens
 0x52f2db69,externalSwap,DODO,BOTH,Performs external swap
-0x441a3e70,farmWithdraw,"BANCOR, BEETHOVEN, BISWAP, KYBERSWAP, ORCA, PANCAKESWAP, QUICKSWAP, RAYDIUM, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, WOMBAT, ZAPPER",INCOMING,Withdraws from farm
+0x441a3e70,"farmWithdraw, withdraw, withdrawDD, withdrawLP","BANCOR, BEETHOVEN, BISWAP, KYBERSWAP, ORCA, PANCAKESWAP, QUICKSWAP, RAYDIUM, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, WOMBAT, ZAPPER",INCOMING,Withdraws from farm
 0x78b85579,fillBounty,ETH_GENERIC,OUTGOING,Completes a bounty by providing required NFT
 0x5da7810f,fillRfqOrder,ZEROEX,BOTH,Fills RFQ order
 0x2f29576c,finalizeMarket,AUGUR,OUTGOING,Finalizes a market after dispute window
-0x490e6cbc,flash,"BEETHOVEN, MAVERICK, MIX_SWAP, PLATYPUS, SUSHISWAP, UNISWAP",BOTH,Executes flash swap
+0x490e6cbc,"flash, flashSwap","BEETHOVEN, MAVERICK, MIX_SWAP, PLATYPUS, SUSHISWAP, UNISWAP",BOTH,Executes flash swap
 0x84242c54,flashCallback,UNISWAP,BOTH,Callback for flash swap
 0x5cffe9de,flashLoan,"HOP, NFTX, SYNAPSE",BOTH,Executes flash loan
 0x5c38449e,flashLoan,BALANCER,BOTH,Executes flash loan
 0xab9c4b5d,flashLoan,AAVE,BOTH,Executes a flash loan operation
 0x42b0b77c,flashLoanSimple,AAVE,BOTH,Executes a simple flash loan of one asset
 0x62a5af3b,freeze,ERC721,OUTGOING,Freezes token metadata
-0x4d5f327c,fulfillOrder,GNOSIS,BOTH,Fulfills placed order
+0x4d5f327c,"fulfillOrder, settleOrders",GNOSIS,BOTH,Fulfills placed order
 0xf48ab19f,fundPool,BANCOR,OUTGOING,Funds pool with initial liquidity
-0x40c10f19,generateDai,"ANKR, ARWEAVE, CENTRIFUGE, CURVE, ERC1155, ERC20, ERC3525, ERC4626, ERC5192, ERC721, FRAX, GOLDFINCH, MAKER, NFTX, OETH, PREMIA, RARIBLE, SYNTHETIX, VENUS, ZCASH",INCOMING,Generates DAI from vault
+0x40c10f19,"generateDai, mint, mintAETH, mintFrax, mintMembership, mintNFT, mintOption, mintToken, shieldedMint, soulMint","ANKR, ARWEAVE, CENTRIFUGE, CURVE, ERC1155, ERC20, ERC3525, ERC4626, ERC5192, ERC721, FRAX, GOLDFINCH, MAKER, NFTX, OETH, PREMIA, RARIBLE, SYNTHETIX, VENUS, ZCASH",INCOMING,Generates DAI from vault
 0xb5ab58dc,getAnswer,CHAINLINK,NEUTRAL,Gets price for round
 0x77c7b8fc,getPricePerFullShare,BEEFY,NEUTRAL,Gets vault share price
-0x0a0e6b3b,getPrices,"BAND, UMBRELLA",NEUTRAL,Gets multiple prices
+0x0a0e6b3b,"getPrices, getReferenceDataBulk","BAND, UMBRELLA",NEUTRAL,Gets multiple prices
 0x8263db17,getPriceUnsafe,PYTH,NEUTRAL,Gets price without checks
-0x3d18b912,getReward,"BEETHOVEN, BINANCE, CONCENTRATOR, CONVEX, FRAX, GAMESTARTER, GEIST, HUNDRED, ILLUVIUM, MAKER, MULTICHAIN, PICKLE, RADIANT, SOLIDLY, SPIRITSWAP, SUSHISWAP, VELODROME, WOMBAT, ZYBERSWAP",INCOMING,Claims farming rewards
+0x3d18b912,"getReward, lock, lockGem, lockHND, lockPICKLE, lockRDNT, lockSpirit, lockStake, lockTokens, lockWOM","BEETHOVEN, BINANCE, CONCENTRATOR, CONVEX, FRAX, GAMESTARTER, GEIST, HUNDRED, ILLUVIUM, MAKER, MULTICHAIN, PICKLE, RADIANT, SOLIDLY, SPIRITSWAP, SUSHISWAP, VELODROME, WOMBAT, ZYBERSWAP",INCOMING,Claims farming rewards
 0x9a6fc8f5,getRoundData,CHAINLINK,NEUTRAL,Gets historical price data
 0xb633620c,getTimestamp,CHAINLINK,NEUTRAL,Gets timestamp for round
 0x28dd2d01,getUserReserveData,AAVE,OUTGOING,Gets the user data for a specific reserve
@@ -224,7 +224,7 @@ method_id,function,protocol,direction,description
 0xc27f68a5,increase_unlock_time,ETH_GENERIC,OUTGOING,Extends the lock duration
 0x39509351,increaseAllowance,ERC20,OUTGOING,Increases token allowance
 0x32148f67,increaseObservationCardinalityNext,UNISWAP,OUTGOING,Increases observation cardinality
-0x969b0e0c,increasePosition,"DRIFT, DYDX, GAINS, GMX, HUBBLE, KWENTA, LEVEL, LYRA, MYCELIUM, PERPETUAL, POLYNOMIAL, ROLLBIT",OUTGOING,Increases leverage position
+0x969b0e0c,"increasePosition, openPosition","DRIFT, DYDX, GAINS, GMX, HUBBLE, KWENTA, LEVEL, LYRA, MYCELIUM, PERPETUAL, POLYNOMIAL, ROLLBIT",OUTGOING,Increases leverage position
 0x1673c3c1,initialize,UNISWAP,OUTGOING,Initializes a new pool
 0x4cd88b76,initialize,BALANCER,OUTGOING,Initializes weighted pool
 0x3b3be21a,initiateAuction,GNOSIS,OUTGOING,Starts new auction
@@ -235,13 +235,13 @@ method_id,function,protocol,direction,description
 0xb95cac28,joinPool,"BALANCER, BEETHOVEN, STAKESTONE, STAKEWISE",OUTGOING,Adds liquidity to pool
 0x4f69c0d4,joinPool,BALANCER,OUTGOING,Adds liquidity to pool
 0x5db34277,joinswapExternAmountIn,BALANCER,OUTGOING,Joins pool with exact token amount
-UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - potential scam
+UNKNOWN,"JunionYoutubeXD_dashhvetozhe, LetsInvest",ETH_GENERIC,UNKNOWN,Suspicious function - potential scam
 0xfeaf968c,latestRoundData,CHAINLINK,NEUTRAL,Gets latest price data
 0x405d8dcd,leaveStaking,PANCAKESWAP,INCOMING,Exits CAKE staking pool
 0x3c278bd5,lift,MAKER,OUTGOING,Activates spell
-0xf5e3c462,liquidate,"COMPOUND, CREAM",BOTH,Liquidates position
-0x96cd4ddb,liquidate,"ALPACA, DYDX, FRAX, GAINS, GEIST, GMX, GRANARY, HUBBLE, HUNDRED, IRONBANK, LEVEL, MAKER, MORPHO, MYCELIUM, PARASWAP, POLYNOMIAL, PORTAL, RADIANT, SYNTHETIX, TRUEFI, VENUS, WORMHOLE",BOTH,Liquidates margin position
 0xf0988da6,liquidate,BENQI,BOTH,Liquidates undercollateralized positions
+0xf5e3c462,"liquidate, liquidateBorrow","COMPOUND, CREAM",BOTH,Liquidates position
+0x96cd4ddb,"liquidate, liquidateLoan, liquidatePosition, seizeCollateral, swapNFTs, transferNFT","ALPACA, DYDX, FRAX, GAINS, GEIST, GMX, GRANARY, HUBBLE, HUNDRED, IRONBANK, LEVEL, MAKER, MORPHO, MYCELIUM, PARASWAP, POLYNOMIAL, PORTAL, RADIANT, SYNTHETIX, TRUEFI, VENUS, WORMHOLE",BOTH,Liquidates margin position
 0x00a718a9,liquidationCall,AAVE,BOTH,Liquidates an unhealthy position
 0x6d0a6f36,lock,PLATYPUS,OUTGOING,Locks tokens for vesting
 0xdd467064,lock,ERC5192,OUTGOING,Locks token transfer
@@ -261,12 +261,12 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0x9a8b2d42,migrateREPv2ToREPv3,AUGUR,OUTGOING,Migrates REPv2 tokens to REPv3
 0x9d4d7b1f,migrateSafe2,GNOSIS,OUTGOING,Migrates a Safe to a newer version
 0xa0712d68,mint,"COMPOUND, CREAM",OUTGOING,Mints cTokens by supplying assets
-0x6a627842,mint,"DYSTOPIA, MESH_SWAP, SOLIDLY, UNISWAP",OUTGOING,Mints LP tokens
+0x6a627842,"mint, mintLPToken","DYSTOPIA, MESH_SWAP, SOLIDLY, UNISWAP",OUTGOING,Mints LP tokens
 0x13c36c92,mint_many,CURVE,OUTGOING,Mints CRV tokens for multiple gauges
 0x1f7fdffa,mintBatch,ERC1155,OUTGOING,Mints multiple tokens
 0x42d16cea,mintCompleteSets,AUGUR,OUTGOING,Mints complete sets of outcome shares
 0x69a933a5,mintUnbacked,AAVE,OUTGOING,Mints unbacked aTokens to bridge liquidity
-0xf7f855b9,mintValue,ERC3525,OUTGOING,Mints token with value
+0xf7f855b9,"mintValue, transferFromValue",ERC3525,OUTGOING,Mints token with value
 0x90a56f37,mintWithEther,ETH_GENERIC,OUTGOING,Mint tokens with ETH
 0x13240b31,mixSwap,"MIX_SWAP, ONEINCH",BOTH,Aggregated token swap
 0xac9650d8,multicall,PANCAKESWAP,BOTH,Executes multiple position operations
@@ -275,7 +275,7 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0x883bdbfd,observe,UNISWAP,NEUTRAL,Gets price observations
 0x859c82c4,orderbook,LOOPRING,NEUTRAL,Gets orderbook state
 0x8456cb59,pause,ERC20,OUTGOING,Pauses token transfers
-0x573ade81,payback,"AAVE, ALPACA, BLUR, DYDX, FRAX, GEIST, GOLDFINCH, GRANARY, HUNDRED, IRONBANK, MAKER, MAPLE, MORPHO, RADIANT, TRADERJOE, TRUEFI, VENUS",OUTGOING,Repays DAI debt
+0x573ade81,"payback, paybackDebt, repay, repayLoan","AAVE, ALPACA, BLUR, DYDX, FRAX, GEIST, GOLDFINCH, GRANARY, HUNDRED, IRONBANK, MAKER, MAPLE, MORPHO, RADIANT, TRADERJOE, TRUEFI, VENUS",OUTGOING,Repays DAI debt
 0x4585e33b,performUpkeep,CHAINLINK,OUTGOING,Performs upkeep task
 0xd505accf,permit,ERC20,OUTGOING,Approves via signature
 0xb8e3de8e,placeOrder,GNOSIS,OUTGOING,Places limit order
@@ -294,23 +294,23 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0x95e2c065,rateByPath,BANCOR,NEUTRAL,Gets conversion rate for path
 0xcd112382,rebalanceStableBorrowRate,AAVE,BOTH,Rebalances the stable borrow rate of the user
 0x4c1f00cc,rebase,OETH,NEUTRAL,Performs rebase operation
-0xdb006a75,redeem,"AAVE, ARBITRUM, CENTRIFUGE, COMPOUND, CREAM, ERC4626, MAKER, NFTX, OETH, SYNAPSE, TRUEFI, VENUS",BOTH,Redeems retryable ticket
+0xdb006a75,"redeem, redeemSCD","AAVE, ARBITRUM, CENTRIFUGE, COMPOUND, CREAM, ERC4626, MAKER, NFTX, OETH, SYNAPSE, TRUEFI, VENUS",BOTH,Redeems retryable ticket
 0xdb1ca77f,redeemPositions,GNOSIS,INCOMING,Redeems conditional token positions
 0x8d2b24d8,redeemStake,AUGUR,INCOMING,Redeems staked REP after market resolution
 0x852a12e3,redeemUnderlying,COMPOUND,OUTGOING,Redeems the underlying asset from cToken
-0x590e1ae3,refund,"BETSWIRL, BULLPERKS, CELER, GAMEFI, GAMESTARTER, SYMBIOSIS",INCOMING,Refunds failed bridge
+0x590e1ae3,"refund, refundBet, revert","BETSWIRL, BULLPERKS, CELER, GAMEFI, GAMESTARTER, SYMBIOSIS",INCOMING,Refunds failed bridge
 0x5b36389c,remove_liquidity,CURVE,INCOMING,Removes liquidity proportionally
 0x1a4d01d2,remove_liquidity_one_coin,CURVE,INCOMING,Removes liquidity in single token
 0x39603469,removeLiquidity,GMX,INCOMING,Removes liquidity from GLP
 0x32f6e3a8,removeLiquidity,BANCOR,INCOMING,Removes liquidity from pool
-0xbaa2abde,removeLiquidity,"ACROSS, ALLBRIDGE, BEETHOVEN, BETSWIRL, BISWAP, CAMELOT, CELER, CHRONOS, DRIFT, DYSTOPIA, HASHFLOW, HEGIC, HOP, KYBERSWAP, LEVEL, LOOPRING, LYRA, MAVERICK, MESH_SWAP, MIX_SWAP, MONERO, MULTICHAIN, MYCELIUM, NFTX, ORBITER, PANCAKESWAP, PLATYPUS, POLYMARKET, PREMIA, QUICKSWAP, RAMSES, RAYDIUM, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, TRADERJOE, UNISWAP, VELA, VELODROME, VULPEFI, WOMBAT, ZCASH, ZERION, ZYBERSWAP",INCOMING,Removes liquidity from bridge pool
-0x02751cec,removeLiquidityAVAX,"BISWAP, CAMELOT, CHRONOS, DYSTOPIA, MESH_SWAP, PANCAKESWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, WOMBAT, ZYBERSWAP",INCOMING,Removes liquidity to AVAX
+0xbaa2abde,"removeLiquidity, withdrawLiquidity","ACROSS, ALLBRIDGE, BEETHOVEN, BETSWIRL, BISWAP, CAMELOT, CELER, CHRONOS, DRIFT, DYSTOPIA, HASHFLOW, HEGIC, HOP, KYBERSWAP, LEVEL, LOOPRING, LYRA, MAVERICK, MESH_SWAP, MIX_SWAP, MONERO, MULTICHAIN, MYCELIUM, NFTX, ORBITER, PANCAKESWAP, PLATYPUS, POLYMARKET, PREMIA, QUICKSWAP, RAMSES, RAYDIUM, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, STARGATE, SUDOSWAP, SUSHISWAP, SYMBIOSIS, SYNAPSE, TRADERJOE, UNISWAP, VELA, VELODROME, VULPEFI, WOMBAT, ZCASH, ZERION, ZYBERSWAP",INCOMING,Removes liquidity from bridge pool
+0x02751cec,"removeLiquidityAVAX, removeLiquidityBNB, removeLiquidityETH, removeLiquidityFTM, removeLiquidityMATIC, removeLiquidityNative","BISWAP, CAMELOT, CHRONOS, DYSTOPIA, MESH_SWAP, PANCAKESWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, WOMBAT, ZYBERSWAP",INCOMING,Removes liquidity to AVAX
 0xded9382a,removeLiquidityETHWithPermit,UNISWAP,INCOMING,Removes ETH liquidity with permit
 0x2195995c,removeLiquidityWithPermit,UNISWAP,INCOMING,Removes liquidity using permit
 0xf8dc5dd9,removeOwner,GNOSIS,OUTGOING,Removes Safe owner
 0x5c11d795,removeStaticLiquidity,KYBERSWAP,INCOMING,Removes static liquidity from pool
-0x0e752702,repay,"BENQI, COMPOUND, CREAM, EULER",OUTGOING,Repays borrowed assets
 0x5ceae9c4,repay,AAVE,OUTGOING,Repays borrowed tokens
+0x0e752702,"repay, repayBorrow","BENQI, COMPOUND, CREAM, EULER",OUTGOING,Repays borrowed assets
 0x563dd613,repayETH,AAVE,OUTGOING,Repays borrowed ETH to the protocol
 0x2dad97d4,repayWithATokens,AAVE,OUTGOING,Repays borrow using aTokens
 0xe20056e6,replaceOwner,GNOSIS,OUTGOING,Replaces Safe owner
@@ -319,30 +319,30 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0xd826f88f,reset,SOLIDLY,OUTGOING,Resets vote weights
 0x44c0bd98,resetPool,DODO,OUTGOING,Resets pool parameters
 0x0cad0bfa,resetTokenRoyalty,ERC2981,OUTGOING,Resets token royalty
-0x7b24a5fd,restake,"ANKR, AXIE, BANCOR, EIGENLAYER, MANTLE",OUTGOING,Restakes rewards back into protocol
+0x7b24a5fd,"restake, restakeRewards","ANKR, AXIE, BANCOR, EIGENLAYER, MANTLE",OUTGOING,Restakes rewards back into protocol
 0x2a55205a,royaltyInfo,ERC2981,NEUTRAL,Gets royalty information
 0x2eb2c2d6,safeBatchTransferFrom,ERC1155,OUTGOING,Transfers multiple tokens
 0x40d097c3,safeMint,ERC721,OUTGOING,Safely mints new NFT
-0x42842e0e,safeTransferFrom,ERC721,OUTGOING,Safely transfers NFT
 0xf242432a,safeTransferFrom,ERC1155,OUTGOING,Safely transfers tokens
+0x42842e0e,safeTransferFrom,ERC721,OUTGOING,Safely transfers NFT
 0x3fdddaa2,sellToVending,DODO,INCOMING,Sells to vending machine
-0xe74b981b,set_fee_receiver,"BRIGHTID, CURVE, LAYERZERO, STARGATE, SUDOSWAP",OUTGOING,Sets fee receiver address
 0xa22cb465,setApprovalForAll,"ERC1155, ERC721",OUTGOING,Approves operator for all tokens
 0x55f804b3,setBaseURI,"ERC1155, ERC721",OUTGOING,Sets base URI for all tokens
 0x4aea29bd,setDefaultProfile,LENS,OUTGOING,Sets default profile
 0x4e06fc7f,setDefaultRoyalty,"ERC1155, ERC2981, ERC721",OUTGOING,Sets default royalty
+0xe74b981b,"setFees, setRelayerFees, set_fee_receiver, updateContext, updateSpotPrice","BRIGHTID, CURVE, LAYERZERO, STARGATE, SUDOSWAP",OUTGOING,Sets fee receiver address
 0x8a742e9c,setGuardian,PORTAL,OUTGOING,Sets guardian address
 0xcd1c0568,setMetadata,ERC3525,OUTGOING,Sets token metadata
 0x3c462743,setRelayerApproval,AAVE,OUTGOING,Approves/disapproves a relayer to operate on behalf of the user
 0x48d9f693,setReservePause,AAVE,OUTGOING,Pauses or unpauses a reserve
-0x8293745b,setRoyalties,"LOOKSRARE, MAGICEDEN, OPENSEA, RARIBLE, SUDOSWAP, X2Y2",OUTGOING,Sets collection royalties
+0x8293745b,"setRoyalties, updateFee","LOOKSRARE, MAGICEDEN, OPENSEA, RARIBLE, SUDOSWAP, X2Y2",OUTGOING,Sets collection royalties
 0x9fba176a,setSlotURI,ERC3525,OUTGOING,Sets slot URI
 0x5e86d2b0,setTokenRoyalty,"ERC1155, ERC2981, ERC721",OUTGOING,Sets token specific royalty
 0x162094c4,setTokenURI,ERC721,OUTGOING,Sets specific token URI
 0x02fe5305,setURI,ERC1155,OUTGOING,Sets token metadata URI
 0x3f7a5459,setUsername,FRIEND_TECH,OUTGOING,Sets profile username
 0x5a3b74b9,setUserUseReserveAsCollateral,AAVE,OUTGOING,Enables/disables an asset as collateral
-0x23b872dd,shieldedTransfer,"AZTEC, CAMELOT, CENTRIFUGE, ERC20, ERC3525, ERC721, SUSHISWAP, UNISWAP, ZCASH",BOTH,Executes shielded transfer
+0x23b872dd,"shieldedTransfer, transfer, transferAsset, transferFrom, transferPosition","AZTEC, CAMELOT, CENTRIFUGE, ERC20, ERC3525, ERC721, SUSHISWAP, UNISWAP, ZCASH",BOTH,Executes shielded transfer
 0x7a9da510,shutdownSCD,MAKER,OUTGOING,Shuts down Single Collateral DAI
 0x8b3a9b4a,signData,REDSTONE,OUTGOING,Signs oracle data
 0x7c53966a,splitPosition,GNOSIS,OUTGOING,Splits conditional token position
@@ -352,8 +352,8 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0x6ce8c739,submitOrder,LOOPRING,OUTGOING,Submits order to orderbook
 0x612c56fa,submitVote,AAVE,OUTGOING,Submits vote on proposal
 0x617ba037,supply,"AAVE, GEIST, GRANARY, HUNDRED, IRONBANK, MORPHO, RADIANT, TRADERJOE",OUTGOING,Supplies assets to lending pool
-0x4b8a3529,supply,"BRIGHTID, COMPOUND, WORLDCOIN",OUTGOING,Supplies assets to protocol
 0x1249c58b,supply,BENQI,OUTGOING,Supplies assets to the protocol
+0x4b8a3529,"supply, verify","BRIGHTID, COMPOUND, WORLDCOIN",OUTGOING,Supplies assets to protocol
 0x02c205f0,supplyWithPermit,AAVE,OUTGOING,Supplies with permit signature (no prior approve needed)
 0x680dd47c,supplyWithPermitSignature,AAVE,OUTGOING,Supplies assets using EIP-2612 permit
 0x01ffc9a7,supportsInterface,ERC2981,NEUTRAL,Checks interface support
@@ -365,10 +365,10 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0xfb3bdb41,swapETHForExactTokens,UNISWAP,BOTH,Swaps ETH for exact amount of tokens
 0x8201aa3f,swapExactAmountIn,BALANCER,BOTH,Swaps exact amount of tokens in
 0x7c5e9ea4,swapExactAmountOut,BALANCER,BOTH,Swaps for exact amount of tokens out
-0x7ff36ab5,swapExactAVAXForTokens,"BISWAP, CAMELOT, CHRONOS, DYSTOPIA, KYBERSWAP, MESH_SWAP, PANCAKESWAP, QUICKSWAP, RAMSES, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, VELODROME, ZYBERSWAP",OUTGOING,Swaps exact AVAX for tokens
+0x7ff36ab5,"swapExactAVAXForTokens, swapExactBNBForTokens, swapExactETHForAlpha, swapExactETHForTokens, swapExactFTMForTokens, swapExactMATICForTokens","BISWAP, CAMELOT, CHRONOS, DYSTOPIA, KYBERSWAP, MESH_SWAP, PANCAKESWAP, QUICKSWAP, RAMSES, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, VELODROME, ZYBERSWAP",OUTGOING,Swaps exact AVAX for tokens
 0x18cbafe5,swapExactTokensForETH,"PANCAKESWAP, SOLIDLY, UNISWAP",BOTH,Swaps exact amount of tokens for BNB
 0x38ed1739,swapExactTokensForTokens,"BISWAP, CAMELOT, CHRONOS, DYSTOPIA, KYBERSWAP, MESH_SWAP, MULTICHAIN, PANCAKESWAP, QUICKSWAP, RAMSES, SOLIDLY, SPIRITSWAP, SPOOKYSWAP, STAKEWISE, SUSHISWAP, TRADERJOE, UNISWAP, VELODROME, WOMBAT, ZYBERSWAP",BOTH,Swaps exact amount of tokens
-0x4a25d94a,swapTokensForExactAVAX,"BISWAP, CAMELOT, CHRONOS, DYSTOPIA, KYBERSWAP, MESH_SWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, VELODROME, ZYBERSWAP",BOTH,Swaps tokens for exact AVAX
+0x4a25d94a,"swapTokensForExactAVAX, swapTokensForExactBNB, swapTokensForExactETH, swapTokensForExactFTM, swapTokensForExactMATIC","BISWAP, CAMELOT, CHRONOS, DYSTOPIA, KYBERSWAP, MESH_SWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, VELODROME, ZYBERSWAP",BOTH,Swaps tokens for exact AVAX
 0x8803dbee,swapTokensForExactTokens,"BISWAP, CAMELOT, CHRONOS, DYSTOPIA, KYBERSWAP, MESH_SWAP, MULTICHAIN, PANCAKESWAP, QUICKSWAP, RAMSES, SPIRITSWAP, SPOOKYSWAP, SUSHISWAP, TRADERJOE, UNISWAP, VELODROME, WOMBAT, ZYBERSWAP",BOTH,Swaps for exact amount of tokens
 0x7c8e4956,swapWithHooks,UNISWAP,BOTH,Performs swap with hooks
 0x2521b930,swapWithPermit,"ONEINCH, UNISWAP",BOTH,Swaps with permit signature
@@ -399,7 +399,7 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0x99a88ec4,upgradeContract,"PORTAL, WORMHOLE",OUTGOING,Upgrades contract implementation
 0x4b820093,user_checkpoint,CURVE,NEUTRAL,Update user rewards checkpoint
 0x6ea9676f,verifySignatures,REDSTONE,NEUTRAL,Verifies data signatures
-0x1749e1e3,vestEsGmx,"GMX, KWENTA",OUTGOING,Vests esGMX tokens to GMX
+0x1749e1e3,"vestEsGmx, vestRewards","GMX, KWENTA",OUTGOING,Vests esGMX tokens to GMX
 0x0121b93f,vote,BENQI,OUTGOING,Votes on proposal
 0x6d46e987,vote_for_gauge_weights,CURVE,OUTGOING,Votes for gauge weights
 0x86a50535,voteFor,ETH_GENERIC,OUTGOING,Cast vote for proposal
@@ -411,7 +411,7 @@ UNKNOWN,JunionYoutubeXD_dashhvetozhe,ETH_GENERIC,UNKNOWN,Suspicious function - p
 0x89b7daa9,withdrawAllQuote,ETH_GENERIC,INCOMING,Withdraw all quote tokens
 0xb9f3eb49,withdrawBase,DODO,INCOMING,Withdraws base token
 0x38d52e0f,withdrawCAKE,PANCAKESWAP,INCOMING,Withdraws CAKE from fixed staking
-0x9e281a98,withdrawERC20For,"BANCOR, ETH_GENERIC",OUTGOING,Withdraws ERC20 tokens on behalf of another address
+0x9e281a98,"withdrawERC20For, withdrawFor","BANCOR, ETH_GENERIC",OUTGOING,Withdraws ERC20 tokens on behalf of another address
 0x24ed7740,withdrawFunds,ETH_GENERIC,INCOMING,Generic withdrawal function
 0x01b7dfa5,withdrawQuote,DODO,INCOMING,Withdraws quote token
 0x6c2a8f5d,zapIn,MIX_SWAP,OUTGOING,Zaps token into LP position

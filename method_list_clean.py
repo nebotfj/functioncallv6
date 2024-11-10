@@ -8,7 +8,7 @@ def clean_methodids():
     # Agrupar por method_id y combinar los protocolos
     print("Agrupando por method_id...")
     grouped = df.groupby('method_id').agg({
-        'function': 'first',  # mantener la primera función
+        'function': lambda x: ', '.join(sorted(set(x))),  # Combinar funciones únicas
         'protocol': lambda x: ', '.join(sorted(set(', '.join(x).split(', ')))),  # combinar protocolos únicos
         'direction': 'first',  # mantener la primera dirección
         'description': 'first',  # mantener la primera descripción
@@ -27,25 +27,32 @@ def clean_methodids():
     print(f"Registros únicos por method_id: {len(grouped)}")
     print("Resultados guardados en 'function_analysis_cleaned.csv'")
 
-# Llamar a la función para encontrar duplicados
+    # Llamar a la función para encontrar duplicados
     find_duplicate_functions()
 
 def find_duplicate_functions():
-    print("\nBuscando funciones duplicadas...")
+    print("\nBuscando method_ids con múltiples funciones...")
     # Leer el CSV limpio
     df = pd.read_csv('function_analysis_cleaned.csv')
     
-    # Encontrar funciones que aparecen más de una vez
-    duplicates = df.groupby('function').filter(lambda x: len(x) > 1)
+    # Encontrar registros donde la columna 'function' contiene comas
+    duplicates = df[df['function'].str.contains(',', na=False)]
     
-    # Ordenar por nombre de función
-    duplicates = duplicates.sort_values('function', key=lambda x: x.str.lower())
-    
-    # Guardar duplicados en nuevo archivo
-    duplicates.to_csv('function_analysis_cleaned_dup.csv', index=False)
-    
-    print(f"Se encontraron {len(duplicates)} registros con funciones duplicadas")
-    print("Duplicados guardados en 'function_analysis_cleaned_dup.csv'")
+    if not duplicates.empty:
+        # Ordenar por method_id
+        duplicates = duplicates.sort_values('method_id')
+        
+        # Guardar en nuevo archivo
+        duplicates.to_csv('function_analysis_cleaned_dup.csv', index=False)
+        
+        print(f"Se encontraron {len(duplicates)} method_ids con múltiples nombres de función")
+        
+        # Mostrar resumen
+        for _, row in duplicates.iterrows():
+            print(f"\nMethod ID: {row['method_id']}")
+            print(f"Funciones: {row['function']}")
+    else:
+        print("No se encontraron method_ids con múltiples nombres de función")
 
 if __name__ == "__main__":
     clean_methodids()
