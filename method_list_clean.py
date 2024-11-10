@@ -42,10 +42,10 @@ def find_duplicate_functions():
     duplicates = duplicates.sort_values('function', key=lambda x: x.str.lower())
     
     # Guardar duplicados en nuevo archivo
-    duplicates.to_csv('method_list_clean_dup.csv', index=False)
+    duplicates.to_csv('function_analysis_cleaned_dup.csv', index=False)
     
     print(f"Se encontraron {len(duplicates)} registros con funciones duplicadas")
-    print("Duplicados guardados en 'method_list_clean_dup.csv'")
+    print("Duplicados guardados en 'function_analysis_cleaned_dup.csv'")
 
 if __name__ == "__main__":
     clean_methodids()
