@@ -539,7 +539,8 @@ def search_function(function_name):
             else:
                 print(f"\nFunction '{function}' not found in any protocol")'''
 
-
+'''
+#Búsqueda por funcion
 def main():
     print("Welcome to DeFi Function Analyzer")
     print("Enter function names separated by comma (or 'exit' to quit)")
@@ -598,7 +599,97 @@ def main():
         writer.writeheader()
         writer.writerows(all_results)
 
-    print("\nResults saved to 'defi_function_analysis.csv' in the current directory.")
+    print("\nResults saved to 'defi_function_analysis.csv' in the current directory.")'''
+
+
+def main():
+    print("Welcome to DeFi Function Analyzer")
+    print("Enter method IDs separated by comma (or 'exit' to quit)")
+
+    # Lista para almacenar los resultados
+    all_results = []
+
+    while True:
+        user_input = input("\nEnter method ID(s): ").strip()
+
+        if user_input.lower() == 'exit':
+            break
+
+        # Divide los method_ids introducidos por el usuario
+        method_ids = [m.strip() for m in user_input.split(',')]
+
+        # Itera sobre todos los method_ids introducidos por el usuario
+        for method_id in method_ids:
+            results = search_function_by_methodid(method_id)
+            
+            if results:
+                print(f"\nResults for method ID '{method_id}':")
+                for result in results:
+                    print(f"\nProtocol: {result['protocol']} {result['version']}")
+                    print(f"Function: {result['function']}")
+                    print(f"Category: {result['category']}")
+                    print(f"Direction: {result['details']['direction']}")
+                    print(f"Description: {result['details']['description']}")
+
+                    # Añadir el resultado a la lista de todos los resultados
+                    all_results.append({
+                        'method_id': method_id,
+                        'function': result['function'],
+                        'protocol': result['protocol'],
+                        'version': result['version'],
+                        'category': result['category'],
+                        'direction': result['details']['direction'],
+                        'description': result['details']['description']
+                    })
+            else:
+                print(f"\nMethod ID '{method_id}' not found in any protocol")
+                # Añadir el resultado a la lista de todos los resultados
+                all_results.append({
+                    'method_id': method_id,
+                    'function': 'not found',
+                    'protocol': 'not found',
+                    'version': '',
+                    'category': '',
+                    'direction': '',
+                    'description': ''
+                })    
+
+    # Guardar todos los resultados en un archivo CSV
+    with open("defi_methodid_analysis.csv", mode="w", newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=['method_id', 'function', 'protocol', 'version', 'category', 'direction', 'description'])
+        writer.writeheader()
+        writer.writerows(all_results)
+
+    print("\nResults saved to 'defi_methodid_analysis.csv' in the current directory.")
+
+def search_function_by_methodid(method_id):
+    protocols = {
+        #RESTOS
+        "ETH_GENERIC": ETH_GENERIC,
+        # BRIDGES
+        "ACROSS": ACROSS_FUNCTIONS,
+        "ALLBRIDGE": ALLBRIDGE_FUNCTIONS,
+        # ... (resto del diccionario de protocolos como en el script original)
+    }
+    
+    results = []
+    
+    for protocol_name, protocol_data in protocols.items():
+        for version, categories in protocol_data.items():
+            for category, functions in categories.items():
+                for function_name, details in functions.items():
+                    if isinstance(details, dict) and details.get('method') == method_id:
+                        results.append({
+                            'protocol': protocol_name,
+                            'version': version,
+                            'category': category,
+                            'function': function_name,
+                            'details': details
+                        })
+    return results
+
+if __name__ == "__main__":
+    main()
 
 
 
