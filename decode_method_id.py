@@ -23,6 +23,7 @@ Añadir una base de datos de signatures conocidas'''
 
 from eth_hash.auto import keccak
 from typing import Optional, Tuple
+import csv
 
 class MethodIdDecoder:
     def __init__(self):
@@ -409,7 +410,10 @@ class MethodIdDecoder:
             '0x79433d8b': 'setDepositLimit(uint256)',
             '0xac7b22dc': 'setInvestmentStrategy(address)',
             '0x0df96f55': 'setFeeBeneficiary(address)',
-            '0xb9d2d7ed': 'setEmergencyReturn(address)'
+            '0xb9d2d7ed': 'setEmergencyReturn(address)',
+            '0x89afcb44': 'join_tg_invmru_haha_2e155da(uint256,address)',
+            '0x322bba21': 'createOrder((address,address,uint256,uint256,bytes32,uint256,uint32,bool,int64))',
+            '0xd9627aa4': 'sellToUniswap(address[],uint256,uint256,bool)'
         }
 
     def is_text(self, hex_str: str) -> Optional[str]:
@@ -436,40 +440,49 @@ def main():
     print("Introduce los Method IDs separados por comas (ejemplo: 0xa9059cbb,0x095ea7b3)")
     print("Para salir, escribe 'exit' o 'quit'\n")
     
-    while True:
-        user_input = input("Introduce Method IDs: ").strip()
+    # Abrir archivo CSV para escritura
+    with open('method_ids_output.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        # Escribir encabezados
+        writer.writerow(['Method ID', 'Tipo', 'Resultado'])
         
-        if user_input.lower() in ['exit', 'quit']:
-            print("¡Hasta luego!")
-            break
+        while True:
+            user_input = input("Introduce Method IDs: ").strip()
             
-        if not user_input:
-            continue
-            
-        method_ids = [mid.strip() for mid in user_input.split(',')]
-        
-        print("\nDecodificando method IDs...")
-        functions_found = 0
-        words_found = 0
-        unknown = 0
-        
-        for method_id in method_ids:
-            tipo, resultado = decoder.try_decode(method_id)
-            if tipo == 'FUNCTION':
-                print(f"✅ {method_id} => {resultado}")
-                functions_found += 1
-            elif tipo == 'WORD':
-                print(f"📝 {method_id} => {resultado}")
-                words_found += 1
-            else:
-                print(f"❌ {method_id} => {resultado}")
-                unknown += 1
+            if user_input.lower() in ['exit', 'quit']:
+                print("¡Hasta luego!")
+                break
                 
-        total = len(method_ids)
-        print(f"\nResumen:")
-        print(f"- Funciones encontradas: {functions_found}/{total}")
-        print(f"- Palabras encontradas: {words_found}/{total}")
-        print(f"- No decodificados: {unknown}/{total}\n")
+            if not user_input:
+                continue
+                
+            method_ids = [mid.strip() for mid in user_input.split(',')]
+            
+            print("\nDecodificando method IDs...")
+            functions_found = 0
+            words_found = 0
+            unknown = 0
+            
+            for method_id in method_ids:
+                tipo, resultado = decoder.try_decode(method_id)
+                if tipo == 'FUNCTION':
+                    print(f"✅ {method_id} => {resultado}")
+                    functions_found += 1
+                elif tipo == 'WORD':
+                    print(f"📝 {method_id} => {resultado}")
+                    words_found += 1
+                else:
+                    print(f"❌ {method_id} => {resultado}")
+                    unknown += 1
+                
+                # Escribir resultado en el archivo CSV
+                writer.writerow([method_id, tipo, resultado])
+                    
+            total = len(method_ids)
+            print(f"\nResumen:")
+            print(f"- Funciones encontradas: {functions_found}/{total}")
+            print(f"- Palabras encontradas: {words_found}/{total}")
+            print(f"- No decodificados: {unknown}/{total}\n")
 
 if __name__ == "__main__":
     main()
