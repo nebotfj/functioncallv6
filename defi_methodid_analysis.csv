@@ -5,6 +5,7 @@ method_id,function,protocol,version,category,direction,description
 0xddf7e1a7,not found,not found,,,,
 0xc2998238,not found,not found,,,,
 0xf3541901,not found,not found,,,,
+
 0xa0712d68,not found,not found,,,,
 0x1249c58b,not found,not found,,,,
 0xc5ebeaec,not found,not found,,,,
@@ -17,6 +18,8 @@ method_id,function,protocol,version,category,direction,description
 0x39039497,not found,not found,,,,
 0x6b1d4db7,not found,not found,,,,
 0xd2d0e066,not found,not found,,,,
+
+
 0x082fef45,not found,not found,,,,
 0xfbabdebd,not found,not found,,,,
 0xa9059cbb,not found,not found,,,,
@@ -45,18 +48,14 @@ method_id,function,protocol,version,category,direction,description
 0x02cce70b,not found,not found,,,,
 0xd0e30db0,not found,not found,,,,
 0x34e7a19f,not found,not found,,,,
+
+
 0xb02f0b73,not found,not found,,,,
 0x6cfd80c9,not found,not found,,,,
 0x517a55a3,not found,not found,,,,
 0xe9af0292,not found,not found,,,,
-0xa694fc3a,stake,ACROSS,V1,STAKING,OUTGOING,Stakes tokens in protocol
-0xa694fc3a,stakeACX,ACROSS,V2,REWARDS,OUTGOING,Stakes ACX tokens
-0xa694fc3a,stakeLPTokens,ALLBRIDGE,V1,LIQUIDITY,OUTGOING,Stakes LP tokens
-0xa694fc3a,stake,ALLBRIDGE,V1,FARMING,OUTGOING,Stakes tokens in farm
 0x77f61403,not found,not found,,,,
 0x4515cef3,not found,not found,,,,
-0xb6b55f25,deposit,ACROSS,V1,BRIDGE,OUTGOING,Deposits tokens for bridging
-0xb6b55f25,deposit,ACROSS,V2,BRIDGE,OUTGOING,Deposits tokens for bridging V2
 0xb384abef,not found,not found,,,,
 0x2cefff96,not found,not found,,,,
 0x7891c043,not found,not found,,,,
@@ -64,36 +63,28 @@ method_id,function,protocol,version,category,direction,description
 0x029b2f34,not found,not found,,,,
 0xbb7e70ef,not found,not found,,,,
 0x1aa3a008,not found,not found,,,,
-0x86a50535,voteFor,ETH_GENERIC,ETH_GENERIC,GOVERNANCE,OUTGOING,Cast vote for proposal
 0x53fa2eb7,not found,not found,,,,
 0x0e752702,not found,not found,,,,
 0x75d9aa1a,not found,not found,,,,
 0x38ed1739,not found,not found,,,,
 0xf305d719,not found,not found,,,,
-0xe8e33700,addLiquidity,ACROSS,V1,LIQUIDITY,OUTGOING,Adds liquidity to bridge pool
-0xe8e33700,addLiquidity,ACROSS,V2,LIQUIDITY,OUTGOING,Adds liquidity to bridge pool V2
-0xe8e33700,addLiquidity,ALLBRIDGE,V1,LIQUIDITY,OUTGOING,Adds liquidity to bridge pool
 0x5c19a95c,not found,not found,,,,
 0xe9fad8ee,not found,not found,,,,
 0x1e83409a,not found,not found,,,,
 0x415565b0,not found,not found,,,,
 0xe0e90acf,not found,not found,,,,
 0xee857b69,not found,not found,,,,
-0x65fc3873,create_lock,ETH_GENERIC,ETH_GENERIC,VESTING_CONTRACTS,OUTGOING,Creates a new lock for tokens
 0xde5f6268,not found,not found,,,,
 0xd7136328,not found,not found,,,,
 0xa453b6cf,not found,not found,,,,
 0xe2b39746,not found,not found,,,,
-0x2e1a7d4d,unstake,ACROSS,V1,STAKING,INCOMING,Unstakes tokens from protocol
-0x2e1a7d4d,unstakeACX,ACROSS,V2,REWARDS,INCOMING,Unstakes ACX tokens
-0x2e1a7d4d,unstakeLPTokens,ALLBRIDGE,V1,LIQUIDITY,INCOMING,Unstakes LP tokens
-0x2e1a7d4d,unstake,ALLBRIDGE,V1,FARMING,INCOMING,Unstakes tokens from farm
 0x4b820093,not found,not found,,,,
 0x1e9a6950,not found,not found,,,,
 0x46ab38f1,not found,not found,,,,
 0x7d49d875,not found,not found,,,,
 0x6a627842,not found,not found,,,,
-0x4957677c,increase_amount,ETH_GENERIC,ETH_GENERIC,VESTING_CONTRACTS,OUTGOING,Increases the amount of locked tokens
+
+
 0xeff7a612,not found,not found,,,,
 0xdf133bca,not found,not found,,,,
 0x3df02124,not found,not found,,,,
@@ -102,12 +93,7 @@ method_id,function,protocol,version,category,direction,description
 0x18cbafe5,not found,not found,,,,
 0x1a4d01d2,not found,not found,,,,
 0xae591d54,not found,not found,,,,
-0x4e71d92d,claimAll,ETH_GENERIC,ETH_GENERIC,CLAIMS,INCOMING,Claim all pending rewards
-0x4e71d92d,claim,ACROSS,V1,BRIDGE,INCOMING,Claims bridged tokens
-0x4e71d92d,claim,ACROSS,V2,BRIDGE,INCOMING,Claims bridged tokens V2
-0x4e71d92d,claim,ALLBRIDGE,V1,BRIDGE,INCOMING,Claims bridged tokens
 0x8fd3ab80,not found,not found,,,,
-0xe63d38ed,disperseEther,ETH_GENERIC,ETH_GENERIC,SWAPS,OUTGOING,Disperse ETH to multiple addresses
 0x682356c0,not found,not found,,,,
 0xadc9772e,not found,not found,,,,
 0x9a99b4f0,not found,not found,,,,
@@ -136,9 +122,10 @@ method_id,function,protocol,version,category,direction,description
 0x2e95b6c8,not found,not found,,,,
 0x94bf804d,not found,not found,,,,
 0x5915d806,not found,not found,,,,
-0x7c025200,speedUpRelay,ACROSS,V1,BRIDGE,OUTGOING,Accelerates relay process
-0x7c025200,speedUpRelay,ACROSS,V2,BRIDGE,OUTGOING,Accelerates relay process V2
 0x2e17de78,not found,not found,,,,
+
+
+
 0x379607f5,not found,not found,,,,
 0x9b172b35,not found,not found,,,,
 0xc8fd6ed0,not found,not found,,,,
@@ -175,8 +162,6 @@ method_id,function,protocol,version,category,direction,description
 0x8a10555c,not found,not found,,,,
 0x6e553f65,not found,not found,,,,
 0xba087652,not found,not found,,,,
-0xcae9ca51,approveAndCall,ETH_GENERIC,ETH_GENERIC,GENERIC_ERC20,OUTGOING,Approves spending and calls another contract
-0xcae9ca51,approveAndCall,ETH_GENERIC,ETH_GENERIC,UTILITY,OUTGOING,Approve and execute in one transaction
 0xb16eb351,not found,not found,,,,
 0x0b8c759a,not found,not found,,,,
 0xeda6a5bc,not found,not found,,,,
@@ -213,6 +198,10 @@ method_id,function,protocol,version,category,direction,description
 0x53c43f15,not found,not found,,,,
 0x7ba0e2e7,not found,not found,,,,
 0x40d097c3,not found,not found,,,,
+
+
+
+
 0x2cc4081e,not found,not found,,,,
 0x5b7d7482,not found,not found,,,,
 0xd7570e45,not found,not found,,,,
@@ -494,9 +483,6 @@ method_id,function,protocol,version,category,direction,description
 0x0df45469,not found,not found,,,,
 0x2fb44d15,not found,not found,,,,
 0x13f78a49,not found,not found,,,,
-0xbaa2abde,removeLiquidity,ACROSS,V1,LIQUIDITY,INCOMING,Removes liquidity from bridge pool
-0xbaa2abde,removeLiquidity,ACROSS,V2,LIQUIDITY,INCOMING,Removes liquidity from bridge pool V2
-0xbaa2abde,removeLiquidity,ALLBRIDGE,V1,LIQUIDITY,INCOMING,Removes liquidity from bridge pool
 0xaa7415f5,not found,not found,,,,
 0xd7bb99ba,not found,not found,,,,
 0xbe27b22c,not found,not found,,,,
