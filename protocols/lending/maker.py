@@ -136,6 +136,7 @@ MAKER_V1_FUNCTIONS = {
         'direction': 'OUTGOING',
         'description': 'Executes arbitrary code through DSProxy',
         'method': '0x1cff79cd'
+        },
     }
 }
 

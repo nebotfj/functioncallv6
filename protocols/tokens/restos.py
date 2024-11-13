@@ -404,6 +404,7 @@ ETH_GENERIC_FUNCTIONS = {
             'method': '0xa9059cbb',
             'app': 'ERC20_STANDARD'
         },
+    },
     'EXECUTION': {
         'execute': {
             'direction': 'OUTGOING',
@@ -1384,21 +1385,9 @@ ETH_GENERIC_FUNCTIONS = {
             'description': 'Claims bridged assets',
             'method': '0x4e71d92d',
             'app': 'GENERAL_BRIDGE'
-        }
+        },
     }
-
-
-
-
-
-
-
-
-
-
-
 }
-
 
 # Combined functions for all versions
 ETH_GENERIC = {

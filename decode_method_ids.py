@@ -10,6 +10,11 @@ import tkinter as tk
 from tkinter import scrolledtext, messagebox
 import pandas as pd
 
+from eth_hash.auto import keccak
+from typing import Optional, Tuple
+import requests
+from web3 import Web3
+
 
 import protocols
 
@@ -949,8 +954,12 @@ class MethodIdDecoder:
             '0x79433d8b': 'setDepositLimit(uint256)',
             '0xac7b22dc': 'setInvestmentStrategy(address)',
             '0x0df96f55': 'setFeeBeneficiary(address)',
-            '0xb9d2d7ed': 'setEmergencyReturn(address)'
+            '0xb9d2d7ed': 'setEmergencyReturn(address)',
+            '0x89afcb44': 'join_tg_invmru_haha_2e155da(uint256,address)',
+            '0x322bba21': 'createOrder((address,address,uint256,uint256,bytes32,uint256,uint32,bool,int64))',
+            '0xd9627aa4': 'sellToUniswap(address[],uint256,uint256,bool)'
         }
+        self.cache = {}
 
     def get_method_id(self, signature: str) -> str:
         """Calcula el method ID para una signature dada."""
@@ -971,21 +980,263 @@ class MethodIdDecoder:
 
     def get_function_signature_from_4byte(self, method_id: str) -> str:
         """Consulta 4byte.directory para obtener la firma de una función a partir de un method ID."""
-        url = f"https://www.4byte.directory/api/v1/signatures/?hex_signature={method_id}"
-        response = requests.get(url)
-        if response.status_code == 200:
+        try:
+            url = f"https://www.4byte.directory/api/v1/signatures/?hex_signature={method_id}"
+            response = requests.get(url, timeout=5)
+            response.raise_for_status()
             results = response.json().get('results')
             if results:
                 return results[0]['text_signature']
+        except requests.RequestException as e:
+            print(f"Error al consultar 4byte.directory: {e}")
+        return "No se pudo decodificar"
+
+    def query_etherface(self, method_id: str) -> str:
+        """Consulta Etherface para obtener la firma de una función a partir de un method ID."""
+        try:
+            url = f"https://www.etherface.io/api/v1/signatures/{method_id}"
+            response = requests.get(url, timeout=5)
+            response.raise_for_status()
+            data = response.json()
+            if data and 'signature' in data:
+                return data['signature']
+        except requests.RequestException as e:
+            print(f"Error al consultar Etherface: {e}")
         return "No se pudo decodificar"
 
     def search_function_by_methodid(self, method_id: str) -> Optional[str]:
         """Busca el method ID en todos los protocolos y devuelve la función correspondiente."""
         protocols = {
-            # Ejemplo de estructura de datos para protocolos
-            "ACROSS": ACROSS_FUNCTIONS,
-            "ALLBRIDGE": ALLBRIDGE_FUNCTIONS,
-            # ... (resto del diccionario de protocolos como en el script original)
+            #RESTOS
+        "ETH_GENERIC": ETH_GENERIC,
+
+            # BRIDGES
+        "ACROSS": ACROSS_FUNCTIONS,
+        "ALLBRIDGE": ALLBRIDGE_FUNCTIONS,
+        "ARBITRUM": ARBITRUM_FUNCTIONS,
+        "CELER": CELER_FUNCTIONS,
+        "HOP": HOP_FUNCTIONS,
+        "LAYERZERO": LAYERZERO_FUNCTIONS,
+        "MULTICHAIN": MULTICHAIN_FUNCTIONS,
+        "OPTIMISM": OPTIMISM_FUNCTIONS,
+        "ORBITER": ORBITER_FUNCTIONS,
+        "POLYGON": POLYGON_FUNCTIONS,
+        "PORTAL": PORTAL_FUNCTIONS,
+        "STARGATE": STARGATE_FUNCTIONS,
+        "SYMBIOSIS": SYMBIOSIS_FUNCTIONS,
+        "SYNAPSE": SYNAPSE_FUNCTIONS,
+        "WORMHOLE": WORMHOLE_FUNCTIONS,
+
+        # DERIVATIVES
+        "DRIFT": DRIFT_FUNCTIONS,
+        "DYDX": DYDX_FUNCTIONS,
+        "GAINS": GAINS_FUNCTIONS,
+        "GMX": GMX_FUNCTIONS,
+        "HUBBLE": HUBBLE_FUNCTIONS,
+        "KWENTA": KWENTA_FUNCTIONS,
+        "LEVEL": LEVEL_FUNCTIONS,
+        "MYCELIUM": MYCELIUM_FUNCTIONS,
+        "PERPETUAL": PERP_FUNCTIONS,
+        "POLYNOMIAL": POLYNOMIAL_FUNCTIONS,
+        "RIBBON": RIBBON_FUNCTIONS,
+        "SYNTHETIX": SYNTHETIX_FUNCTIONS,
+        "VELA": VELA_FUNCTIONS,
+
+        # DEX
+        "BALANCER": BALANCER_FUNCTIONS,
+        "BANCOR": BANCOR_FUNCTIONS,
+        "BEETHOVEN": BEETHOVEN_FUNCTIONS,
+        "BISWAP": BISWAP_FUNCTIONS,
+        "CAMELOT": CAMELOT_FUNCTIONS,
+        "CHRONOS": CHRONOS_FUNCTIONS,
+        "CURVE": CURVE_FUNCTIONS,
+        "DODO": DODO_FUNCTIONS,
+        "DYSTOPIA": DYSTOPIA_FUNCTIONS,
+        "GMX": GMX_FUNCTIONS,
+        "GNOSIS": GNOSIS_FUNCTIONS,
+        "HASHFLOW": HASHFLOW_FUNCTIONS,
+        "KYBERSWAP": KYBERSWAP_FUNCTIONS,
+        "LOOPRING": LOOPRING_FUNCTIONS,
+        "MAVERICK": MAVERICK_FUNCTIONS,
+        "MESH_SWAP": MESHSWAP_FUNCTIONS,
+        "MIX_SWAP": MIXSWAP_FUNCTIONS,
+        "ONEINCH": ONEINCH_FUNCTIONS,
+        "ORCA": ORCA_FUNCTIONS,
+        "PANCAKESWAP": PANCAKESWAP_FUNCTIONS,
+        "PARASWAP": PARASWAP_FUNCTIONS,
+        "PLATYPUS": PLATYPUS_FUNCTIONS,
+        "QUICKSWAP": QUICKSWAP_FUNCTIONS,
+        "RAMSES": RAMSES_FUNCTIONS,
+        "RAYDIUM": RAYDIUM_FUNCTIONS,
+        "SOLIDLY": SOLIDLY_FUNCTIONS,
+        "SPIRITSWAP": SPIRITSWAP_FUNCTIONS,
+        "SPOOKYSWAP": SPOOKYSWAP_FUNCTIONS,
+        "SUSHISWAP": SUSHISWAP_FUNCTIONS,
+        "TRADERJOE": TRADERJOE_FUNCTIONS,
+        "UNISWAP": UNISWAP_FUNCTIONS,
+        "VELODROME": VELODROME_FUNCTIONS,
+        "VULPEFI": VULPEFI_FUNCTIONS,
+        "WOMBAT": WOMBAT_FUNCTIONS,
+        "ZAPPER": ZAPPER_FUNCTIONS,
+        "ZERION": ZERION_FUNCTIONS,
+        "ZEROEX": ZEROEX_FUNCTIONS,
+        "ZYBERSWAP": ZYBERSWAP_FUNCTIONS,
+
+        # GAMING
+        "AXIE": AXIE_FUNCTIONS,
+        "AUGUR" :  AUGUR_FUNCTIONS,
+        "BETSWIRL": BETSWIRL_FUNCTIONS,
+        "BIGTIME": BIGTIME_FUNCTIONS,
+        "CRYPTO_UNICORNS": CRYPTO_UNICORNS_FUNCTIONS,
+        "DECENTRAL": DECENTRAL_FUNCTIONS,
+        "DEFI_KINGDOMS": DEFI_KINGDOMS_FUNCTIONS,
+        "EMBER_SWORD": EMBER_SWORD_FUNCTIONS,
+        "GALA": GALA_FUNCTIONS,
+        "GODS_UNCHAINED": GODS_UNCHAINED_FUNCTIONS,
+        "ILLUVIUM": ILLUVIUM_FUNCTIONS,
+        "PEGAXY": PEGAXY_FUNCTIONS,
+        "POLYMARKET": POLYMARKET_FUNCTIONS,
+        "ROLLBIT": ROLLBIT_FUNCTIONS,
+        "SORARE": SORARE_FUNCTIONS,
+        "SPLINTERLANDS": SPLINTERLANDS_FUNCTIONS,
+        "STAR_ATLAS": STAR_ATLAS_FUNCTIONS,
+        "STEPN": STEPN_FUNCTIONS,
+        "THETAN_ARENA": THETAN_ARENA_FUNCTIONS,
+        "WALLFAIR": WALLFAIR_FUNCTIONS,
+        "ZED_RUN": ZED_RUN_FUNCTIONS,
+
+        # IDENTITY
+        "BRIGHTID": BRIGHTID_FUNCTIONS,
+        "CIVIC": CIVIC_FUNCTIONS,
+        "POLYGONID": POLYGONID_FUNCTIONS,
+        "WORLDCOIN": WORLDCOIN_FUNCTIONS,
+
+        # INFRASTRUCTURE
+        "ARWEAVE": ARWEAVE_FUNCTIONS,
+        "FILECOIN": FILECOIN_FUNCTIONS,
+        "IPFS": IPFS_FUNCTIONS,
+        "POCKET": POCKET_FUNCTIONS,
+        "THE_GRAPH": THE_GRAPH_FUNCTIONS,
+
+        # INSURANCE
+        "INSURACE": INSURACE_FUNCTIONS,
+        "NEXUS_MUTUAL": NEXUS_MUTUAL_FUNCTIONS,
+        "UNSLASHED": UNSLASHED_FUNCTIONS,
+
+        # LAUNCHPAD
+        "BULLPERKS": BULLPERKS_FUNCTIONS,
+        "COINLIST": COINLIST_FUNCTIONS,
+        "COPPER_LAUNCH": COPPER_LAUNCH_FUNCTIONS,
+        "DAOMAKER": DAOMAKER_FUNCTIONS,
+        "GAMEFI": GAMEFI_FUNCTIONS,
+        "GAMESTARTER": GAMESTARTER_FUNCTIONS,
+        "PINKSALE": PINKSALE_FUNCTIONS,
+        "POLKSTARTER": POLKASTARTER_FUNCTIONS,
+        "SEEDIFY": SEEDIFY_FUNCTIONS,
+
+        # LENDING
+        "AAVE": AAVE_FUNCTIONS,
+        "BENQI": BENQI_FUNCTIONS,
+        "COMPOUND": COMPOUND_FUNCTIONS,
+        "CREAM": CREAM_FUNCTIONS,
+        "EULER": EULER_FUNCTIONS,
+        "FRAX": FRAX_FUNCTIONS,
+        "GEIST": GEIST_FUNCTIONS,
+        "GRANARY": GRANARY_FUNCTIONS,
+        "HUNDRED": HUNDRED_FUNCTIONS,
+        "IRONBANK": IRONBANK_FUNCTIONS,
+        "MAPLE": MAPLE_FUNCTIONS,
+        "MAKER": MAKER_FUNCTIONS,
+        "MORPHO": MORPHO_FUNCTIONS,
+        "RADIANT": RADIANT_FUNCTIONS,
+        "VENUS": VENUS_FUNCTIONS,
+
+        # MEV
+        "COWSWAP": COWSWAP_FUNCTIONS,
+        "EDEN": EDEN_FUNCTIONS,
+        "FLASHBOTS": FLASHBOTS_FUNCTIONS,
+        "MANIFOLD": MANIFOLD_FUNCTIONS,
+        "ROOK": ROOK_FUNCTIONS,
+
+        # NFT
+        "BLUR": BLUR_FUNCTIONS,
+        "LOOKSRARE": LOOKSRARE_FUNCTIONS,
+        "MAGICEDEN": MAGICEDEN_FUNCTIONS,
+        "NFTX": NFTX_FUNCTIONS,
+        "OPENSEA": OPENSEA_FUNCTIONS,
+        "RARIBLE": RARIBLE_FUNCTIONS,
+        "SUDOSWAP": SUDOSWAP_FUNCTIONS,
+        "X2Y2": X2Y2_FUNCTIONS,
+
+        # OPTIONS
+        "DOPEX": DOPEX_FUNCTIONS,
+        "HEGIC": HEGIC_FUNCTIONS,
+        "LYRA": LYRA_FUNCTIONS,
+        "PREMIA": PREMIA_FUNCTIONS,
+
+        # ORACLES
+        "API3": API3_FUNCTIONS,
+        "BAND": BAND_FUNCTIONS,
+        "CHAINLINK": CHAINLINK_FUNCTIONS,
+        "DIA": DIA_FUNCTIONS,
+        "PYTH": PYTH_FUNCTIONS,
+        "REDSTONE": REDSTONE_FUNCTIONS,
+        "TELLOR": TELLOR_FUNCTIONS,
+        "UMA": UMA_FUNCTIONS,
+        "UMBRELLA": UMBRELLA_FUNCTIONS,
+
+        # PRIVACY
+        "AZTEC": AZTEC_FUNCTIONS,
+        "MONERO": MONERO_FUNCTIONS,
+        "RAILWAY": RAILWAY_FUNCTIONS,
+        "TORNADO": TORNADO_FUNCTIONS,
+        "ZCASH": ZCASH_FUNCTIONS,
+
+        # RWA
+        "CENTRIFUGE": CENTRIFUGE_FUNCTIONS,
+        "GOLDFINCH": GOLDFINCH_FUNCTIONS,
+        "MAPLE": MAPLE_FUNCTIONS,
+        "TRUEFI": TRUEFI_FUNCTIONS,
+
+        # SOCIAL_MEDIA
+        "FARCASTER": FARCASTER_FUNCTIONS,
+        "FRIEND_TECH": FRIEND_TECH_FUNCTIONS,
+        "LENS": LENS_FUNCTIONS,
+
+        # STAKING
+        "ANKR": ANKR_FUNCTIONS,
+        "BINANCE": BINANCE_FUNCTIONS,
+        "EIGENLAYER": EIGENLAYER_FUNCTIONS,
+        "LIDO": LIDO_FUNCTIONS,
+        "MANTLE": MANTLE_FUNCTIONS,
+        "OETH": OETH_FUNCTIONS,
+        "ROCKETPOOL": ROCKETPOOL_FUNCTIONS,
+        "STADER": STADER_FUNCTIONS,
+        "STAKESTONE": STAKESTONE_FUNCTIONS,
+        "STAKEWISE": STAKEWISE_FUNCTIONS,
+        "SWELL": SWELL_FUNCTIONS,
+
+        # TOKENS
+        "ERC1155": ERC1155_FUNCTIONS,
+        "ERC20": ERC20_FUNCTIONS,
+        "ERC2981": ERC2981_FUNCTIONS,
+        "ERC3525": ERC3525_FUNCTIONS,
+        "ERC4626": ERC4626_FUNCTIONS,
+        "ERC5192": ERC5192_FUNCTIONS,
+        "ERC721": ERC721_FUNCTIONS,
+
+        # YIELD FARMING
+        "ALPACA": ALPACA_FUNCTIONS,
+        "BEEFY": BEEFY_FUNCTIONS,
+        "CONCENTRATOR": CONCENTRATOR_FUNCTIONS,
+        "CONVEX": CONVEX_FUNCTIONS,
+        "JONES": JONES_FUNCTIONS,
+        "PICKLE": PICKLE_FUNCTIONS,
+        "PIREX": PIREX_FUNCTIONS,
+        "REDACTED": REDACTED_FUNCTIONS,
+        "YEARN": YEARN_FUNCTIONS,
+        "YIELD_YAK": YIELD_YAK_FUNCTIONS,
+
         }
         
         for protocol_name, protocol_data in protocols.items():
@@ -996,9 +1247,9 @@ class MethodIdDecoder:
                             return function_name
         return None
 
-    def try_decode(self, method_id: str) -> Tuple[str, str]:
+    def try_decode(self, method_id: str, source: str) -> Tuple[str, str]:
         """
-        Intenta decodificar un method ID.
+        Intenta decodificar un method ID usando la fuente especificada.
         Retorna una tupla (tipo, resultado)
         """
         # Normalizar method_id
@@ -1014,10 +1265,21 @@ class MethodIdDecoder:
         if method_id in self.known_words:
             return ('WORD', self.known_words[method_id])
         
-        # Intentar decodificar usando 4byte.directory
-        signature = self.get_function_signature_from_4byte(method_id)
+        # Decodificar usando la fuente especificada
+        if source == 'etherface':
+            signature = self.query_etherface(method_id)
+        elif source == '4byte':
+            signature = self.get_function_signature_from_4byte(method_id)
+        else:
+            return ('UNKNOWN', 'Fuente no válida')
+        
         if signature != "No se pudo decodificar":
             return ('FUNCTION', signature)
+        
+        # Buscar en CSV local si no se encontró en la API
+        csv_signature = self.search_in_csv(method_id)
+        if csv_signature:
+            return ('FUNCTION', csv_signature)
         
         # Buscar en protocolos
         function_name = self.search_function_by_methodid(method_id)
@@ -1027,58 +1289,96 @@ class MethodIdDecoder:
         # Si no se encuentra en ninguna lista, se considera desconocido
         return ('UNKNOWN', f'No se encontró coincidencia para el method ID: {method_id}')
 
-    def decode_multiple(self, method_ids: List[str]) -> Dict[str, str]:
+    def search_in_csv(self, method_id: str) -> Optional[str]:
+        """Busca el method ID en un archivo CSV local."""
+        try:
+            with open('local_signatures.csv', mode='r') as file:
+                reader = csv.reader(file)
+                for row in reader:
+                    if row[0] == method_id:
+                        return row[1]
+        except FileNotFoundError:
+            print("Archivo CSV local no encontrado.")
+        return None
+
+    def decode_multiple(self, method_ids: List[str], source: str) -> Dict[str, str]:
         """
-        Decodifica múltiples method IDs y retorna un diccionario
+        Decodifica múltiples method IDs usando la fuente especificada y retorna un diccionario
         """
         results = {}
         for method_id in method_ids:
-            tipo, resultado = self.try_decode(method_id)
+            tipo, resultado = self.try_decode(method_id, source)
             results[method_id] = resultado
         return results
 
+    def decode_transaction_data(self, data: str, abi: list) -> dict:
+        """Decodifica los datos de una transacción usando el ABI proporcionado."""
+        w3 = Web3()
+        contract = w3.eth.contract(abi=abi)
+        return contract.decode_function_input(data)
+
+    def generate_method_id(self, signature: str) -> str:
+        """Genera un method ID a partir de una firma de función."""
+        return keccak(signature.encode('utf-8')).hex()[:8]
+
 def main():
     decoder = MethodIdDecoder()
+    
+    # Configurar la ventana de Tkinter
+    root = tk.Tk()
+    root.withdraw()  # Ocultar la ventana principal
+    
+    # Preguntar al usuario qué fuente desea usar
+    source = simpledialog.askstring("Fuente de Decodificación", "¿Qué fuente deseas usar para la decodificación? (etherface/4byte):")
+    if source not in ['etherface', '4byte']:
+        messagebox.showerror("Error", "Fuente no válida. Por favor, elige 'etherface' o '4byte'.")
+        return
     
     print("\nBienvenido al decodificador de Method IDs")
     print("Introduce los Method IDs separados por comas (ejemplo: 0xa9059cbb,0x095ea7b3)")
     print("Para salir, escribe 'exit' o 'quit'\n")
     
-    while True:
-        user_input = input("Introduce Method IDs: ").strip()
+    with open('method_ids_output.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['Method ID', 'Tipo', 'Resultado'])
         
-        if user_input.lower() in ['exit', 'quit']:
-            print("¡Hasta luego!")
-            break
+        while True:
+            user_input = input("Introduce Method IDs: ").strip()
             
-        if not user_input:
-            continue
-            
-        method_ids = [mid.strip() for mid in user_input.split(',')]
-        
-        print("\nDecodificando method IDs...")
-        results = decoder.decode_multiple(method_ids)
-        
-        functions_found = 0
-        words_found = 0
-        unknown = 0
-        
-        for method_id, resultado in results.items():
-            if "FUNCTION" in resultado:
-                print(f"✅ {method_id} => {resultado}")
-                functions_found += 1
-            elif "WORD" in resultado:
-                print(f"📝 {method_id} => {resultado}")
-                words_found += 1
-            else:
-                print(f"❌ {method_id} => {resultado}")
-                unknown += 1
+            if user_input.lower() in ['exit', 'quit']:
+                print("¡Hasta luego!")
+                break
                 
-        total = len(method_ids)
-        print(f"\nResumen:")
-        print(f"- Funciones encontradas: {functions_found}/{total}")
-        print(f"- Palabras encontradas: {words_found}/{total}")
-        print(f"- No decodificados: {unknown}/{total}\n")
+            if not user_input:
+                continue
+                
+            method_ids = [mid.strip() for mid in user_input.split(',')]
+            
+            print("\nDecodificando method IDs...")
+            functions_found = 0
+            words_found = 0
+            unknown = 0
+            
+            for method_id in method_ids:
+                tipo, resultado = decoder.try_decode(method_id, source)
+                if tipo == 'FUNCTION':
+                    print(f"✅ {method_id} => {resultado}")
+                    functions_found += 1
+                elif tipo == 'WORD':
+                    print(f"📝 {method_id} => {resultado}")
+                    words_found += 1
+                else:
+                    print(f"❌ {method_id} => No se encontró coincidencia para el method ID: {method_id}")
+                    unknown += 1
+                
+                writer.writerow([method_id, tipo, resultado])
+                    
+            total = len(method_ids)
+            print(f"\nResumen:")
+            print(f"- Funciones encontradas: {functions_found}/{total}")
+            print(f"- Palabras encontradas: {words_found}/{total}")
+            print(f"- No decodificados: {unknown}/{total}\n")
+            print("Los resultados han sido guardados en 'method_ids_output.csv'.\n")
 
 if __name__ == "__main__":
-    main() 
+    main()
