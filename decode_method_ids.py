@@ -7,7 +7,7 @@ import requests
 import os
 import csv
 import tkinter as tk
-from tkinter import scrolledtext, messagebox
+from tkinter import scrolledtext, messagebox, simpledialog
 import pandas as pd
 
 from eth_hash.auto import keccak
@@ -1320,6 +1320,39 @@ class MethodIdDecoder:
     def generate_method_id(self, signature: str) -> str:
         """Genera un method ID a partir de una firma de función."""
         return keccak(signature.encode('utf-8')).hex()[:8]
+
+def separate_known_and_unknown(file_path: str, known_file_path: str, unknown_file_path: str):
+    # Leer el contenido del archivo CSV original
+    with open(file_path, mode='r', newline='') as file:
+        reader = csv.reader(file)
+        known_lines = []
+        unknown_lines = []
+        
+        for line in reader:
+            if 'UNKNOWN' in line:
+                unknown_lines.append(line)
+            else:
+                known_lines.append(line)
+
+    # Escribir los métodos conocidos en local_signatures.csv
+    with open(known_file_path, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(known_lines)
+
+    # Escribir los métodos desconocidos en method_unknown.csv
+    with open(unknown_file_path, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(unknown_lines)
+
+# Ruta al archivo CSV original
+csv_file_path = 'local_signatures.csv'
+
+# Rutas a los archivos de salida
+known_csv_file_path = 'local_signatures.csv'
+unknown_csv_file_path = 'method_unknown.csv'
+
+# Llamar a la función para separar los métodos conocidos y desconocidos
+separate_known_and_unknown(csv_file_path, known_csv_file_path, unknown_csv_file_path)
 
 def main():
     decoder = MethodIdDecoder()
